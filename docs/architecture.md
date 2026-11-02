@@ -1,7 +1,8 @@
 # Architecture
 
-**Status:** Application scaffold implemented for Issue #1. The logical components
-below remain proposed beyond the minimal homepage.
+**Status:** Application scaffold implemented for Issue #1, with local birth-input
+validation added for Issue #3. The calculation interface is absent from this
+checkout; the other logical components below remain proposed.
 
 ## Application foundation
 
@@ -10,6 +11,16 @@ Issue #1. Route components and the root layout live in `src/app`; tests live in
 `tests`. Styling uses plain CSS. No application services or persistence exist yet.
 Future calculation code must remain independent of route components and AI code.
 See [dependencies](dependencies.md) for exact versions and license notes.
+
+The homepage renders a client form in `src/components/birth-input-form.tsx`.
+`src/lib/birth-input.ts` provides pure format validation and provisional form value
+types, not a chart engine interface. Form values stay in component memory, with no
+logging, transmission, storage, or chart calculation. Native controls, associated
+labels and error descriptions, an error summary, and focus on the first invalid
+field support keyboard and assistive-technology use. No dependencies were added.
+See [birth-input scope and verification](birth-input-verification.md) for unresolved
+input requirements. Any future server entry point must independently validate
+inputs; browser checks are not a server trust boundary.
 
 `next.config.ts` sets `agentRules: false` so development startup does not create or
 rewrite instruction files. This preserves explicit control of `AGENTS.md` for the

@@ -4,9 +4,11 @@ Celestia is an independent software project exploring deterministic Zi Wei Dou S
 
 ## Project status
 
-The Issue #1 application scaffold provides a minimal Next.js App Router homepage,
-strict TypeScript checking, ESLint, and one automated render smoke test. Birth-input
-forms, chart calculation, authentication, persistence, and AI services are not implemented.
+The Next.js application includes a keyboard-accessible birth-input form with
+browser-local validation of Gregorian date, local time, and birthplace time zone.
+Chart calculation, authentication, persistence, and AI services are not implemented.
+The calculation interface and additional required chart inputs remain undefined;
+see [Issue #3 scope and verification](docs/birth-input-verification.md).
 
 ## Local development
 
@@ -32,8 +34,8 @@ npm start
 
 `typecheck` generates Next.js route types before running TypeScript, including on
 a fresh checkout. `lint` treats warnings as failures. `test` uses Node's test runner
-with `tsx` to render the homepage and check its application heading inside the main
-landmark; it is not a browser or end-to-end test. `start` serves the production build
+with `tsx` for validation unit tests and static form/homepage rendering checks;
+it is not a browser or end-to-end test. `start` serves the production build
 at [localhost:3000](http://localhost:3000) and requires a successful build first.
 
 See [scaffold verification](docs/scaffold-verification.md) for recorded results and
@@ -44,10 +46,16 @@ See [scaffold verification](docs/scaffold-verification.md) for recorded results 
 ```text
 src/app/
   layout.tsx             Root HTML layout and metadata
-  page.tsx               Minimal Celestia homepage
+  page.tsx               Celestia homepage with birth-input form
   globals.css            Base responsive styles
+src/components/
+  birth-input-form.tsx    Accessible local-only form
+src/lib/
+  birth-input.ts          Pure format validation; provisional form value types
 tests/
   home-page.test.tsx      Homepage render smoke test
+  birth-input.test.tsx    Validation unit tests with synthetic inputs
+  birth-input-form.test.tsx Static form accessibility and privacy checks
 docs/                    Product, architecture, dependency, and verification records
 eslint.config.mjs         Next.js and TypeScript lint rules
 next.config.ts            Disable automatic agent instruction generation

@@ -2,7 +2,7 @@
 
 **Status:** Draft 0.1  
 **Owner:** Celestia repository owner  
-**Implementation:** Application scaffold only; product capabilities below are not implemented
+**Implementation:** Application scaffold and provisional browser-local birth-input format checks; chart calculation and other product capabilities below are not implemented. See [input scope and open requirements](birth-input-verification.md).
 
 ## Problem
 
