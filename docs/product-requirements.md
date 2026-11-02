@@ -2,7 +2,8 @@
 
 **Status:** Draft 0.1  
 **Owner:** Celestia repository owner  
-**Implementation:** Application scaffold only; product capabilities below are not implemented
+**Implementation:** Application scaffold and provisional local birth-input validation;
+chart generation and the other product capabilities below are not implemented.
 
 ## Problem
 
@@ -35,6 +36,11 @@ These capabilities are candidates for subsequent milestones. Their exact priorit
 
 ## Open decisions
 
+- Birth-input/calculation contract: additional required chart inputs, supported
+  calendars and date ranges, birthplace/coordinate requirements, and handling of
+  unknown times, daylight-saving conflicts, and historical time conventions.
+  The [Issue #3 implementation record](birth-input-verification.md) documents the
+  provisional form assumptions; they do not establish calculation requirements.
 - Calculation library and license compatibility.
 - Authentication provider and persistence strategy.
 - Hosting, budget, and AI service limits.

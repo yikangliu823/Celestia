@@ -23,3 +23,91 @@ main {
 h1 {
   line-height: 1.2;
 }
+
+section {
+  margin-top: 2.5rem;
+}
+
+fieldset {
+  min-width: 0;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  border: 0;
+}
+
+legend,
+label {
+  font-weight: 600;
+}
+
+.form-field {
+  margin: 1.5rem 0;
+}
+
+label {
+  display: block;
+}
+
+.field-hint {
+  margin: 0.25rem 0 0.5rem;
+  color: #454950;
+}
+
+input,
+button {
+  font: inherit;
+  border-radius: 0.25rem;
+}
+
+input {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.75rem;
+  color: inherit;
+  background: #fff;
+  border: 1px solid #606670;
+}
+
+input[aria-invalid="true"] {
+  border: 2px solid #a21616;
+}
+
+button {
+  min-height: 2.75rem;
+  padding: 0.5rem 1.25rem;
+  color: #fff;
+  background: #234e8a;
+  border: 2px solid #234e8a;
+  cursor: pointer;
+}
+
+fieldset:disabled button {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+:is(input, button, a):focus-visible {
+  outline: 3px solid #734200;
+  outline-offset: 3px;
+}
+
+.field-error {
+  margin: 0.5rem 0 0;
+  color: #a21616;
+  font-weight: 600;
+}
+
+.error-summary {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border: 2px solid #a21616;
+  overflow-wrap: anywhere;
+}
+
+.error-summary p {
+  margin-top: 0;
+}
+
+a {
+  color: #234e8a;
+}
