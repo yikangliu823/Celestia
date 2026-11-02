@@ -1,0 +1,55 @@
+{
+  "status": "BLOCKED",
+  "recordedAt": "2026-11-02T06:01:48.902504+00:00",
+  "reason": "Frozen global Codex configuration SHA-256 mismatch; stopped before any implementation session.",
+  "expectedUserConfigSha256": "24edc21f3f5c8ba44bc9697e92923601f5bd68325e787c25cf4a5984f1ecbd11",
+  "observedUserConfigSha256": "bfff10908e1fcdeb84e0e7ecdc2a2219ac3d65b350afee2a77233aebc9645899",
+  "exactConfigDelta": "Unavailable: preparation preserved a fingerprint and audit, not a full prior config copy. Current model and reasoning settings remain gpt-6-astra and medium; other differences must not be inferred.",
+  "worktrees": {
+    "main": {
+      "worktree": "/Users/richardlau/Development/Celestia",
+      "head": "03573c23532fa94715844284b8e16a6bf864c9a6",
+      "branch": "main",
+      "statusPorcelain": ""
+    },
+    "control": {
+      "worktree": "/Users/richardlau/Development/Celestia-experiment-control",
+      "head": "85cdbb0c597a6f00f9feac3bf4cb9620f139fb46",
+      "branch": "experiment/no-agent-instructions",
+      "statusPorcelain": ""
+    },
+    "treatment": {
+      "worktree": "/Users/richardlau/Development/Celestia-experiment-treatment",
+      "head": "96d1af2fb056066376eccc3e66f66a500c70df71",
+      "branch": "experiment/with-agent-instructions",
+      "statusPorcelain": ""
+    }
+  },
+  "frozenFileMismatches": [],
+  "scoringFreezeMismatches": [],
+  "implementationAttemptDirectories": [],
+  "implementationRunsStarted": 0,
+  "implementationCommits": {
+    "control": null,
+    "treatment": null
+  },
+  "independentEvaluationStarted": false,
+  "modelCallsFromSetup": 0,
+  "actualExecutionDurations": {
+    "control": null,
+    "treatment": null
+  },
+  "implementationTestAttempts": {
+    "control": 0,
+    "treatment": 0
+  },
+  "debuggingIterations": {
+    "control": 0,
+    "treatment": 0
+  },
+  "implementationHumanInterventions": {
+    "control": 0,
+    "treatment": 0
+  },
+  "contaminationEventsObserved": []
+}

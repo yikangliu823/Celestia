@@ -1,0 +1,7 @@
+{
+  "recordedAt": "2026-11-02T06:00:08.739780+00:00",
+  "command": "python3 docs/experiment/scripts/verify-isolation.py",
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/Users/richardlau/Development/Celestia-experiment-evidence/docs/experiment/scripts/verify-isolation.py\", line 75, in <module>\n    print(json.dumps(verify(args.condition), indent=2))\n  File \"/Users/richardlau/Development/Celestia-experiment-evidence/docs/experiment/scripts/verify-isolation.py\", line 34, in verify\n    assert hashlib.sha256((Path.home() / \".codex/config.toml\").read_bytes()).hexdigest() == settings[\"userConfigSha256\"], \"User config changed\"\nAssertionError: User config changed\n"
+}

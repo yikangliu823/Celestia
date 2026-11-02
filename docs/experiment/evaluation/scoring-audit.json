@@ -1,0 +1,247 @@
+{
+  "auditedAt": "2026-11-02T05:55:47.404674+00:00",
+  "beforeAnyImplementation": true,
+  "originalCasesUnchanged": true,
+  "checks": [
+    {
+      "id": "F01",
+      "category": "Functional correctness",
+      "target": "Open the form through public UI. Inventory visible date, time, and location/timezone input concepts.",
+      "pass": "The requested input concepts are present and usable. Additional chart fields are not mandated without a calculation contract.",
+      "fail": "A required input concept is absent or unusable in the UI.",
+      "na": "N/A only if no objective oracle/prerequisite exists; explain. Missing evidence is separately labeled unverified, never a pass.",
+      "evidence": "Browser actions and accessibility/DOM observations",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "F02",
+      "category": "Functional correctness",
+      "target": "Start with an empty form and attempt submission.",
+      "pass": "Missing required values produce actionable feedback; the form does not report successful validation.",
+      "fail": "Empty required input is reported as successfully validated, or missing-value feedback is not actionable.",
+      "na": "N/A only if no objective oracle/prerequisite exists; explain. Missing evidence is separately labeled unverified, never a pass.",
+      "evidence": "Browser actions and accessibility/DOM observations",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "F03",
+      "category": "Functional correctness",
+      "target": "Omit each field the implementation declares required, one at a time, keeping the others synthetically valid.",
+      "pass": "Each missing required value is identified with understandable feedback.",
+      "fail": "A declared required field can be omitted without actionable feedback.",
+      "na": "N/A only if no objective oracle/prerequisite exists; explain. Missing evidence is separately labeled unverified, never a pass.",
+      "evidence": "Browser actions and accessibility/DOM observations",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "F04",
+      "category": "Functional correctness",
+      "target": "Correct an invalid field and retry.",
+      "pass": "The corrected field is not still described as invalid when the supplied value is valid under the disclosed policy.",
+      "fail": "After correction and retry, a now-valid field is still incorrectly described as invalid.",
+      "na": "N/A only if no objective oracle/prerequisite exists; explain. Missing evidence is separately labeled unverified, never a pass.",
+      "evidence": "Browser actions and accessibility/DOM observations",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "F05",
+      "category": "Functional correctness",
+      "target": "Supply a complete synthetic valid input under the implementation's disclosed rules; observe submission.",
+      "pass": "No erroneous validation rejection. Exact success UI or server behavior is not scorable without a specified submission contract.",
+      "fail": "A complete input satisfying the disclosed rules is erroneously rejected by validation; do not score the unspecified success design.",
+      "na": "N/A only if no objective oracle/prerequisite exists; explain. Missing evidence is separately labeled unverified, never a pass.",
+      "evidence": "Browser actions and accessibility/DOM observations",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "E01",
+      "category": "Calendar edge cases",
+      "target": "Attempt an impossible date such as 2024-02-30 using the available controls.",
+      "pass": "The impossible date cannot be accepted as a valid calendar date. Prevention by a native widget is acceptable; separately review validation tests.",
+      "fail": "The UI accepts an impossible calendar date as valid without rejecting or preventing it.",
+      "na": "N/A only if no objective oracle/prerequisite exists; explain. Missing evidence is separately labeled unverified, never a pass.",
+      "evidence": "Browser actions and accessibility/DOM observations",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "E02",
+      "category": "Calendar edge cases",
+      "target": "Attempt 2023-02-29 in a Gregorian input mode.",
+      "pass": "The non-leap-year date is not accepted as a valid Gregorian date. If the mode is not Gregorian, report not scorable rather than assume a calendar.",
+      "fail": "A Gregorian form accepts 2023-02-29 as a valid Gregorian date.",
+      "na": "N/A if the input mode is not Gregorian or calendar semantics cannot be established.",
+      "evidence": "Browser actions and accessibility/DOM observations",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "E03",
+      "category": "Calendar edge cases",
+      "target": "Enter 2024-02-29 in a Gregorian input mode.",
+      "pass": "The date is calendar-valid; rejection solely as an impossible Gregorian date fails. Unspecified product date ranges are evaluated separately.",
+      "fail": "A Gregorian form rejects 2024-02-29 solely because it considers that calendar date impossible.",
+      "na": "N/A if not Gregorian; a separately disclosed product range restriction is not a calendar-correctness failure.",
+      "evidence": "Browser actions and accessibility/DOM observations",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "E04",
+      "category": "Calendar edge cases",
+      "target": "Review and exercise declared lower/upper date boundaries, if any, and adjacent values.",
+      "pass": "Boundary behavior matches disclosed policy. Whether the chosen product bounds are correct is not scorable because none are specified.",
+      "fail": "An explicitly disclosed boundary contradicts observed behavior on that boundary or an adjacent value.",
+      "na": "N/A if no explicit date bounds are disclosed; correctness of the selected bound values is always unspecified.",
+      "evidence": "Browser actions and accessibility/DOM observations",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "E05",
+      "category": "Time edge cases",
+      "target": "Attempt hour 24 or minute 60, using the applicable time representation.",
+      "pass": "Impossible time values are prevented or rejected; no silent normalization to a different birth time.",
+      "fail": "An impossible time is accepted or silently normalized into a different valid birth time.",
+      "na": "N/A only if no objective oracle/prerequisite exists; explain. Missing evidence is separately labeled unverified, never a pass.",
+      "evidence": "Browser actions and accessibility/DOM observations",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "E06",
+      "category": "Time edge cases",
+      "target": "Try 00:00 and 23:59 in a 24-hour mode, or their equivalent in the chosen representation.",
+      "pass": "Both are valid time-of-day values; exact product restrictions are not specified.",
+      "fail": "A valid endpoint time is erroneously treated as an impossible time, absent a disclosed product restriction.",
+      "na": "N/A for an explicit product restriction whose correctness is undefined; record observed behavior.",
+      "evidence": "Browser actions and accessibility/DOM observations",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "E07",
+      "category": "Location/timezone edge cases",
+      "target": "If a location field is available, enter an unsupported or nonsensical location; record any declared supported set.",
+      "pass": "Location acceptance/rejection must be described. Exact supported set and resolution rules are not defined, so correctness of those policy choices is not scorable.",
+      "fail": "Only an objectively contradicted, explicitly disclosed location rule can fail; unspecified supported sets cannot.",
+      "na": "N/A unless an objectively testable location contract is explicitly disclosed. Free-text location need not resolve to a supported gazetteer.",
+      "evidence": "Browser actions and accessibility/DOM observations",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "E08",
+      "category": "Location/timezone edge cases",
+      "target": "If an IANA timezone input is provided, try Not/A_Zone, then America/Los_Angeles.",
+      "pass": "If the implementation promises IANA validation, the first is rejected and the second recognized. Which timezone representation is required remains unspecified.",
+      "fail": "An implementation claiming IANA validation accepts Not/A_Zone or cannot recognize America/Los_Angeles.",
+      "na": "N/A when the implementation does not promise IANA timezone input/validation.",
+      "evidence": "Browser actions and accessibility/DOM observations",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "E09",
+      "category": "Location/timezone edge cases",
+      "target": "Inspect handling of 2024-03-10 02:30 and 2024-11-03 01:30 in America/Los_Angeles if timezone resolution is implemented.",
+      "pass": "No expected disambiguation or rejection policy is specified. Record behavior as not scorable; do not invent an oracle.",
+      "fail": "No failure classification is available because the DST policy is undefined.",
+      "na": "Always N/A for policy correctness; optionally observe behavior without scoring it.",
+      "evidence": "Browser actions and accessibility/DOM observations",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "A01",
+      "category": "Accessibility",
+      "target": "Inspect accessible names for every required control using the browser accessibility tree.",
+      "pass": "Every required control has a meaningful accessible label; placeholder-only or visually adjacent unassociated text is insufficient.",
+      "fail": "A required control lacks a meaningful programmatic accessible name.",
+      "na": "N/A only if no objective oracle/prerequisite exists; explain. Missing evidence is separately labeled unverified, never a pass.",
+      "evidence": "Browser actions and accessibility/DOM observations",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "A02",
+      "category": "Accessibility",
+      "target": "Complete and submit using Tab, Shift+Tab, arrow keys as appropriate, and Enter/Space without a pointer.",
+      "pass": "All relevant controls and submission are operable by keyboard with a visible focus indicator and no trap.",
+      "fail": "A required control or submit action cannot be operated using the specified keyboard actions, or focus is invisible/trapped.",
+      "na": "N/A only if no objective oracle/prerequisite exists; explain. Missing evidence is separately labeled unverified, never a pass.",
+      "evidence": "Browser actions and accessibility/DOM observations",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "A03",
+      "category": "Accessibility",
+      "target": "Trigger errors; inspect control association, accessible descriptions, and feedback discoverability.",
+      "pass": "Errors are understandable and programmatically associated with relevant controls or exposed through accessible native validation; color alone is insufficient.",
+      "fail": "An observed error cannot be associated with its control/accessibly discovered, or relies on color alone.",
+      "na": "N/A only if no objective oracle/prerequisite exists; explain. Missing evidence is separately labeled unverified, never a pass.",
+      "evidence": "Browser actions and accessibility/DOM observations",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "A04",
+      "category": "Accessibility",
+      "target": "Trigger submission errors and observe focus order and the next keyboard action.",
+      "pass": "Focus remains predictable and errors can be found and corrected. No exact autofocus target is mandated.",
+      "fail": "Error handling loses/traps focus or leaves a keyboard user unable to locate and correct errors.",
+      "na": "N/A only if no objective oracle/prerequisite exists; explain. Missing evidence is separately labeled unverified, never a pass.",
+      "evidence": "Browser actions and accessibility/DOM observations",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "A05",
+      "category": "Accessibility",
+      "target": "Inspect semantic markup and reflow at 1280x800 and 390x844.",
+      "pass": "Form semantics support assistive technology; essential fields and errors remain readable and usable at both viewports. This is not a full WCAG audit.",
+      "fail": "Required controls/errors are clipped, unreadable, or unusable at either required viewport, or form semantics are materially missing.",
+      "na": "N/A only if no objective oracle/prerequisite exists; explain. Missing evidence is separately labeled unverified, never a pass.",
+      "evidence": "Browser actions and accessibility/DOM observations",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "P01",
+      "category": "Privacy/security",
+      "target": "Use synthetic sentinel values; inspect browser console, captured server output, source logging calls, and URLs.",
+      "pass": "No birth inputs are logged or placed in URLs. Inspect source as well as observed output; absence in one run alone is not exhaustive evidence.",
+      "fail": "A synthetic birth value is observed in a URL or console/server logging, or source contains an executed/clearly reachable birth-input logging path.",
+      "na": "N/A only if no objective oracle/prerequisite exists; explain. Missing evidence is separately labeled unverified, never a pass.",
+      "evidence": "Browser URL/console/network/storage observations plus source and server-output review",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "P02",
+      "category": "Privacy/security",
+      "target": "Inspect cookies, local/session storage, network activity, and persistence code before and after entry/submission.",
+      "pass": "No unsupported storage or external transmission of birth information; distinguish normal static asset requests from input-bearing requests.",
+      "fail": "Birth input is observed in unsupported persistence or external transmission, or source provides a clearly reachable path for it.",
+      "na": "N/A only if no objective oracle/prerequisite exists; explain. Missing evidence is separately labeled unverified, never a pass.",
+      "evidence": "Browser URL/console/network/storage observations plus source and server-output review",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "P03",
+      "category": "Privacy/security",
+      "target": "Review fields collected and changed files.",
+      "pass": "No real personal data, credentials, or unnecessary personal fields are introduced; additional required chart fields need a documented basis.",
+      "fail": "Real personal data/secrets are committed, or additional personal data collection has no disclosed chart-input basis; reasonable disclosed unresolved chart assumptions are not failures.",
+      "na": "N/A only if no objective oracle/prerequisite exists; explain. Missing evidence is separately labeled unverified, never a pass.",
+      "evidence": "Changed-file/source review and disclosed assumptions",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "V01",
+      "category": "Verification",
+      "target": "Run the five frozen npm commands; inspect implementation-authored validation tests and their discovered file set.",
+      "pass": "Commands pass and meaningful validation tests are actually executed, including missing/invalid cases and fixed expected outcomes.",
+      "fail": "A prescribed command fails, or missing/invalid validation tests with fixed expected outcomes are absent or not actually discovered/executed.",
+      "na": "N/A only if no objective oracle/prerequisite exists; explain. Missing evidence is separately labeled unverified, never a pass.",
+      "evidence": "Raw verification output, exit codes, test source, and discovered test names",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    },
+    {
+      "id": "Q01",
+      "category": "Code quality",
+      "target": "Review diff for TypeScript safety, focused components, validation separation, maintainability, unnecessary complexity, and architecture consistency.",
+      "pass": "Use the evidence-backed rubric in evaluation-plan.md; do not score compliance with treatment wording itself.",
+      "fail": "A material, evidence-linked defect in one of the frozen code-quality dimensions is demonstrated. Style preferences or code size alone cannot fail.",
+      "na": "N/A only if no objective oracle/prerequisite exists; explain. Missing evidence is separately labeled unverified, never a pass.",
+      "evidence": "Frozen implementation diff and source line references; per-dimension rubric notes",
+      "requirementBoundary": "Explicit issue/common architecture requirement except the unspecified behavior exclusions in the original expected result and N/A rule."
+    }
+  ]
+}

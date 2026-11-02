@@ -1,0 +1,12 @@
+{
+  "frozenAt": "2026-11-02T05:55:47.405588+00:00",
+  "filesSha256": {
+    "evaluation-plan.md": "b5db16ce0aacdb82f643791d8dbc50f869d018e5309c357dacbe1415437ea508",
+    "evaluation/cases.json": "733936881854b66dc48ab9923c4230cc2a116f7ef23d10040b6f16817aea0912",
+    "evaluation/scoring-audit.json": "787da0daddfbdc410b7f2c82f91f7de2b402e147d744ce195a6f2ef3fc0947e0",
+    "evaluation/scoring-clarifications.md": "81d470743dfbb66ee0e7aa5399dfb759ef9d6cfc9cb0567b2e8558971a584ace",
+    "implementation-prompt.md": "0ad96dc539a2696b973d9f5cd470fb146cf16366c135f84f071cd9dcf4fd286b"
+  },
+  "criteriaCount": 24,
+  "runsStarted": false
+}

@@ -1,0 +1,210 @@
+[
+  {
+    "condition": "treatment",
+    "probe": "own-status",
+    "command": [
+      "git",
+      "status",
+      "--porcelain"
+    ],
+    "exitCode": 0,
+    "expectedExitCode": 0,
+    "passed": true,
+    "output": "",
+    "recordedAt": "2026-11-02T05:59:38.194547+00:00"
+  },
+  {
+    "condition": "treatment",
+    "probe": "opposite-read",
+    "command": [
+      "/bin/cat",
+      "/Users/richardlau/Development/Celestia-experiment-control/README.md"
+    ],
+    "exitCode": 1,
+    "expectedExitCode": 1,
+    "passed": true,
+    "output": "cat: /Users/richardlau/Development/Celestia-experiment-control/README.md: Operation not permitted\n",
+    "recordedAt": "2026-11-02T05:59:38.204028+00:00"
+  },
+  {
+    "condition": "treatment",
+    "probe": "evidence-read",
+    "command": [
+      "/bin/cat",
+      "/Users/richardlau/Development/Celestia-experiment-evidence/docs/experiment/evaluation-plan.md"
+    ],
+    "exitCode": 1,
+    "expectedExitCode": 1,
+    "passed": true,
+    "output": "cat: /Users/richardlau/Development/Celestia-experiment-evidence/docs/experiment/evaluation-plan.md: Operation not permitted\n",
+    "recordedAt": "2026-11-02T05:59:38.212349+00:00"
+  },
+  {
+    "condition": "treatment",
+    "probe": "main-instructions-read",
+    "command": [
+      "/bin/cat",
+      "/Users/richardlau/Development/Celestia/AGENTS.md"
+    ],
+    "exitCode": 1,
+    "expectedExitCode": 1,
+    "passed": true,
+    "output": "cat: /Users/richardlau/Development/Celestia/AGENTS.md: Operation not permitted\n",
+    "recordedAt": "2026-11-02T05:59:38.221100+00:00"
+  },
+  {
+    "condition": "treatment",
+    "probe": "nested-sandbox-smoke",
+    "command": [
+      "/Applications/ChatGPT.app/Contents/Resources/codex",
+      "-c",
+      "model=\"gpt-6-astra\"",
+      "-c",
+      "model_reasoning_effort=\"medium\"",
+      "-c",
+      "approval_policy=\"never\"",
+      "-c",
+      "web_search=\"disabled\"",
+      "-c",
+      "project_doc_fallback_filenames=[]",
+      "-c",
+      "features.plugins=false",
+      "-c",
+      "features.apps=false",
+      "-c",
+      "features.memories=false",
+      "-c",
+      "features.multi_agent=false",
+      "-c",
+      "features.hooks=false",
+      "-c",
+      "features.shell_snapshot=false",
+      "-c",
+      "features.skip_host_skill_discovery=true",
+      "-c",
+      "mcp_servers.node_repl.enabled=false",
+      "-c",
+      "mcp_servers.computer-use.enabled=false",
+      "-c",
+      "shell_environment_policy.inherit=\"core\"",
+      "-c",
+      "shell_environment_policy.ignore_default_excludes=false",
+      "-c",
+      "sandbox_mode=\"workspace-write\"",
+      "-c",
+      "sandbox_workspace_write.network_access=true",
+      "sandbox",
+      "npm",
+      "test"
+    ],
+    "exitCode": 71,
+    "expectedExitCode": 0,
+    "passed": false,
+    "output": "sandbox-exec: sandbox_apply: Operation not permitted\n",
+    "recordedAt": "2026-11-02T05:59:38.256488+00:00"
+  },
+  {
+    "condition": "control",
+    "probe": "own-status",
+    "command": [
+      "git",
+      "status",
+      "--porcelain"
+    ],
+    "exitCode": 0,
+    "expectedExitCode": 0,
+    "passed": true,
+    "output": "",
+    "recordedAt": "2026-11-02T05:59:38.279073+00:00"
+  },
+  {
+    "condition": "control",
+    "probe": "opposite-read",
+    "command": [
+      "/bin/cat",
+      "/Users/richardlau/Development/Celestia-experiment-treatment/README.md"
+    ],
+    "exitCode": 1,
+    "expectedExitCode": 1,
+    "passed": true,
+    "output": "cat: /Users/richardlau/Development/Celestia-experiment-treatment/README.md: Operation not permitted\n",
+    "recordedAt": "2026-11-02T05:59:38.288928+00:00"
+  },
+  {
+    "condition": "control",
+    "probe": "evidence-read",
+    "command": [
+      "/bin/cat",
+      "/Users/richardlau/Development/Celestia-experiment-evidence/docs/experiment/evaluation-plan.md"
+    ],
+    "exitCode": 1,
+    "expectedExitCode": 1,
+    "passed": true,
+    "output": "cat: /Users/richardlau/Development/Celestia-experiment-evidence/docs/experiment/evaluation-plan.md: Operation not permitted\n",
+    "recordedAt": "2026-11-02T05:59:38.296875+00:00"
+  },
+  {
+    "condition": "control",
+    "probe": "main-instructions-read",
+    "command": [
+      "/bin/cat",
+      "/Users/richardlau/Development/Celestia/AGENTS.md"
+    ],
+    "exitCode": 1,
+    "expectedExitCode": 1,
+    "passed": true,
+    "output": "cat: /Users/richardlau/Development/Celestia/AGENTS.md: Operation not permitted\n",
+    "recordedAt": "2026-11-02T05:59:38.305782+00:00"
+  },
+  {
+    "condition": "control",
+    "probe": "nested-sandbox-smoke",
+    "command": [
+      "/Applications/ChatGPT.app/Contents/Resources/codex",
+      "-c",
+      "model=\"gpt-6-astra\"",
+      "-c",
+      "model_reasoning_effort=\"medium\"",
+      "-c",
+      "approval_policy=\"never\"",
+      "-c",
+      "web_search=\"disabled\"",
+      "-c",
+      "project_doc_fallback_filenames=[]",
+      "-c",
+      "features.plugins=false",
+      "-c",
+      "features.apps=false",
+      "-c",
+      "features.memories=false",
+      "-c",
+      "features.multi_agent=false",
+      "-c",
+      "features.hooks=false",
+      "-c",
+      "features.shell_snapshot=false",
+      "-c",
+      "features.skip_host_skill_discovery=true",
+      "-c",
+      "mcp_servers.node_repl.enabled=false",
+      "-c",
+      "mcp_servers.computer-use.enabled=false",
+      "-c",
+      "shell_environment_policy.inherit=\"core\"",
+      "-c",
+      "shell_environment_policy.ignore_default_excludes=false",
+      "-c",
+      "sandbox_mode=\"workspace-write\"",
+      "-c",
+      "sandbox_workspace_write.network_access=true",
+      "sandbox",
+      "npm",
+      "test"
+    ],
+    "exitCode": 71,
+    "expectedExitCode": 0,
+    "passed": false,
+    "output": "sandbox-exec: sandbox_apply: Operation not permitted\n",
+    "recordedAt": "2026-11-02T05:59:38.334511+00:00"
+  }
+]
