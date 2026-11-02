@@ -2,7 +2,7 @@
 
 **Status:** Draft 0.1  
 **Owner:** Celestia repository owner  
-**Implementation:** Not started
+**Implementation:** Application scaffold only; product capabilities below are not implemented
 
 ## Problem
 

@@ -1,6 +1,19 @@
 # Architecture
 
-**Status:** Proposed; no application implementation exists in this repository.
+**Status:** Application scaffold implemented for Issue #1. The logical components
+below remain proposed beyond the minimal homepage.
+
+## Application foundation
+
+The scaffold uses Next.js App Router, React, and strict TypeScript, as requested in
+Issue #1. Route components and the root layout live in `src/app`; tests live in
+`tests`. Styling uses plain CSS. No application services or persistence exist yet.
+Future calculation code must remain independent of route components and AI code.
+See [dependencies](dependencies.md) for exact versions and license notes.
+
+`next.config.ts` sets `agentRules: false` so development startup does not create or
+rewrite instruction files. This preserves explicit control of `AGENTS.md` for the
+planned Issue #3 experiment; no experimental branches have been created.
 
 ## Logical components
 
@@ -24,4 +37,4 @@ Establish fixed calculation fixtures, API contract tests, authorization tests, a
 
 ## Open decisions
 
-Framework, database, hosting, authentication provider, calculation engine, and model provider have not been selected for this independent implementation.
+Database, hosting, authentication provider, calculation engine, and model provider have not been selected for this independent implementation.
