@@ -1,0 +1,26 @@
+{
+  "observedAt": "2026-11-02T05:39:52.906607+00:00",
+  "checks": [
+    {
+      "directory": "/Users/richardlau/.codex/rules",
+      "exists": true,
+      "files": [
+        {
+          "name": "default.rules",
+          "sha256": "43d8ff60e796297cf8cb4ce6c32c64cc31c43f40c9448abb8b5e05eaf14518a9",
+          "celestiaOrExperimentReference": false
+        }
+      ]
+    },
+    {
+      "directory": "/Users/richardlau/.codex/agents",
+      "exists": false,
+      "files": []
+    },
+    {
+      "directory": "/Users/richardlau/.codex/hooks",
+      "exists": false,
+      "files": []
+    }
+  ]
+}

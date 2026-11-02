@@ -1,0 +1,67 @@
+{
+  "frozenAt": "2026-11-02T05:46:51.062191+00:00",
+  "baseline": "03573c23532fa94715844284b8e16a6bf864c9a6",
+  "conditions": {
+    "control": {
+      "branch": "experiment/no-agent-instructions",
+      "worktree": "/Users/richardlau/Development/Celestia-experiment-control",
+      "configurationCommit": "85cdbb0c597a6f00f9feac3bf4cb9620f139fb46"
+    },
+    "treatment": {
+      "branch": "experiment/with-agent-instructions",
+      "worktree": "/Users/richardlau/Development/Celestia-experiment-treatment",
+      "configurationCommit": "96d1af2fb056066376eccc3e66f66a500c70df71"
+    }
+  },
+  "codexBinarySha256": "a30ec314bbd0e3721632234d07db7c99855db3b9f1e32dbe8c791947f07e7629",
+  "frozenFilesSha256": {
+    "README.md": "a7df3e756e2dcb741383041d120872a525984e772d00b5a4c395c31b555629d0",
+    "protocol.md": "816ad71a692d46dbb62ff4498b9adbf50cb34c2379c6a4f6e1572d1423d13df0",
+    "environment.md": "ea94deb9fc50136956fb11e7c7ca0ddeecc0d31b94b167dd0c9789004f3a7925",
+    "implementation-prompt.md": "0ad96dc539a2696b973d9f5cd470fb146cf16366c135f84f071cd9dcf4fd286b",
+    "evaluation-plan.md": "b5db16ce0aacdb82f643791d8dbc50f869d018e5309c357dacbe1415437ea508",
+    "logging-procedure.md": "2794f9ae7271553d275627b4501edb165887258b35944a4f6272d6932e527ad5",
+    "runtime-settings.json": "63926df46a39180458bf04db50f437286613dffd108f9b7c0bcb6fe8d27030aa",
+    "evaluation/cases.json": "733936881854b66dc48ab9923c4230cc2a116f7ef23d10040b6f16817aea0912",
+    "evaluation/result-template.json": "5feadb43fafa81445ef4c54649e44ade658cee25c982f1355dab1891cdf6a3e6",
+    "preparation/treatment-agents.md": "cf44f166a3f5f6409a5f4d7e479217198f608849737cafcf3cac803d8d103940",
+    "preparation/issue-3.json": "b4bee38915194e0cfb1a00aa692725a435cc2333520e0cc2a5c885246fa7b4bf",
+    "preparation/order.json": "a7b54b86333b76a060b9b495926811a64c54e6aa671360126be9cbe41cb18bc9",
+    "scripts/verify-isolation.py": "a7fa54b8a7f50d95ffbe2efc4db00479ca0d6f4b27bd92823119f7e3f80402be",
+    "scripts/run-condition.py": "cd30f299591cd06f24a1816d347e013434b186e2efb5e9d5dbdfa66a6c12d42c",
+    "scripts/audit-inputs.py": "3b934026f033528184c0268a031488c1f97081d74a4fb4a0d009cbf736a765b4",
+    "preparation-report.md": "269634b9d1e05b23ad1e99bfe36daf876795d234d5b109d518a6725797833f8b"
+  },
+  "executionStarted": false,
+  "modelSnapshot": null,
+  "sharedLocalSourcesSha256": {
+    "/Users/richardlau/.agents/skills/ip-as-logo/SKILL.md": "4f315d64e11c4976283e42a47bbd9712c3981b16377b5a3ddb78313a3865ba4b",
+    "/Users/richardlau/.codex/rules/default.rules": "43d8ff60e796297cf8cb4ce6c32c64cc31c43f40c9448abb8b5e05eaf14518a9",
+    "/Users/richardlau/.codex/skills/.system/imagegen/SKILL.md": "681ddb4ad6d06a2acc78a3535b583f8d0c1ea800ecda3d56370d3310fd2cd4ba",
+    "/Users/richardlau/.codex/skills/.system/openai-docs/SKILL.md": "7cb8fa1b2a0c635b5c61ffe1da7b8594a7ea0fce5b71e8d523e2025d88b2a05e",
+    "/Users/richardlau/.codex/skills/.system/plugin-creator/SKILL.md": "71b95b8219644f95d633721e7f7cd3c469edfc8fe50f8415d400dfb2d74bc7b9",
+    "/Users/richardlau/.codex/skills/.system/review-agent/SKILL.md": "07079efd0dc76f05fade424e5dfb048dce1de2df7626e1a4f56292a4f3f92228",
+    "/Users/richardlau/.codex/skills/.system/skill-creator/SKILL.md": "6656e54755638e8efcf275a472b9672eaa8a9a1b9e59dc210e275b03b59e1e66",
+    "/Users/richardlau/.codex/skills/.system/skill-installer/SKILL.md": "d68b77e5bbb34dedab89d134da52855f140fc4b4299b80104f534e3b9e98f8ee"
+  },
+  "preparationEvidenceSha256": {
+    "preparation/additional-config-audit.json": "b69502f3e17bcb95349e33a37178bd703b9ec841bca1602aff415603e55a955d",
+    "preparation/artifact-reset.json": "ef31f0746c098bba7bf33edaecaefa63b7ab77c8a1cb6ae83cb28d42831aa0db",
+    "preparation/baseline-checks.json": "6b153d71a6b8847e795fee4c34c3fb432ddb308d77970511c693aaf4071e9610",
+    "preparation/configuration-diff.patch": "3d4071b4764da758a9457556cbf358074cd0b851d24931eaa76b457a38fc9a47",
+    "preparation/final-input-audit.json": "3f3e9fc26fd2e460f49c6df2f959bdefbc67e25535458242a07f1cfee05150f0",
+    "preparation/final-sandbox-checks.json": "141e5aa1cb1b8f52d5f0d459f33e8a46b1e00e8625a112f7eb41c7aa97c99b13",
+    "preparation/instruction-audit.json": "c1f0accbdba89904f041b5b85c3492fc0a592063bd5b3761f4803295b8bdc1bb",
+    "preparation/isolation.json": "d9092dcec380415f2add5ca1cea402e2a0bd5709cb6f03bcfc20a5819b0b0411",
+    "preparation/issue-3.json": "b4bee38915194e0cfb1a00aa692725a435cc2333520e0cc2a5c885246fa7b4bf",
+    "preparation/order.json": "a7b54b86333b76a060b9b495926811a64c54e6aa671360126be9cbe41cb18bc9",
+    "preparation/resolved-dependencies.json": "d740716562e6b6b353a581fe8d071770531f9f5db09e809fc8f52194821432ca",
+    "preparation/runner-guard-check.json": "acaae25411cc5c11b8cf9f7c03d919b26eee6938cb5f240805d3dc9afd4e48f8",
+    "preparation/runtime-settings-initial.json": "80710a4546d8e25d57464c5d266be85442449906c17c4a11863e54223f6cd4e2",
+    "preparation/runtime-settings-socket-attempt.json": "7649ed43e514cb1eab4738add26b2afc5a54d3887ad2f0cb4771801c2f0f6f71",
+    "preparation/runtime.json": "84b604f6f062874e0a2cb57652465f4c783438ebf5cb69fdfaf9e1c328ca70d1",
+    "preparation/sandbox-checks.json": "50310a917db6942d8fd4e5fab7ab707429af1f5139bb85cd4f5de2b4287e9ad9",
+    "preparation/treatment-agents.md": "cf44f166a3f5f6409a5f4d7e479217198f608849737cafcf3cac803d8d103940",
+    "preparation/worktree-checks.json": "af0f60fa9bfe32b5375f1c6bace5960fad9f300270d9fefbe85b75fc776cdf2f"
+  }
+}

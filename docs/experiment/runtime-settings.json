@@ -1,0 +1,45 @@
+{
+  "model": "gpt-6-astra",
+  "reasoningEffort": "medium",
+  "modelSnapshot": null,
+  "seed": null,
+  "temperature": null,
+  "serviceTier": null,
+  "cliVersion": "codex-cli 0.153.4",
+  "codexBinary": "/Applications/ChatGPT.app/Contents/Resources/codex",
+  "configOverrides": [
+    "model=\"gpt-6-astra\"",
+    "model_reasoning_effort=\"medium\"",
+    "approval_policy=\"never\"",
+    "web_search=\"disabled\"",
+    "project_doc_fallback_filenames=[]",
+    "features.plugins=false",
+    "features.apps=false",
+    "features.memories=false",
+    "features.multi_agent=false",
+    "features.hooks=false",
+    "features.shell_snapshot=false",
+    "features.skip_host_skill_discovery=true",
+    "mcp_servers.node_repl.enabled=false",
+    "mcp_servers.computer-use.enabled=false",
+    "shell_environment_policy.inherit=\"core\"",
+    "shell_environment_policy.ignore_default_excludes=false",
+    "sandbox_mode=\"workspace-write\"",
+    "sandbox_workspace_write.network_access=true"
+  ],
+  "userConfigSha256": "24edc21f3f5c8ba44bc9697e92923601f5bd68325e787c25cf4a5984f1ecbd11",
+  "baseline": "03573c23532fa94715844284b8e16a6bf864c9a6",
+  "conditions": {
+    "control": {
+      "branch": "experiment/no-agent-instructions",
+      "worktree": "/Users/richardlau/Development/Celestia-experiment-control",
+      "configurationCommit": "85cdbb0c597a6f00f9feac3bf4cb9620f139fb46"
+    },
+    "treatment": {
+      "branch": "experiment/with-agent-instructions",
+      "worktree": "/Users/richardlau/Development/Celestia-experiment-treatment",
+      "configurationCommit": "96d1af2fb056066376eccc3e66f66a500c70df71"
+    }
+  },
+  "networkPolicyNote": "Shared network-enabled workspace sandbox allows tsx local IPC; socket-only attempt failed in both. Web search and integrations remain disabled. No application or dependency changes."
+}

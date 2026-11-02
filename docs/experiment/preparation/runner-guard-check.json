@@ -1,0 +1,13 @@
+{
+  "observedAt": "2026-11-02T05:35:45.709823+00:00",
+  "command": [
+    "python3",
+    "docs/experiment/scripts/run-condition.py",
+    "control"
+  ],
+  "exitCode": 2,
+  "stderr": "usage: run-condition.py [-h] [--approved] {control,treatment}\nrun-condition.py: error: No model request made. Explicit owner approval and --approved are required.\n",
+  "expectedRejection": true,
+  "modelRequestMade": false,
+  "pythonSyntaxCheck": "passed"
+}

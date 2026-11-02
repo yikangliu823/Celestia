@@ -1,0 +1,59 @@
+{
+  "performedAt": "2026-11-02T05:34:57.789989+00:00",
+  "actions": [
+    {
+      "condition": "control",
+      "removedIgnoredArtifact": ".next"
+    },
+    {
+      "condition": "control",
+      "removedIgnoredArtifact": "tsconfig.tsbuildinfo"
+    },
+    {
+      "condition": "control",
+      "removedIgnoredArtifact": "next-env.d.ts"
+    },
+    {
+      "condition": "treatment",
+      "removedIgnoredArtifact": ".next"
+    },
+    {
+      "condition": "treatment",
+      "removedIgnoredArtifact": "tsconfig.tsbuildinfo"
+    },
+    {
+      "condition": "treatment",
+      "removedIgnoredArtifact": "next-env.d.ts"
+    }
+  ],
+  "independentNodeModulesDirectories": true,
+  "finalReset": {
+    "performedAt": "2026-11-02T05:46:51.058616+00:00",
+    "actions": [
+      {
+        "condition": "control",
+        "removedIgnoredArtifact": ".next"
+      },
+      {
+        "condition": "control",
+        "removedIgnoredArtifact": "tsconfig.tsbuildinfo"
+      },
+      {
+        "condition": "control",
+        "removedIgnoredArtifact": "next-env.d.ts"
+      },
+      {
+        "condition": "treatment",
+        "removedIgnoredArtifact": ".next"
+      },
+      {
+        "condition": "treatment",
+        "removedIgnoredArtifact": "tsconfig.tsbuildinfo"
+      },
+      {
+        "condition": "treatment",
+        "removedIgnoredArtifact": "next-env.d.ts"
+      }
+    ]
+  }
+}

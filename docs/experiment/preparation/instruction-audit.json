@@ -1,0 +1,100 @@
+{
+  "observedAt": "2026-11-02T05:34:57.673783+00:00",
+  "files": [
+    {
+      "path": "/AGENTS.md",
+      "exists": false
+    },
+    {
+      "path": "/AGENTS.override.md",
+      "exists": false
+    },
+    {
+      "path": "/CLAUDE.md",
+      "exists": false
+    },
+    {
+      "path": "/Users/AGENTS.md",
+      "exists": false
+    },
+    {
+      "path": "/Users/AGENTS.override.md",
+      "exists": false
+    },
+    {
+      "path": "/Users/CLAUDE.md",
+      "exists": false
+    },
+    {
+      "path": "/Users/richardlau/AGENTS.md",
+      "exists": false
+    },
+    {
+      "path": "/Users/richardlau/AGENTS.override.md",
+      "exists": false
+    },
+    {
+      "path": "/Users/richardlau/CLAUDE.md",
+      "exists": false
+    },
+    {
+      "path": "/Users/richardlau/Development/AGENTS.md",
+      "exists": false
+    },
+    {
+      "path": "/Users/richardlau/Development/AGENTS.override.md",
+      "exists": false
+    },
+    {
+      "path": "/Users/richardlau/Development/CLAUDE.md",
+      "exists": false
+    },
+    {
+      "path": "/Users/richardlau/.codex/AGENTS.md",
+      "exists": false
+    },
+    {
+      "path": "/Users/richardlau/.codex/AGENTS.override.md",
+      "exists": false
+    }
+  ],
+  "globalConfigSha256": "24edc21f3f5c8ba44bc9697e92923601f5bd68325e787c25cf4a5984f1ecbd11",
+  "customInstructionOverridesDetected": false,
+  "globalOrParentProjectInstructionFilesDetected": false,
+  "diagnosticAttempts": [
+    {
+      "attempt": 1,
+      "exitCodes": {
+        "control": 1,
+        "treatment": 1
+      },
+      "error": "Error: `--strict-config` is not supported for `codex debug`"
+    },
+    {
+      "attempt": 2,
+      "exitCodes": {
+        "control": 0,
+        "treatment": 0
+      },
+      "correction": "Removed unsupported strict-config flag only for debug prompt-input."
+    }
+  ],
+  "executionRun": false,
+  "renderedInputs": {
+    "control": {
+      "rawSha256": "90c637af46494034f9205396b899e8606a909874a1ee17af633b8ad8a457401d",
+      "messages": 5,
+      "renderedCelestiaInstructionBlock": false,
+      "normalizedRoleTextSha256": "038514bff7544b56c7574ae9d7453f985aef2c82fbbd476b5f057acd6aff88c7"
+    },
+    "treatment": {
+      "rawSha256": "0cfa11c5ab91ed99e729aacd57a7bd37cad86cba166ba562999e9dfcab67b3e9",
+      "messages": 5,
+      "renderedCelestiaInstructionBlock": true,
+      "normalizedRoleTextSha256": "038514bff7544b56c7574ae9d7453f985aef2c82fbbd476b5f057acd6aff88c7"
+    }
+  },
+  "normalization": "Replace own worktree absolute path with <WORKTREE>; remove exact treatment AGENTS block; compare role/text only, ignoring random message IDs and internal metadata.",
+  "commonGenericSkillsRemain": true,
+  "normalizedRoleTextEqual": true
+}

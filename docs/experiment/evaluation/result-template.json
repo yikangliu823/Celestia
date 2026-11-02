@@ -1,0 +1,157 @@
+{
+  "condition": null,
+  "finalCommit": null,
+  "evaluator": null,
+  "browserVersion": null,
+  "viewport": null,
+  "locale": null,
+  "timezone": null,
+  "startedAt": null,
+  "endedAt": null,
+  "cases": [
+    {
+      "id": "F01",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "F02",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "F03",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "F04",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "F05",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "E01",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "E02",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "E03",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "E04",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "E05",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "E06",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "E07",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "E08",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "E09",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "A01",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "A02",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "A03",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "A04",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "A05",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "P01",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "P02",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "P03",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "V01",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    },
+    {
+      "id": "Q01",
+      "status": "not_run",
+      "observation": null,
+      "artifact": null
+    }
+  ]
+}

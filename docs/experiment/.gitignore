@@ -1,0 +1,3 @@
+# Raw client exports require inspection for secrets before publication.
+private/
+__pycache__/

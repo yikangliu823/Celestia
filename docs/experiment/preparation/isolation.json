@@ -1,0 +1,201 @@
+{
+  "observedAt": "2026-11-02T05:34:59.010196+00:00",
+  "baseline": "03573c23532fa94715844284b8e16a6bf864c9a6",
+  "conditions": {
+    "control": {
+      "branch": "experiment/no-agent-instructions",
+      "worktree": "/Users/richardlau/Development/Celestia-experiment-control",
+      "configurationCommit": "85cdbb0c597a6f00f9feac3bf4cb9620f139fb46"
+    },
+    "treatment": {
+      "branch": "experiment/with-agent-instructions",
+      "worktree": "/Users/richardlau/Development/Celestia-experiment-treatment",
+      "configurationCommit": "96d1af2fb056066376eccc3e66f66a500c70df71"
+    }
+  },
+  "configurationParents": {
+    "control": "03573c23532fa94715844284b8e16a6bf864c9a6",
+    "treatment": "03573c23532fa94715844284b8e16a6bf864c9a6"
+  },
+  "trackedFileDifferences": [
+    "AGENTS.md"
+  ],
+  "files": {
+    "control": {
+      ".gitignore": {
+        "mode": "100644",
+        "blob": "211c7b720d5c8f65efa29f43f22819998bb931ab",
+        "sha256": "a606fdb0aee42d022102d651fa82e2f2bd765140a6caa5749c46654682bc1c1d"
+      },
+      "README.md": {
+        "mode": "100644",
+        "blob": "3195dc8b45ead8f89e5e1f08b93ae10d75e1e254",
+        "sha256": "a027223e33a670225a043b72b73643048620c0e7c98e324977f058b4435fc0a3"
+      },
+      "docs/architecture.md": {
+        "mode": "100644",
+        "blob": "06ac5bf0f4a27c42eba2ba745c18eda5b672aa7f",
+        "sha256": "c9152157145f06786e61dcc7b0be2397158ad7c7d485fba6b5a6923ddc58f7c8"
+      },
+      "docs/dependencies.md": {
+        "mode": "100644",
+        "blob": "80b8c7d904944238ade8b9529cd285a2d3588a3d",
+        "sha256": "c998b3f98ca09c3c4d90ccbd10f0dcdebc0a20539f5f8e2b36ea1943ab4d82f3"
+      },
+      "docs/product-requirements.md": {
+        "mode": "100644",
+        "blob": "ec820020903dc705d520317111c34f46479c5dfe",
+        "sha256": "b01c0f6c2d369a733cf0db1c03b53b80d63392a9609fd15503276fc2d482707e"
+      },
+      "docs/scaffold-verification.md": {
+        "mode": "100644",
+        "blob": "0cd7936e8faca372cbc22907f2012eed00e728df",
+        "sha256": "034755738ec5fc8a3b6f401e5ab734225663e7519d044d2c4718a43f238cba1a"
+      },
+      "eslint.config.mjs": {
+        "mode": "100644",
+        "blob": "28ace47f085fa5cebb37cc961b08f2fd5fc546f6",
+        "sha256": "e5e8e06cdef81c9466bbe6dbb44ac9ca373b79ae4ba65d43968c350e81a3f7cb"
+      },
+      "next.config.ts": {
+        "mode": "100644",
+        "blob": "8f21bf4f8b3d3bfddf293b30d0634516fe23fc4c",
+        "sha256": "0b56c833c6818c23daf18abb722e25b287d5e43455439e1ed8b3a4442f288cc6"
+      },
+      "package-lock.json": {
+        "mode": "100644",
+        "blob": "3a105479e30c748726c8db9970dd03532b4765aa",
+        "sha256": "cbf6a3a6792cf7b8e7c421864b9a4cb756e788b0dbfdd8a81112d65c709e630a"
+      },
+      "package.json": {
+        "mode": "100644",
+        "blob": "a8653cba8e6de8c59772285881e8a6ac0aeb102b",
+        "sha256": "0096b3790f2ce401d8dccb62a3732cf0fc74692cabaa8d6410c62c3fd9fc444b"
+      },
+      "src/app/globals.css": {
+        "mode": "100644",
+        "blob": "6f9aed0f0ecee5493dd2d9cf8df767a8d499eb57",
+        "sha256": "9c4d4fd5eb265ed6032748911f3533792778af74db66290e2c3d1bbafdc827b4"
+      },
+      "src/app/layout.tsx": {
+        "mode": "100644",
+        "blob": "6ae9bb0518386733ad8cca04ced0ae7ae064c743",
+        "sha256": "c989f0b35b4dc407badb195a8d7811dac559de26810d4d6a5bea9a4e4398ddc6"
+      },
+      "src/app/page.tsx": {
+        "mode": "100644",
+        "blob": "bb08395b8b2b9611f1344428cd48c79f3c15c265",
+        "sha256": "fb26cf4ace033932188f19de055857e67c26a2d1d63c5f0a3e8060cf63c4d153"
+      },
+      "tests/home-page.test.tsx": {
+        "mode": "100644",
+        "blob": "a3599ffebb66a78eb8d9645906d6e65c73c21517",
+        "sha256": "dec50187a734258e70b795c233b34f52f5189e10ed1f179bc88683c1bab9d2e5"
+      },
+      "tsconfig.json": {
+        "mode": "100644",
+        "blob": "7ff54fe01d7de6f0968b4dae94181d9769150649",
+        "sha256": "f1afa3dcddae2614de2d368f4a930987e2876bd163748980ddcdaaa9a0584cd9"
+      }
+    },
+    "treatment": {
+      ".gitignore": {
+        "mode": "100644",
+        "blob": "211c7b720d5c8f65efa29f43f22819998bb931ab",
+        "sha256": "a606fdb0aee42d022102d651fa82e2f2bd765140a6caa5749c46654682bc1c1d"
+      },
+      "AGENTS.md": {
+        "mode": "100644",
+        "blob": "5dfe568674034a22d960e33f5b0639e64f87fb98",
+        "sha256": "cf44f166a3f5f6409a5f4d7e479217198f608849737cafcf3cac803d8d103940"
+      },
+      "README.md": {
+        "mode": "100644",
+        "blob": "3195dc8b45ead8f89e5e1f08b93ae10d75e1e254",
+        "sha256": "a027223e33a670225a043b72b73643048620c0e7c98e324977f058b4435fc0a3"
+      },
+      "docs/architecture.md": {
+        "mode": "100644",
+        "blob": "06ac5bf0f4a27c42eba2ba745c18eda5b672aa7f",
+        "sha256": "c9152157145f06786e61dcc7b0be2397158ad7c7d485fba6b5a6923ddc58f7c8"
+      },
+      "docs/dependencies.md": {
+        "mode": "100644",
+        "blob": "80b8c7d904944238ade8b9529cd285a2d3588a3d",
+        "sha256": "c998b3f98ca09c3c4d90ccbd10f0dcdebc0a20539f5f8e2b36ea1943ab4d82f3"
+      },
+      "docs/product-requirements.md": {
+        "mode": "100644",
+        "blob": "ec820020903dc705d520317111c34f46479c5dfe",
+        "sha256": "b01c0f6c2d369a733cf0db1c03b53b80d63392a9609fd15503276fc2d482707e"
+      },
+      "docs/scaffold-verification.md": {
+        "mode": "100644",
+        "blob": "0cd7936e8faca372cbc22907f2012eed00e728df",
+        "sha256": "034755738ec5fc8a3b6f401e5ab734225663e7519d044d2c4718a43f238cba1a"
+      },
+      "eslint.config.mjs": {
+        "mode": "100644",
+        "blob": "28ace47f085fa5cebb37cc961b08f2fd5fc546f6",
+        "sha256": "e5e8e06cdef81c9466bbe6dbb44ac9ca373b79ae4ba65d43968c350e81a3f7cb"
+      },
+      "next.config.ts": {
+        "mode": "100644",
+        "blob": "8f21bf4f8b3d3bfddf293b30d0634516fe23fc4c",
+        "sha256": "0b56c833c6818c23daf18abb722e25b287d5e43455439e1ed8b3a4442f288cc6"
+      },
+      "package-lock.json": {
+        "mode": "100644",
+        "blob": "3a105479e30c748726c8db9970dd03532b4765aa",
+        "sha256": "cbf6a3a6792cf7b8e7c421864b9a4cb756e788b0dbfdd8a81112d65c709e630a"
+      },
+      "package.json": {
+        "mode": "100644",
+        "blob": "a8653cba8e6de8c59772285881e8a6ac0aeb102b",
+        "sha256": "0096b3790f2ce401d8dccb62a3732cf0fc74692cabaa8d6410c62c3fd9fc444b"
+      },
+      "src/app/globals.css": {
+        "mode": "100644",
+        "blob": "6f9aed0f0ecee5493dd2d9cf8df767a8d499eb57",
+        "sha256": "9c4d4fd5eb265ed6032748911f3533792778af74db66290e2c3d1bbafdc827b4"
+      },
+      "src/app/layout.tsx": {
+        "mode": "100644",
+        "blob": "6ae9bb0518386733ad8cca04ced0ae7ae064c743",
+        "sha256": "c989f0b35b4dc407badb195a8d7811dac559de26810d4d6a5bea9a4e4398ddc6"
+      },
+      "src/app/page.tsx": {
+        "mode": "100644",
+        "blob": "bb08395b8b2b9611f1344428cd48c79f3c15c265",
+        "sha256": "fb26cf4ace033932188f19de055857e67c26a2d1d63c5f0a3e8060cf63c4d153"
+      },
+      "tests/home-page.test.tsx": {
+        "mode": "100644",
+        "blob": "a3599ffebb66a78eb8d9645906d6e65c73c21517",
+        "sha256": "dec50187a734258e70b795c233b34f52f5189e10ed1f179bc88683c1bab9d2e5"
+      },
+      "tsconfig.json": {
+        "mode": "100644",
+        "blob": "7ff54fe01d7de6f0968b4dae94181d9769150649",
+        "sha256": "f1afa3dcddae2614de2d368f4a930987e2876bd163748980ddcdaaa9a0584cd9"
+      }
+    }
+  },
+  "resolvedDependencyTreesEqual": true,
+  "applicationSourceEqual": true,
+  "testInfrastructureEqual": true,
+  "initialWorktreesClean": true,
+  "necessaryNonSourceDifferences": [
+    "branch name",
+    "configuration commit SHA",
+    "worktree absolute path",
+    ".git indirection",
+    "filesystem timestamps and cache locality"
+  ],
+  "remainingLimitations": [
+    "shared Git object database and read access to sibling worktrees",
+    "generic system/skill context remains",
+    "remote model snapshot unavailable",
+    "future execution context must be re-audited"
+  ]
+}

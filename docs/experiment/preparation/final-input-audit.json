@@ -1,0 +1,19 @@
+{
+  "startedAt": "2026-11-02T05:46:13.706096+00:00",
+  "modelInferenceMade": false,
+  "conditions": {
+    "control": {
+      "exitCode": 0,
+      "rawSha256": "d70d7849966836d20c5b4479a3887d9df2442672cdcc37132929f3a680567a46",
+      "treatmentInstructionBlocks": 0
+    },
+    "treatment": {
+      "exitCode": 0,
+      "rawSha256": "42a83bed099db953f2386281799fa1f03ef80195f6b60a2cb4bf10a57c7fe2e2",
+      "treatmentInstructionBlocks": 1
+    }
+  },
+  "normalizedRoleTextEqual": true,
+  "endedAt": "2026-11-02T05:46:14.413035+00:00",
+  "privateEvidenceDirectory": "/Users/richardlau/Development/Celestia-experiment-evidence/docs/experiment/private/input-audit-20261102T054613705398Z"
+}
