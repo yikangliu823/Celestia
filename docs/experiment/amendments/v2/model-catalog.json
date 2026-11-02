@@ -1,0 +1,45 @@
+{
+  "observedAt": "2026-11-02T06:11:00.157619+00:00",
+  "command": [
+    "/Applications/ChatGPT.app/Contents/Resources/codex",
+    "debug",
+    "models",
+    "--bundled"
+  ],
+  "exitCode": 0,
+  "catalogSha256": "32bdd1fe3ffd82df3d03c6c9b9d9068087cd9640ded4377f604586d7a743749b",
+  "selectedModel": {
+    "slug": "gpt-6-astra",
+    "display_name": "GPT-6-Astra",
+    "default_reasoning_level": "low",
+    "supported_reasoning_levels": [
+      {
+        "effort": "low",
+        "description": "Fast responses with lighter reasoning"
+      },
+      {
+        "effort": "medium",
+        "description": "Balances speed and reasoning depth for everyday tasks"
+      },
+      {
+        "effort": "high",
+        "description": "Greater reasoning depth for complex problems"
+      },
+      {
+        "effort": "xhigh",
+        "description": "Extra high reasoning depth for complex problems"
+      },
+      {
+        "effort": "max",
+        "description": "Maximum reasoning depth for the hardest problems"
+      },
+      {
+        "effort": "ultra",
+        "description": "Maximum reasoning with automatic task delegation"
+      }
+    ],
+    "shell_type": "unified_exec",
+    "supported_in_api": true
+  },
+  "limitation": "Bundled client catalog, not an inference or immutable remote model snapshot."
+}

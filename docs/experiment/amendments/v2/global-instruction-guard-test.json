@@ -1,0 +1,9 @@
+{
+  "recordedAt": "2026-11-02T06:17:39.967575+00:00",
+  "method": "In-memory mock of Path.read_bytes for only the global instruction file; no filesystem writes",
+  "expected": "Global instructions changed: /Users/richardlau/.codex/AGENTS.md",
+  "actual": "Global instructions changed: /Users/richardlau/.codex/AGENTS.md",
+  "passed": true,
+  "actualGlobalFileBytes": 0,
+  "actualGlobalFileSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,10 @@
+{
+  "recordedAt": "2026-11-02T06:17:38.966568+00:00",
+  "command": [
+    "python3",
+    "docs/experiment/amendments/v2/verify-isolation.py"
+  ],
+  "exitCode": 0,
+  "stdout": "{\n  \"baseline\": \"03573c23532fa94715844284b8e16a6bf864c9a6\",\n  \"differences\": [\n    \"AGENTS.md\"\n  ],\n  \"checkedPristineCondition\": \"both\",\n  \"verified\": true,\n  \"protocolVersion\": \"2.0\",\n  \"model\": \"gpt-6-astra\",\n  \"reasoningEffort\": \"high\"\n}\n",
+  "stderr": ""
+}

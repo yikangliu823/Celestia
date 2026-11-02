@@ -1,0 +1,27 @@
+{
+  "protocolVersion": "2.0",
+  "amendedAt": "2026-11-02T06:14:16.162433+00:00",
+  "authorization": "Owner request: Resolve Configuration Drift and Restore Experiment Readiness; High approved for both, implementation execution prohibited.",
+  "protocolSha256": "70190846f2f6453258851bb3739f61444114552582d44c97137f1bec80a03edc",
+  "historicalManifestSha256": "4196ec3b72eaac7e2b9e47ac73f579110ad319d6ec38eecdcda3b1d6503e8374",
+  "originalUserConfigSha256": "24edc21f3f5c8ba44bc9697e92923601f5bd68325e787c25cf4a5984f1ecbd11",
+  "acceptedUserConfigSha256": "bfff10908e1fcdeb84e0e7ecdc2a2219ac3d65b350afee2a77233aebc9645899",
+  "filesSha256": {
+    "amendments/v2/protocol.md": "70190846f2f6453258851bb3739f61444114552582d44c97137f1bec80a03edc",
+    "amendments/v2/runtime-settings.json": "5818574f3ed00a71ba2020047054f46ab03247b50af2a4362416fbf17fbad2ba",
+    "amendments/v2/verify-isolation.py": "d9d2a4ed69a740ad0e08dfef7c165d48469362d4d6b80d40a5e2b3203c1fe5f8",
+    "amendments/v2/audit-inputs.py": "742e1c184706042cd38398d2b5527aa488e3cd3ff3429897bd0bdacc24339be6",
+    "amendments/v2/verify-effective-config.py": "3200eac0cfdf45a76e9b32baef09f06f681a61440fec2a53fae3dc18cd4fa83b",
+    "amendments/v2/run-condition.py": "5f83df5cced06ac6e5df0fdc0940054a05ff6fd6f8e35dc4c64fcdbccefafc3a",
+    "amendments/v2/history-audit.json": "64883d6a616fe432604531b0bd39967a682b720b0f12c28775b6fcbe1f66cb08",
+    "amendments/v2/configuration-fingerprints.json": "f600c01cb009596a6207de1fab564b4a78b42c934c867c972e3235d79fde2bf6",
+    "amendments/v2/model-catalog.json": "831092d0f7e2f4503697c7c75e7f6062c38f99a6e5239040085519299a87a9e0",
+    "evaluation/scoring-audit.json": "787da0daddfbdc410b7f2c82f91f7de2b402e147d744ce195a6f2ef3fc0947e0",
+    "evaluation/scoring-clarifications.md": "81d470743dfbb66ee0e7aa5399dfb759ef9d6cfc9cb0567b2e8558971a584ace",
+    "execution/evaluation-freeze.json": "6ff754c34b688efa6c3eeac6faec0cd72a3c2f53298eedf9711eae7cef0780ea"
+  },
+  "implementationRunsStarted": 0,
+  "acceptedGlobalInstructionFiles": {
+    "/Users/richardlau/.codex/AGENTS.md": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

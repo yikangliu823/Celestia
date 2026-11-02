@@ -1,0 +1,15 @@
+{
+  "recordedAt": "2026-11-02T06:11:00.157619+00:00",
+  "originalUserConfigSha256": "24edc21f3f5c8ba44bc9697e92923601f5bd68325e787c25cf4a5984f1ecbd11",
+  "acceptedUserConfigSha256": "bfff10908e1fcdeb84e0e7ecdc2a2219ac3d65b350afee2a77233aebc9645899",
+  "globalConfigNotModified": true,
+  "originalRuntimeSettingsSha256": "63926df46a39180458bf04db50f437286613dffd108f9b7c0bcb6fe8d27030aa",
+  "amendedRuntimeSettingsSha256": "5818574f3ed00a71ba2020047054f46ab03247b50af2a4362416fbf17fbad2ba",
+  "globalConfigDefaultModel": "gpt-6-astra",
+  "globalConfigDefaultEffort": "medium",
+  "approvedSessionEffort": "high",
+  "rawAcceptedConfigPrivateCopy": "/Users/richardlau/Development/Celestia-experiment-evidence/docs/experiment/private/config-drift-investigation/accepted-config.toml",
+  "driftClassification": "Known unrelated project-trust addition plus incompletely attributable historical file drift; no reasoning-effort change in the observed global defaults. Current resolved experimental settings are identical across conditions and explicitly accepted under protocol 2.0.",
+  "historicalUnknowns": "No complete original file is available, so all changed keys and exact byte-level cause cannot be established.",
+  "policy": "Exact accepted byte fingerprint remains a fail-closed gate. Changed bytes never auto-pass. Compare semantic configuration, origins, instructions and tool settings; formatting-only changes are nonsemantic, desktop-only/unrelated trust changes are potentially irrelevant after verification. Relevant or unknown changes require amended common settings and renewed approval/verification."
+}

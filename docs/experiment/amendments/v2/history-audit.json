@@ -1,0 +1,86 @@
+{
+  "recordedAt": "2026-11-02T06:08:41.193527+00:00",
+  "sourceSessionId": "01a19a9a-1cd0-7db3-8173-3fb72f97160d",
+  "sourceLine": 487,
+  "historicalConfigAuditTimestamp": "2026-11-02T05:23:27.688Z",
+  "historicalConfigOutputExcerpt": [
+    "PRESENT /Users/richardlau/.codex/config.toml sha256=24edc21f3f5c8ba44bc9697e92923601f5bd68325e787c25cf4a5984f1ecbd11",
+    " model \"gpt-6-astra\"",
+    " model_reasoning_effort \"medium\""
+  ],
+  "turnContextObservations": [
+    {
+      "line": 8,
+      "timestamp": "2026-11-02T04:52:35.584Z",
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    {
+      "line": 59,
+      "timestamp": "2026-11-02T04:56:13.493Z",
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    {
+      "line": 135,
+      "timestamp": "2026-11-02T05:06:22.321Z",
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    {
+      "line": 168,
+      "timestamp": "2026-11-02T05:08:11.907Z",
+      "model": "gpt-6-astra",
+      "effort": "high"
+    },
+    {
+      "line": 337,
+      "timestamp": "2026-11-02T05:13:50.863Z",
+      "model": "gpt-6-astra",
+      "effort": "high"
+    },
+    {
+      "line": 403,
+      "timestamp": "2026-11-02T05:16:14.512Z",
+      "model": "gpt-6-astra",
+      "effort": "high"
+    },
+    {
+      "line": 455,
+      "timestamp": "2026-11-02T05:22:33.891Z",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 633,
+      "timestamp": "2026-11-02T05:39:20.970Z",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 803,
+      "timestamp": "2026-11-02T05:50:49.506Z",
+      "model": "gpt-6-astra",
+      "effort": "high"
+    },
+    {
+      "line": 854,
+      "timestamp": "2026-11-02T05:58:40.837Z",
+      "model": "gpt-6-astra",
+      "effort": "high"
+    },
+    {
+      "line": 958,
+      "timestamp": "2026-11-02T06:04:40.300Z",
+      "model": "gpt-6-astra",
+      "effort": "high"
+    }
+  ],
+  "verifiedDelta": "One unrelated trusted-project table is present in current config and absent in the historical complete section inventory. Its path is withheld as unrelated.",
+  "fullHistoricalConfigAvailable": false,
+  "reasoningChangeAloneExplainsHashDrift": false,
+  "otherChangesFullyKnown": false,
+  "candidateReconstruction": "476 single-edit and 1020 two-edit candidates did not match the original fingerprint; no reconstructed historical config was accepted.",
+  "userReportedHistory": "Extra High to High; confirmed for preparation task contexts, not the frozen CLI experiment settings.",
+  "implementationRunsStarted": 0
+}

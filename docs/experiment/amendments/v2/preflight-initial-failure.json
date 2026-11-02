@@ -1,0 +1,14 @@
+{
+  "recordedAt": "2026-11-02T06:14:16.161235+00:00",
+  "command": [
+    "python3",
+    "docs/experiment/amendments/v2/verify-isolation.py"
+  ],
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/Users/richardlau/Development/Celestia-experiment-evidence/docs/experiment/amendments/v2/verify-isolation.py\", line 80, in <module>\n    print(json.dumps(verify(args.condition), indent=2))\n  File \"/Users/richardlau/Development/Celestia-experiment-evidence/docs/experiment/amendments/v2/verify-isolation.py\", line 69, in verify\n    assert not (Path.home() / \".codex\" / filename).exists(), filename\nAssertionError: AGENTS.md\n",
+  "finding": "A zero-byte global AGENTS.md exists; original procedure disallows any global instruction file.",
+  "globalInstructionFileSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "globalInstructionFileSize": 0,
+  "modifiedAt": "2026-11-02T05:56:10.368855+00:00"
+}

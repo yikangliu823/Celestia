@@ -1,0 +1,35 @@
+{
+  "recordedAt": "2026-11-02T06:18:40.153998+00:00",
+  "status": "READY",
+  "protocolVersion": "2.0",
+  "protocolSha256": "70190846f2f6453258851bb3739f61444114552582d44c97137f1bec80a03edc",
+  "worktrees": {
+    "main": {
+      "head": "03573c23532fa94715844284b8e16a6bf864c9a6",
+      "branch": "main",
+      "porcelain": ""
+    },
+    "control": {
+      "head": "85cdbb0c597a6f00f9feac3bf4cb9620f139fb46",
+      "branch": "experiment/no-agent-instructions",
+      "porcelain": ""
+    },
+    "treatment": {
+      "head": "96d1af2fb056066376eccc3e66f66a500c70df71",
+      "branch": "experiment/with-agent-instructions",
+      "porcelain": ""
+    }
+  },
+  "originalFrozenArtifactMismatches": [],
+  "evaluationAndScoringMismatches": [],
+  "amendmentInputMismatches": [],
+  "globalInstructionFileSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "instructionContentChangeGuardPassed": true,
+  "effectiveConfigAndInstructionAuditExitCodes": [
+    0,
+    0,
+    0
+  ],
+  "implementationRunsStarted": 0,
+  "globalConfigChangedByTask": false
+}

@@ -1,0 +1,38 @@
+{
+  "status": "READY",
+  "recordedAt": "2026-11-02T06:15:59.860594+00:00",
+  "protocolVersion": "2.0",
+  "protocolSha256": "70190846f2f6453258851bb3739f61444114552582d44c97137f1bec80a03edc",
+  "globalConfigSha256": "bfff10908e1fcdeb84e0e7ecdc2a2219ac3d65b350afee2a77233aebc9645899",
+  "worktrees": {
+    "main": {
+      "head": "03573c23532fa94715844284b8e16a6bf864c9a6",
+      "branch": "main",
+      "status": ""
+    },
+    "control": {
+      "head": "85cdbb0c597a6f00f9feac3bf4cb9620f139fb46",
+      "branch": "experiment/no-agent-instructions",
+      "status": ""
+    },
+    "treatment": {
+      "head": "96d1af2fb056066376eccc3e66f66a500c70df71",
+      "branch": "experiment/with-agent-instructions",
+      "status": ""
+    }
+  },
+  "conditionsResolveHigh": true,
+  "fullResolvedConfigurationsEqual": true,
+  "startupInstructionsEqualExceptTreatment": true,
+  "allOriginalFrozenFilesUnchanged": true,
+  "all24ChecksAndClarificationsUnchanged": true,
+  "noImplementationAttempts": true,
+  "globalConfigUnmodified": true,
+  "inferenceRequests": 0,
+  "executionAuthorizedByThisTask": false,
+  "limitations": [
+    "Exact full historical config delta is unavailable; unrelated project-trust addition is verified.",
+    "Strict filesystem read isolation remains unavailable under the frozen sandbox; approved audit fallback remains necessary.",
+    "Remote model snapshot and inference-time availability are unverified without starting a run."
+  ]
+}
