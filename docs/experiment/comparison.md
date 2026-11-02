@@ -1,5 +1,12 @@
 # Celestia controlled experiment comparison
 
+Latest evaluation status: **COMPLETE for the frozen checks**, after the separately
+authorized supplemental evaluation. Both conditions now have 22 PASS, 0 FAIL,
+2 N/A and 0 UNVERIFIED. The original PARTIAL findings below are retained as a
+historical snapshot; they are not silently replaced. See the
+[supplemental report](supplemental/2026-11-02/report.md) and the added section below.
+
+
 Status: PARTIAL. Both independent implementation runs completed and were frozen.
 All five coordinator verification commands passed for each. Browser evaluation is
 incomplete and unequal, and the final global configuration fingerprint has drifted.
@@ -157,3 +164,57 @@ either satisfies every acceptance criterion. Complete the remaining browser chec
 against these frozen commits after restoring a documented evaluation environment.
 Any new implementation run requires renewed configuration review and authorization.
 No branch was pushed or merged, no PR created, and no issue status was changed.
+
+## Supplemental evaluation, November 1, 2026 (America/Los_Angeles)
+
+This evaluation occurred after original evidence commit
+`1e2e0f198c7f113d2a4289000d80b3662b76c84b`, against the same frozen implementation
+commits. It did not repeat or modify either implementation. The original comparison
+is preserved byte for byte in [original-comparison.md](supplemental/2026-11-02/original-comparison.md),
+and original result JSON files, metrics, criteria and final report remain unchanged.
+
+The owner approved standalone Playwright after the native browser fallback timed
+out. Chrome 156.0.8078.74 / Playwright 1.62.1 used separate fresh nonpersistent
+contexts, ports 3101/3102, en-US, America/Los_Angeles, device scale 1 and matching
+1280×800 / 390×844 viewports. Successful navigation, input, submission and reload
+were established before testing. These infrastructure changes do not alter the
+original criteria or approve a new Codex implementation configuration.
+
+| Outcome | Original Control | Original Treatment | Updated Control | Updated Treatment |
+| --- | --- | --- | --- | --- |
+| PASS | 10 | 4 | 22 | 22 |
+| FAIL | 0 | 0 | 0 | 0 |
+| N/A | 2 | 2 | 2 | 2 |
+| UNVERIFIED | 12 | 18 | 0 | 0 |
+| Assessed applicable | 10 | 4 | 22 | 22 |
+
+All 30 previously UNVERIFIED condition/check pairs were completed: 12 Control and
+18 Treatment. The same 18 criteria were exercised in both conditions (36 executions),
+including six confirmations of earlier Control passes. Remaining unverified checks:
+none. E07/E09 remain N/A for undefined location/DST policy correctness.
+
+Observed: required-field cases, correction, invalid dates/times/zones, declared
+format boundaries, keyboard traversal/submission, associated accessible errors,
+focus correction and responsive layouts passed for both. Control's missing-field
+anomaly did not recur with actual empty values captured before submission, either
+from a fresh form or after clearing an accepted form. The original anomaly's cause
+remains unknown; its old evidence is preserved. Browser/server logs and URLs did
+not contain synthetic birth sentinels; no entry/submission requests or unsupported
+storage were observed. Source review corroborated the runtime privacy findings.
+
+No new failure against the frozen suite was observed. Both emitted a /favicon.ico
+404 resource error, a minor missing-asset observation outside the suite's failure
+conditions. No uncaught runtime exception was captured. Neither implementation
+was repaired. See [results](supplemental/2026-11-02/results.md),
+[actual observations](supplemental/2026-11-02/run.json), and
+[review notes](supplemental/2026-11-02/manual-review.json).
+
+Revised conclusion: unequal evidence coverage no longer prevents comparison on the
+22 applicable checks; both pass that same set. This supports comparable observed
+behavior within the frozen suite, not universal equivalence or a causal benefit
+from AGENTS.md. Original process and design tradeoffs remain unchanged. One run per
+condition, unblinded review and shared filesystem exposure still limit inference.
+One headless browser, synthetic scenarios and two viewports do not establish full
+WCAG, screen-reader, cross-browser or exhaustive privacy/security conformance.
+The original global configuration drift remains unresolved for future implementation
+runs; no new model run, merge or issue closure occurred.

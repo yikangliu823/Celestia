@@ -1,0 +1,229 @@
+FILE: src/lib/birth-input.ts
+1: /** Provisional form values, not a calculation-engine contract. */
+2: export type BirthInputValues = {
+3:   date: string;
+4:   time: string;
+5:   timeZone: string;
+6: };
+7:
+8: export type BirthInputField = keyof BirthInputValues;
+9: export type BirthInputErrors = Partial<Record<BirthInputField, string>>;
+10:
+11: export type BirthInputValidation =
+12:   | { valid: true; values: BirthInputValues }
+13:   | { valid: false; errors: BirthInputErrors };
+14:
+15: function isGregorianDate(value: string): boolean {
+16:   if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+17:
+18:   const [year, month, day] = value.split("-").map(Number);
+19:   if (year < 1 || month < 1 || month > 12 || day < 1) return false;
+20:
+21:   const leapYear = year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
+22:   const daysInMonth = [31, leapYear ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+23:   return day <= daysInMonth[month - 1];
+24: }
+25:
+26: function isTimeZone(value: string): boolean {
+27:   // Require a named zone rather than an abbreviation or fixed UTC offset.
+28:   if (value !== "UTC" && !/^[A-Za-z_+-]+(?:\/[A-Za-z0-9_+-]+)+$/.test(value)) {
+29:     return false;
+30:   }
+31:   try {
+32:     new Intl.DateTimeFormat("en", { timeZone: value });
+33:     return true;
+34:   } catch {
+35:     return false;
+36:   }
+37: }
+38:
+39: /** Checks syntax only; does not resolve a local time to an instant or log inputs. */
+40: export function validateBirthInput(input: BirthInputValues): BirthInputValidation {
+41:   const values = {
+42:     date: input.date.trim(),
+43:     time: input.time.trim(),
+44:     timeZone: input.timeZone.trim(),
+45:   };
+46:   const errors: BirthInputErrors = {};
+47:
+48:   if (!values.date) {
+49:     errors.date = "Enter a birth date in YYYY-MM-DD format.";
+50:   } else if (!isGregorianDate(values.date)) {
+51:     errors.date = "Enter a real Gregorian date in YYYY-MM-DD format (years 0001–9999).";
+52:   }
+53:
+54:   if (!values.time) {
+55:     errors.time = "Enter a birth time in 24-hour HH:MM format.";
+56:   } else if (!/^([01]\d|2[0-3]):[0-5]\d$/.test(values.time)) {
+57:     errors.time = "Enter a time from 00:00 to 23:59 in 24-hour HH:MM format.";
+58:   }
+59:
+60:   if (!values.timeZone) {
+61:     errors.timeZone = "Enter the birth location’s time zone, such as America/Los_Angeles or UTC.";
+62:   } else if (!isTimeZone(values.timeZone)) {
+63:     errors.timeZone = "Enter a recognized IANA time zone, such as Asia/Shanghai or America/Los_Angeles, or UTC; avoid abbreviations such as PST.";
+64:   }
+65:
+66:   return Object.keys(errors).length ? { valid: false, errors } : { valid: true, values };
+67: }
+FILE: src/components/birth-input-form.tsx
+1: "use client";
+2:
+3: import { useEffect, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
+4: import {
+5:   validateBirthInput,
+6:   type BirthInputErrors,
+7:   type BirthInputField,
+8:   type BirthInputValues,
+9: } from "../lib/birth-input";
+10:
+11: const fields: { key: BirthInputField; label: string; hint: string; placeholder: string }[] = [
+12:   {
+13:     key: "date",
+14:     label: "Birth date (required)",
+15:     hint: "Use the Gregorian calendar and YYYY-MM-DD format.",
+16:     placeholder: "2000-01-15",
+17:   },
+18:   {
+19:     key: "time",
+20:     label: "Birth time (required)",
+21:     hint: "Enter the local clock time at birth in 24-hour HH:MM format, to the minute.",
+22:     placeholder: "14:30",
+23:   },
+24:   {
+25:     key: "timeZone",
+26:     label: "Birth location time zone (required)",
+27:     hint: "Use an IANA zone for the birthplace, such as Asia/Shanghai or America/Los_Angeles, or UTC. Your device’s zone is not selected automatically.",
+28:     placeholder: "Asia/Shanghai",
+29:   },
+30: ];
+31:
+32: const emptyValues: BirthInputValues = { date: "", time: "", timeZone: "" };
+33: const subscribe = () => () => {};
+34: const clientSnapshot = () => true;
+35: const serverSnapshot = () => false;
+36:
+37: export function BirthInputFields({ values, errors, onChange }: {
+38:   values: BirthInputValues;
+39:   errors: BirthInputErrors;
+40:   onChange: (field: BirthInputField, value: string) => void;
+41: }) {
+42:   return fields.map(({ key, label, hint, placeholder }) => (
+43:     <div className="form-field" key={key}>
+44:       <label htmlFor={`birth-${key}`}>{label}</label>
+45:       <p className="field-hint" id={`birth-${key}-hint`}>{hint}</p>
+46:       <input
+47:         id={`birth-${key}`}
+48:         type="text"
+49:         required
+50:         autoComplete="off"
+51:         autoCapitalize="none"
+52:         spellCheck={false}
+53:         placeholder={placeholder}
+54:         value={values[key]}
+55:         aria-invalid={errors[key] ? true : undefined}
+56:         aria-describedby={`birth-${key}-hint${errors[key] ? ` birth-${key}-error` : ""}`}
+57:         onChange={(event) => onChange(key, event.target.value)}
+58:       />
+59:       {errors[key] && <p className="field-error" id={`birth-${key}-error`}>{errors[key]}</p>}
+60:     </div>
+61:   ));
+62: }
+63:
+64: export default function BirthInputForm() {
+65:   const ready = useSyncExternalStore(subscribe, clientSnapshot, serverSnapshot);
+66:   const [values, setValues] = useState(emptyValues);
+67:   const [errors, setErrors] = useState<BirthInputErrors>({});
+68:   const [attempted, setAttempted] = useState(false);
+69:   const [valid, setValid] = useState(false);
+70:   const formRef = useRef<HTMLFormElement>(null);
+71:   const pendingFocus = useRef<BirthInputField | null>(null);
+72:
+73:   // Focus after error descriptions have been added to the DOM.
+74:   useEffect(() => {
+75:     if (pendingFocus.current) {
+76:       formRef.current?.querySelector<HTMLInputElement>(`#birth-${pendingFocus.current}`)?.focus();
+77:       pendingFocus.current = null;
+78:     }
+79:   });
+80:
+81:   function changeValue(field: BirthInputField, value: string) {
+82:     const next = { ...values, [field]: value };
+83:     setValues(next);
+84:     setValid(false);
+85:     if (attempted) {
+86:       const result = validateBirthInput(next);
+87:       setErrors(result.valid ? {} : result.errors);
+88:     }
+89:   }
+90:
+91:   function submit(event: FormEvent<HTMLFormElement>) {
+92:     event.preventDefault();
+93:     const result = validateBirthInput(values);
+94:     setAttempted(true);
+95:     setValid(result.valid);
+96:     setErrors(result.valid ? {} : result.errors);
+97:     if (!result.valid) {
+98:       pendingFocus.current = fields.find(({ key }) => result.errors[key])?.key ?? null;
+99:     }
+100:   }
+101:
+102:   return (
+103:     <section aria-labelledby="birth-input-heading">
+104:       <h2 id="birth-input-heading">Check birth inputs</h2>
+105:       <p>Check a date, local time, and birthplace time zone. Chart calculation is not available yet.</p>
+106:       <p id="birth-privacy">This form checks entries in your browser. Entries are not sent, saved, or logged by the application.</p>
+107:       <noscript>Enable JavaScript to check birth inputs.</noscript>
+108:       {/* No names: native submission cannot serialize birth values, even before hydration. */}
+109:       <form ref={formRef} onSubmit={submit} noValidate autoComplete="off" aria-describedby="birth-privacy">
+110:         <fieldset disabled={!ready}>
+111:           <legend>Birth details</legend>
+112:           {Object.keys(errors).length > 0 && (
+113:             <div className="error-summary" role="alert">
+114:               <p>Please correct the following fields:</p>
+115:               <ul>
+116:                 {fields.filter(({ key }) => errors[key]).map(({ key, label }) => (
+117:                   <li key={key}><a href={`#birth-${key}`}>{label}: {errors[key]}</a></li>
+118:                 ))}
+119:               </ul>
+120:             </div>
+121:           )}
+122:           <BirthInputFields values={values} errors={errors} onChange={changeValue} />
+123:           <button type="submit">Check inputs</button>
+124:         </fieldset>
+125:         <p role="status" aria-live="polite">
+126:           {valid ? "Input format checks passed. No chart has been calculated. Local-time daylight-saving validity has not been checked." : ""}
+127:         </p>
+128:       </form>
+129:     </section>
+130:   );
+131: }
+FILE: src/app/page.tsx
+1: import BirthInputForm from "../components/birth-input-form";
+2:
+3: export default function HomePage() {
+4:   return (
+5:     <main>
+6:       <h1>Celestia</h1>
+7:       <p>An independent project for exploring Zi Wei Dou Shu charts.</p>
+8:       <BirthInputForm />
+9:     </main>
+10:   );
+11: }
+FILE: src/app/layout.tsx
+1: import type { Metadata } from "next";
+2: import type { ReactNode } from "react";
+3: import "./globals.css";
+4:
+5: export const metadata: Metadata = {
+6:   title: "Celestia",
+7:   description: "An independent Zi Wei Dou Shu chart exploration project.",
+8: };
+9:
+10: export default function RootLayout({ children }: { children: ReactNode }) {
+11:   return (
+12:     <html lang="en">
+13:       <body>{children}</body>
+14:     </html>
+15:   );
+16: }

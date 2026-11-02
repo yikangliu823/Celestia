@@ -1,0 +1,27 @@
+{
+  "recordedAt": "2026-11-02T07:34:53.363551+00:00",
+  "events": [
+    {
+      "method": "CUA inventory",
+      "observation": "Only ChatGPT in-app browser and MCP Apps connected; native Google Chrome reported running. No isolated-context creation API exposed."
+    },
+    {
+      "method": "Native Chrome through cua.getApp",
+      "observation": "Timed out after 30.3308 seconds; kernel reset. No unchanged retry performed."
+    },
+    {
+      "method": "Standalone Playwright",
+      "authorization": "Owner explicitly selected Use standalone Playwright (recommended).",
+      "observation": "Existing Playwright 1.62.1 and installed Chrome 156.0.8078.74 used. No package installs or application dependency changes."
+    },
+    {
+      "method": "Probe process interrupted in chat",
+      "observation": "Resume found persisted successful browser-probe.json and stopped probe servers. Did not rerun probe. Old exec session ID was unavailable."
+    },
+    {
+      "method": "Supplemental harness",
+      "observation": "All 36 condition/check executions completed without infrastructure exception. Both servers stopped and browser contexts closed."
+    }
+  ],
+  "testingFailures": []
+}

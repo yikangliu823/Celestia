@@ -1,0 +1,57 @@
+{
+  "recordedAt": "2026-11-02T07:25:06.860957+00:00",
+  "worktrees": [
+    {
+      "worktree": "/Users/richardlau/Development/Celestia",
+      "head": "03573c23532fa94715844284b8e16a6bf864c9a6",
+      "status": ""
+    },
+    {
+      "worktree": "/Users/richardlau/Development/Celestia-experiment-control",
+      "head": "b9c5635a66c373276efda99c07e315a63812fec0",
+      "status": ""
+    },
+    {
+      "worktree": "/Users/richardlau/Development/Celestia-experiment-treatment",
+      "head": "5fd6e6cb0f29ee472bac25be2ebfd6a2f1e40d34",
+      "status": ""
+    },
+    {
+      "worktree": "/Users/richardlau/Development/Celestia-experiment-evidence",
+      "head": "1e2e0f198c7f113d2a4289000d80b3662b76c84b",
+      "status": ""
+    }
+  ],
+  "frozenFilesSha256": {
+    "evaluation-plan.md": "b5db16ce0aacdb82f643791d8dbc50f869d018e5309c357dacbe1415437ea508",
+    "evaluation/cases.json": "733936881854b66dc48ab9923c4230cc2a116f7ef23d10040b6f16817aea0912",
+    "evaluation/scoring-audit.json": "787da0daddfbdc410b7f2c82f91f7de2b402e147d744ce195a6f2ef3fc0947e0",
+    "evaluation/scoring-clarifications.md": "81d470743dfbb66ee0e7aa5399dfb759ef9d6cfc9cb0567b2e8558971a584ace",
+    "control/evaluation-results.json": "890405439b480b25d3542f9f559ea1b1e5ee4d229c0f288a7b525244b8bf5988",
+    "treatment/evaluation-results.json": "d5a0e2a158f4f3329c34f2488ae4158e9a5f47f783a09944e1b50436bd3dcac2",
+    "execution/approved-v2/final-report.md": "1638e6ab6b0aeb2681979e00be69c1a372ba197f682a7ffcb0dbe41b191afb48",
+    "implementation-prompt.md": "0ad96dc539a2696b973d9f5cd470fb146cf16366c135f84f071cd9dcf4fd286b"
+  },
+  "authorization": "Owner authorizes supplemental evaluation only, separate ports and isolated browser contexts; no implementation or criteria changes. Prior global Codex drift remains unapproved for new implementation sessions.",
+  "evaluationPortAdaptation": "Owner explicitly requests separate ports, superseding original sequential localhost:3000 setup only. Criteria unchanged.",
+  "targetIDs": [
+    "F01",
+    "F02",
+    "F03",
+    "F04",
+    "F05",
+    "E01",
+    "E02",
+    "E03",
+    "E04",
+    "E05",
+    "E06",
+    "E08",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "P01",
+    "P02"
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "checkedAt": "2026-11-02T07:38:26.637851+00:00",
+  "scope": "Frozen application, criteria and original-evidence preservation; does not approve global Codex configuration drift.",
+  "passed": true,
+  "checks": [
+    {
+      "check": "Evidence branch",
+      "passed": true,
+      "actual": "codex/experiment-protocol",
+      "expected": "codex/experiment-protocol"
+    },
+    {
+      "check": "Celestia HEAD preserved",
+      "passed": true,
+      "actual": "03573c23532fa94715844284b8e16a6bf864c9a6",
+      "expected": "03573c23532fa94715844284b8e16a6bf864c9a6"
+    },
+    {
+      "check": "Celestia clean",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "check": "Celestia-experiment-control HEAD preserved",
+      "passed": true,
+      "actual": "b9c5635a66c373276efda99c07e315a63812fec0",
+      "expected": "b9c5635a66c373276efda99c07e315a63812fec0"
+    },
+    {
+      "check": "Celestia-experiment-control clean",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "check": "Celestia-experiment-treatment HEAD preserved",
+      "passed": true,
+      "actual": "5fd6e6cb0f29ee472bac25be2ebfd6a2f1e40d34",
+      "expected": "5fd6e6cb0f29ee472bac25be2ebfd6a2f1e40d34"
+    },
+    {
+      "check": "Celestia-experiment-treatment clean",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "check": "Celestia-experiment-evidence HEAD preserved",
+      "passed": true,
+      "actual": "1e2e0f198c7f113d2a4289000d80b3662b76c84b",
+      "expected": "1e2e0f198c7f113d2a4289000d80b3662b76c84b"
+    },
+    {
+      "check": "Frozen/original evaluation-plan.md",
+      "passed": true,
+      "actual": "b5db16ce0aacdb82f643791d8dbc50f869d018e5309c357dacbe1415437ea508",
+      "expected": "b5db16ce0aacdb82f643791d8dbc50f869d018e5309c357dacbe1415437ea508"
+    },
+    {
+      "check": "Frozen/original evaluation/cases.json",
+      "passed": true,
+      "actual": "733936881854b66dc48ab9923c4230cc2a116f7ef23d10040b6f16817aea0912",
+      "expected": "733936881854b66dc48ab9923c4230cc2a116f7ef23d10040b6f16817aea0912"
+    },
+    {
+      "check": "Frozen/original evaluation/scoring-audit.json",
+      "passed": true,
+      "actual": "787da0daddfbdc410b7f2c82f91f7de2b402e147d744ce195a6f2ef3fc0947e0",
+      "expected": "787da0daddfbdc410b7f2c82f91f7de2b402e147d744ce195a6f2ef3fc0947e0"
+    },
+    {
+      "check": "Frozen/original evaluation/scoring-clarifications.md",
+      "passed": true,
+      "actual": "81d470743dfbb66ee0e7aa5399dfb759ef9d6cfc9cb0567b2e8558971a584ace",
+      "expected": "81d470743dfbb66ee0e7aa5399dfb759ef9d6cfc9cb0567b2e8558971a584ace"
+    },
+    {
+      "check": "Frozen/original control/evaluation-results.json",
+      "passed": true,
+      "actual": "890405439b480b25d3542f9f559ea1b1e5ee4d229c0f288a7b525244b8bf5988",
+      "expected": "890405439b480b25d3542f9f559ea1b1e5ee4d229c0f288a7b525244b8bf5988"
+    },
+    {
+      "check": "Frozen/original treatment/evaluation-results.json",
+      "passed": true,
+      "actual": "d5a0e2a158f4f3329c34f2488ae4158e9a5f47f783a09944e1b50436bd3dcac2",
+      "expected": "d5a0e2a158f4f3329c34f2488ae4158e9a5f47f783a09944e1b50436bd3dcac2"
+    },
+    {
+      "check": "Frozen/original execution/approved-v2/final-report.md",
+      "passed": true,
+      "actual": "1638e6ab6b0aeb2681979e00be69c1a372ba197f682a7ffcb0dbe41b191afb48",
+      "expected": "1638e6ab6b0aeb2681979e00be69c1a372ba197f682a7ffcb0dbe41b191afb48"
+    },
+    {
+      "check": "Frozen/original implementation-prompt.md",
+      "passed": true,
+      "actual": "0ad96dc539a2696b973d9f5cd470fb146cf16366c135f84f071cd9dcf4fd286b",
+      "expected": "0ad96dc539a2696b973d9f5cd470fb146cf16366c135f84f071cd9dcf4fd286b"
+    },
+    {
+      "check": "Original comparison archived exactly",
+      "passed": true,
+      "actual": "b6b6135fd47adc95162431bacae5e7cbc66f11f3fa38eae7b71b574f028ec5a3",
+      "expected": "b6b6135fd47adc95162431bacae5e7cbc66f11f3fa38eae7b71b574f028ec5a3"
+    },
+    {
+      "check": "Only existing comparison changed",
+      "passed": true,
+      "actual": [
+        "docs/experiment/comparison.md"
+      ],
+      "expected": [
+        "docs/experiment/comparison.md"
+      ]
+    },
+    {
+      "check": "control supplemental cases",
+      "passed": true,
+      "actual": 18,
+      "expected": 18
+    },
+    {
+      "check": "control successful cases",
+      "passed": true,
+      "actual": 18,
+      "expected": 18
+    },
+    {
+      "check": "control trace archive integrity",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "check": "control expected final SHA",
+      "passed": true,
+      "actual": "b9c5635a66c373276efda99c07e315a63812fec0",
+      "expected": "b9c5635a66c373276efda99c07e315a63812fec0"
+    },
+    {
+      "check": "control server stopped",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "check": "treatment supplemental cases",
+      "passed": true,
+      "actual": 18,
+      "expected": 18
+    },
+    {
+      "check": "treatment successful cases",
+      "passed": true,
+      "actual": 18,
+      "expected": 18
+    },
+    {
+      "check": "treatment trace archive integrity",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "check": "treatment expected final SHA",
+      "passed": true,
+      "actual": "5fd6e6cb0f29ee472bac25be2ebfd6a2f1e40d34",
+      "expected": "5fd6e6cb0f29ee472bac25be2ebfd6a2f1e40d34"
+    },
+    {
+      "check": "treatment server stopped",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    }
+  ]
+}

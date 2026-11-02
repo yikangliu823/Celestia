@@ -1,0 +1,92 @@
+{
+  "at": "2026-11-02T07:32:36.061Z",
+  "url": "http://127.0.0.1:3102/",
+  "ax": "- main:\n  - heading \"Celestia\" [level=1]\n  - paragraph: An independent project for exploring Zi Wei Dou Shu charts.\n  - region \"Check birth inputs\":\n    - heading \"Check birth inputs\" [level=2]\n    - paragraph: Check the date, time, and timezone formats here. Chart calculation is not available, and additional chart inputs have not yet been defined.\n    - paragraph: These entries stay in this page’s memory. They are not sent, saved, or logged by Celestia.\n    - form \"Check birth inputs\":\n      - group \"Birth details — all fields are required\":\n        - text: Birth details — all fields are required\n        - alert:\n          - paragraph: Correct 3 fields and check again.\n          - list:\n            - listitem:\n              - 'link \"Birth date (Gregorian): Enter a birth date in YYYY-MM-DD format.\"':\n                - /url: \"#birthDate\"\n            - listitem:\n              - 'link \"Local birth time: Enter the local birth time in HH:mm format.\"':\n                - /url: \"#birthTime\"\n            - listitem:\n              - 'link \"Birth location timezone: Enter the birth location’s IANA timezone, for example Asia/Taipei, or UTC.\"':\n                - /url: \"#timeZone\"\n        - text: Birth date (Gregorian) (required)\n        - paragraph: Use YYYY-MM-DD, for example 2000-02-29. Lunar dates are not supported by this form.\n        - textbox \"Birth date (Gregorian) (required)\" [invalid]:\n          - /placeholder: YYYY-MM-DD\n        - paragraph: Enter a birth date in YYYY-MM-DD format.\n        - text: Local birth time (required)\n        - paragraph: Use 24-hour HH:mm, for example 14:30. Enter the clock time at the birth location.\n        - textbox \"Local birth time (required)\" [invalid]:\n          - /placeholder: HH:mm\n        - paragraph: Enter the local birth time in HH:mm format.\n        - text: Birth location timezone (required)\n        - paragraph: Enter an IANA timezone such as Asia/Taipei or America/Los_Angeles, or UTC. No timezone is chosen automatically.\n        - textbox \"Birth location timezone (required)\" [invalid]:\n          - /placeholder: Asia/Taipei\n        - paragraph: Enter the birth location’s IANA timezone, for example Asia/Taipei, or UTC.\n        - button \"Check inputs\"\n      - status",
+  "dom": {
+    "fields": [
+      {
+        "id": "birthDate",
+        "type": "text",
+        "label": "Birth date (Gregorian) (required)",
+        "value": "",
+        "required": true,
+        "disabled": false,
+        "invalid": "true",
+        "describedBy": "birthDate-hint birthDate-error",
+        "description": "Use YYYY-MM-DD, for example 2000-02-29. Lunar dates are not supported by this form. Enter a birth date in YYYY-MM-DD format.",
+        "error": "Enter a birth date in YYYY-MM-DD format.",
+        "rect": {
+          "x": 280,
+          "y": 538.6875,
+          "width": 720,
+          "height": 45.59375,
+          "top": 538.6875,
+          "right": 1000,
+          "bottom": 584.28125,
+          "left": 280
+        }
+      },
+      {
+        "id": "birthTime",
+        "type": "text",
+        "label": "Local birth time (required)",
+        "value": "",
+        "required": true,
+        "disabled": false,
+        "invalid": "true",
+        "describedBy": "birthTime-hint birthTime-error",
+        "description": "Use 24-hour HH:mm, for example 14:30. Enter the clock time at the birth location. Enter the local birth time in HH:mm format.",
+        "error": "Enter the local birth time in HH:mm format.",
+        "rect": {
+          "x": 280,
+          "y": 705.0625,
+          "width": 720,
+          "height": 45.59375,
+          "top": 705.0625,
+          "right": 1000,
+          "bottom": 750.65625,
+          "left": 280
+        }
+      },
+      {
+        "id": "timeZone",
+        "type": "text",
+        "label": "Birth location timezone (required)",
+        "value": "",
+        "required": true,
+        "disabled": false,
+        "invalid": "true",
+        "describedBy": "timeZone-hint timeZone-error",
+        "description": "Enter an IANA timezone such as Asia/Taipei or America/Los_Angeles, or UTC. No timezone is chosen automatically. Enter the birth location’s IANA timezone, for example Asia/Taipei, or UTC.",
+        "error": "Enter the birth location’s IANA timezone, for example Asia/Taipei, or UTC.",
+        "rect": {
+          "x": 280,
+          "y": 897.03125,
+          "width": 720,
+          "height": 45.59375,
+          "top": 897.03125,
+          "right": 1000,
+          "bottom": 942.625,
+          "left": 280
+        }
+      }
+    ],
+    "status": [
+      ""
+    ],
+    "alerts": [
+      "Correct 3 fields and check again.Birth date (Gregorian): Enter a birth date in YYYY-MM-DD format.Local birth time: Enter the local birth time in HH:mm format.Birth location timezone: Enter the birth location’s IANA timezone, for example Asia/Taipei, or UTC."
+    ],
+    "active": {
+      "id": "birthDate",
+      "tag": "INPUT",
+      "text": ""
+    },
+    "viewport": {
+      "width": 1280,
+      "height": 800,
+      "documentWidth": 1280,
+      "scale": 1
+    }
+  }
+}

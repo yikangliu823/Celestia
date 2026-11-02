@@ -1,0 +1,38 @@
+{
+  "browserVersion": "156.0.8078.74",
+  "playwright": "1.62.1",
+  "node": "v26.11.0",
+  "contextOptions": {
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "deviceScaleFactor": 1,
+    "locale": "en-US",
+    "timezoneId": "America/Los_Angeles",
+    "colorScheme": "light"
+  },
+  "headless": true,
+  "url": "http://127.0.0.1:3101/",
+  "isolatedNonPersistentContext": true,
+  "metadata": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "language": "en-US",
+    "languages": [
+      "en-US"
+    ],
+    "timeZone": "America/Los_Angeles",
+    "devicePixelRatio": 1,
+    "innerWidth": 1280,
+    "innerHeight": 800,
+    "visualViewportScale": 1
+  },
+  "initialStorage": {
+    "cookies": [],
+    "localStorage": {},
+    "sessionStorage": {},
+    "indexedDB": [],
+    "cacheStorage": [],
+    "serviceWorkers": []
+  }
+}

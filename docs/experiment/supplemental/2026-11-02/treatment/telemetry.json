@@ -1,0 +1,5182 @@
+{
+  "console": [
+    {
+      "at": "2026-11-02T07:32:13.613Z",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": {
+        "url": "http://127.0.0.1:3102/favicon.ico",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "pageErrors": [],
+  "requests": [
+    {
+      "at": "2026-11-02T07:32:13.549Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:13.569Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "http://127.0.0.1:3102/",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "accept-language": "en-US",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:13.569Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "http://127.0.0.1:3102/",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "accept-language": "en-US",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:13.569Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "http://127.0.0.1:3102/",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "accept-language": "en-US",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:13.569Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "http://127.0.0.1:3102/",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "accept-language": "en-US",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:13.569Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "http://127.0.0.1:3102/",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "accept-language": "en-US",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:13.569Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "http://127.0.0.1:3102/",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "accept-language": "en-US",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:13.569Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "http://127.0.0.1:3102/",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "accept-language": "en-US",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:14.156Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:14.168Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:14.169Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:14.169Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:14.169Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:14.169Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:14.169Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:14.169Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:14.767Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:14.810Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:14.810Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:14.811Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:14.811Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:14.811Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:14.811Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:14.811Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:15.476Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:15.483Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:15.484Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:15.484Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:15.484Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:15.484Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:15.485Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:15.485Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:16.042Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:16.051Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:16.052Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:16.053Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:16.053Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:16.053Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:16.053Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:16.053Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:16.632Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:16.643Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:16.644Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:16.644Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:16.644Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:16.645Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:16.645Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:16.645Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:17.233Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:17.246Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:17.248Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:17.248Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:17.248Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:17.248Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:17.248Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:17.248Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:17.850Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:17.863Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:17.864Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:17.864Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:17.864Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:17.864Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:17.864Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:17.865Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:18.515Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:18.529Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:18.530Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:18.530Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:18.530Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:18.531Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:18.531Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:18.531Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:19.181Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:19.196Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:19.197Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:19.197Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:19.197Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:19.197Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:19.197Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:19.197Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:19.866Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:19.879Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:19.880Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:19.881Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:19.881Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:19.881Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:19.881Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:19.881Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:20.532Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:20.546Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:20.547Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:20.547Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:20.547Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:20.547Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:20.547Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:20.548Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:21.151Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:21.162Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:21.163Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:21.163Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:21.163Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:21.163Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:21.163Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:21.163Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:21.755Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:21.763Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:21.764Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:21.764Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:21.764Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:21.764Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:21.764Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:21.764Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:22.353Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:22.362Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:22.363Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:22.363Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:22.363Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:22.363Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:22.364Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:22.364Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:22.968Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:22.980Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:22.980Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:22.980Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:22.981Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:22.981Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:22.981Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:22.981Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:23.530Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:23.545Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:23.546Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:23.546Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:23.546Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:23.546Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:23.547Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:23.547Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:24.151Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:24.163Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:24.163Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:24.165Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:24.165Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:24.165Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:24.165Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:24.165Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:24.767Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:24.779Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:24.780Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:24.780Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:24.780Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:24.780Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:24.780Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:24.780Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:25.367Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:25.379Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:25.379Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:25.379Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:25.379Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:25.379Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:25.379Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:25.379Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:25.974Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:25.985Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:25.985Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:25.986Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:25.986Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:25.986Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:25.986Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:25.986Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:26.524Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:26.531Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:26.532Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:26.532Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:26.532Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:26.533Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:26.533Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:26.533Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:27.135Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:27.146Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:27.148Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:27.148Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:27.148Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:27.148Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:27.149Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:27.150Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:27.735Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:27.746Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:27.746Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:27.748Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:27.748Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:27.748Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:27.748Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:27.748Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:28.292Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:28.300Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:28.300Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:28.300Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:28.301Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:28.301Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:28.301Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:28.301Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:28.881Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:28.895Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:28.896Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:28.896Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:28.896Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:28.896Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:28.897Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:28.897Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:29.504Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:29.513Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:29.514Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:29.514Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:29.514Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:29.514Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:29.514Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:29.515Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:30.061Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:30.069Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:30.070Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:30.070Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:30.070Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:30.070Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:30.070Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:30.071Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:30.667Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:30.678Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:30.680Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:30.680Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:30.680Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:30.680Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:30.680Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:30.680Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:31.267Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:31.278Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:31.280Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:31.280Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:31.280Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:31.280Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:31.280Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:31.280Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:31.935Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:31.946Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:31.946Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:31.946Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:31.946Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:31.946Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:31.946Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:31.947Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:32.512Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:32.529Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:32.535Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:32.535Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:32.535Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:32.535Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:32.535Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:32.535Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:33.118Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:33.139Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:33.139Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:33.140Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:33.140Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:33.140Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:33.140Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:33.140Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:33.728Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:33.736Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:33.738Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:33.738Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:33.738Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:33.738Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:33.738Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:33.738Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:34.322Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:34.333Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:34.338Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:34.338Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:34.338Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:34.338Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:34.338Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:34.338Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:34.911Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:34.919Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:34.919Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:34.920Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:34.920Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:34.921Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:34.921Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:34.921Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:35.469Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:35.478Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:35.479Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:35.479Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:35.479Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:35.479Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:35.479Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:35.480Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:36.301Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:36.311Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:36.312Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:36.312Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:36.312Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:36.312Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:36.313Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:36.313Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:37.120Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:37.130Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:37.132Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:37.132Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:37.132Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:37.132Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:37.132Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:37.132Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:37.768Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:37.777Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:37.778Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:37.778Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:37.778Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:37.778Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:37.778Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:37.778Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:38.378Z",
+      "url": "http://127.0.0.1:3102/",
+      "method": "GET",
+      "type": "document",
+      "body": null,
+      "headers": {
+        "accept-language": "en-US",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\""
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:38.388Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:38.388Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:38.388Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:38.388Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:38.389Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:38.389Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    },
+    {
+      "at": "2026-11-02T07:32:38.389Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "method": "GET",
+      "type": "script",
+      "body": null,
+      "headers": {
+        "referer": "http://127.0.0.1:3102/"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "at": "2026-11-02T07:32:13.559Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:13.574Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:13.580Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:13.580Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:13.581Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:13.581Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:13.585Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:13.588Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:14.160Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:14.169Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:14.169Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:14.169Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:14.169Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:14.169Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:14.169Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:14.169Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:14.772Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:14.810Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:14.811Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:14.811Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:14.811Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:14.811Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:14.811Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:14.811Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:15.478Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:15.484Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:15.484Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:15.484Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:15.484Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:15.485Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:15.485Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:15.485Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:16.045Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:16.052Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:16.053Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:16.053Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:16.053Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:16.053Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:16.053Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:16.053Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:16.638Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:16.644Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:16.644Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:16.644Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:16.645Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:16.645Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:16.645Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:16.645Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:17.241Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:17.246Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:17.248Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:17.248Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:17.248Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:17.248Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:17.248Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:17.248Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:17.857Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:17.864Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:17.864Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:17.864Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:17.864Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:17.864Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:17.864Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:17.865Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:18.522Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:18.530Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:18.530Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:18.530Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:18.531Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:18.531Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:18.531Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:18.531Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:19.189Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:19.197Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:19.197Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:19.197Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:19.197Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:19.197Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:19.197Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:19.197Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:19.874Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:19.879Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:19.881Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:19.881Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:19.881Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:19.881Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:19.881Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:19.881Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:20.539Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:20.547Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:20.547Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:20.547Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:20.547Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:20.547Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:20.547Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:20.548Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:21.156Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:21.162Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:21.163Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:21.163Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:21.163Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:21.163Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:21.163Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:21.164Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:21.757Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:21.763Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:21.764Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:21.764Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:21.764Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:21.764Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:21.764Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:21.764Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:22.357Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:22.362Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:22.363Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:22.363Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:22.363Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:22.363Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:22.364Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:22.364Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:22.973Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:22.980Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:22.980Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:22.981Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:22.981Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:22.981Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:22.981Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:22.981Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:23.540Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:23.546Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:23.546Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:23.546Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:23.546Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:23.546Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:23.547Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:23.547Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:24.157Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:24.163Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:24.165Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:24.165Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:24.165Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:24.165Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:24.165Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:24.165Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:24.773Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:24.779Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:24.780Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:24.780Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:24.780Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:24.780Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:24.780Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:24.780Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:25.373Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:25.379Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:25.379Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:25.379Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:25.379Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:25.379Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:25.379Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:25.379Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:25.977Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:25.985Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:25.986Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:25.986Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:25.986Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:25.986Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:25.986Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:25.986Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:26.527Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:26.532Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:26.532Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:26.532Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:26.532Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:26.533Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:26.533Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:26.533Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:27.140Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:27.148Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:27.148Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:27.148Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:27.148Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:27.149Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:27.150Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:27.150Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:27.740Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:27.746Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:27.746Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:27.748Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:27.748Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:27.748Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:27.748Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:27.748Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:28.294Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:28.300Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:28.300Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:28.301Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:28.301Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:28.301Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:28.301Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:28.302Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:28.890Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:28.896Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:28.896Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:28.896Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:28.896Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:28.896Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:28.897Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:28.897Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:29.507Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:29.514Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:29.514Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:29.514Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:29.514Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:29.514Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:29.515Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:29.515Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:30.064Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:30.070Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:30.070Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:30.070Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:30.070Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:30.070Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:30.071Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:30.071Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:30.673Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:30.678Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:30.680Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:30.680Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:30.680Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:30.680Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:30.680Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:30.680Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:31.273Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:31.280Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:31.280Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:31.280Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:31.280Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:31.280Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:31.280Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:31.281Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:31.939Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:31.946Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:31.946Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:31.946Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:31.946Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:31.946Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:31.947Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:31.947Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:32.514Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:32.529Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:32.535Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:32.535Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:32.535Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:32.535Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:32.535Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:32.535Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:33.123Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:33.139Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:33.139Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:33.140Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:33.140Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:33.140Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:33.140Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:33.140Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:33.730Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:33.736Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:33.738Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:33.738Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:33.738Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:33.738Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:33.738Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:33.738Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:34.325Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:34.338Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:34.338Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:34.338Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:34.338Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:34.338Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:34.338Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:34.338Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:34.913Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:34.919Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:34.919Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:34.920Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:34.920Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:34.921Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:34.921Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:34.921Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:35.472Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:35.478Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:35.479Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:35.479Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:35.479Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:35.479Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:35.479Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:35.480Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:36.303Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:36.312Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:36.312Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:36.312Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:36.312Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:36.313Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:36.313Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:36.313Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:37.125Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:37.132Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:37.132Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:37.132Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:37.132Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:37.132Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:37.132Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:37.132Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:37.771Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:37.778Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:37.778Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:37.778Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:37.778Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:37.778Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:37.778Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:37.778Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:38.381Z",
+      "url": "http://127.0.0.1:3102/",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:38.388Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/06do3w7v9daes.css",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:38.388Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3cfn99dbrcvvp.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:38.388Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0r-yur70-ku2o.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:38.389Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3wbm-994r45kr.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:38.389Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:38.389Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/0umf92h1sb77c.js",
+      "status": 200
+    },
+    {
+      "at": "2026-11-02T07:32:38.389Z",
+      "url": "http://127.0.0.1:3102/_next/static/chunks/3g6qyr99ab06k.js",
+      "status": 200
+    }
+  ],
+  "webSockets": []
+}

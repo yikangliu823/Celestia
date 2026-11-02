@@ -1,0 +1,7 @@
+{
+  "recordedAt": "2026-11-02T07:34:53.363551+00:00",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "machine": "arm64",
+  "globalCodexConfigSha256": "c0471c3e8bca852b4ef63bfc88ad833aa1b962b3a989e31dd628219cd2eafaff",
+  "scope": "Recorded for provenance only. No global configuration repair or approval; no implementation session launched. Browser environment is recorded in browser-probe.json and each condition/environment.json."
+}

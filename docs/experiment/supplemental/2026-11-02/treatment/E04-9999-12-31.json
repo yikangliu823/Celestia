@@ -1,0 +1,90 @@
+{
+  "at": "2026-11-02T07:32:25.359Z",
+  "url": "http://127.0.0.1:3102/",
+  "ax": "- main:\n  - heading \"Celestia\" [level=1]\n  - paragraph: An independent project for exploring Zi Wei Dou Shu charts.\n  - region \"Check birth inputs\":\n    - heading \"Check birth inputs\" [level=2]\n    - paragraph: Check the date, time, and timezone formats here. Chart calculation is not available, and additional chart inputs have not yet been defined.\n    - paragraph: These entries stay in this page’s memory. They are not sent, saved, or logged by Celestia.\n    - form \"Check birth inputs\":\n      - group \"Birth details — all fields are required\":\n        - text: Birth details — all fields are required Birth date (Gregorian) (required)\n        - paragraph: Use YYYY-MM-DD, for example 2000-02-29. Lunar dates are not supported by this form.\n        - textbox \"Birth date (Gregorian) (required)\":\n          - /placeholder: YYYY-MM-DD\n          - text: 9999-12-31\n        - text: Local birth time (required)\n        - paragraph: Use 24-hour HH:mm, for example 14:30. Enter the clock time at the birth location.\n        - textbox \"Local birth time (required)\":\n          - /placeholder: HH:mm\n          - text: 14:30\n        - text: Birth location timezone (required)\n        - paragraph: Enter an IANA timezone such as Asia/Taipei or America/Los_Angeles, or UTC. No timezone is chosen automatically.\n        - textbox \"Birth location timezone (required)\":\n          - /placeholder: Asia/Taipei\n          - text: America/Los_Angeles\n        - button \"Check inputs\"\n      - status: These inputs passed basic validation. No chart has been calculated. Historical timezone offsets and daylight-saving time conflicts have not been checked.",
+  "dom": {
+    "fields": [
+      {
+        "id": "birthDate",
+        "type": "text",
+        "label": "Birth date (Gregorian) (required)",
+        "value": "9999-12-31",
+        "required": true,
+        "disabled": false,
+        "invalid": "false",
+        "describedBy": "birthDate-hint",
+        "description": "Use YYYY-MM-DD, for example 2000-02-29. Lunar dates are not supported by this form.",
+        "error": "",
+        "rect": {
+          "x": 280,
+          "y": 334.71875,
+          "width": 720,
+          "height": 44,
+          "top": 334.71875,
+          "right": 1000,
+          "bottom": 378.71875,
+          "left": 280
+        }
+      },
+      {
+        "id": "birthTime",
+        "type": "text",
+        "label": "Local birth time (required)",
+        "value": "14:30",
+        "required": true,
+        "disabled": false,
+        "invalid": "false",
+        "describedBy": "birthTime-hint",
+        "description": "Use 24-hour HH:mm, for example 14:30. Enter the clock time at the birth location.",
+        "error": "",
+        "rect": {
+          "x": 280,
+          "y": 465.90625,
+          "width": 720,
+          "height": 44,
+          "top": 465.90625,
+          "right": 1000,
+          "bottom": 509.90625,
+          "left": 280
+        }
+      },
+      {
+        "id": "timeZone",
+        "type": "text",
+        "label": "Birth location timezone (required)",
+        "value": "America/Los_Angeles",
+        "required": true,
+        "disabled": false,
+        "invalid": "false",
+        "describedBy": "timeZone-hint",
+        "description": "Enter an IANA timezone such as Asia/Taipei or America/Los_Angeles, or UTC. No timezone is chosen automatically.",
+        "error": "",
+        "rect": {
+          "x": 280,
+          "y": 622.6875,
+          "width": 720,
+          "height": 44,
+          "top": 622.6875,
+          "right": 1000,
+          "bottom": 666.6875,
+          "left": 280
+        }
+      }
+    ],
+    "status": [
+      "These inputs passed basic validation. No chart has been calculated. Historical timezone offsets and daylight-saving time conflicts have not been checked."
+    ],
+    "alerts": [],
+    "active": {
+      "id": "",
+      "tag": "BUTTON",
+      "text": "Check inputs"
+    },
+    "viewport": {
+      "width": 1280,
+      "height": 800,
+      "documentWidth": 1280,
+      "scale": 1
+    }
+  }
+}

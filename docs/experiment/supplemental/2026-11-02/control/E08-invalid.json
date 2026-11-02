@@ -1,0 +1,92 @@
+{
+  "at": "2026-11-02T07:32:04.729Z",
+  "url": "http://127.0.0.1:3101/",
+  "ax": "- main:\n  - heading \"Celestia\" [level=1]\n  - paragraph: An independent project for exploring Zi Wei Dou Shu charts.\n  - region \"Check birth inputs\":\n    - heading \"Check birth inputs\" [level=2]\n    - paragraph: Check a date, local time, and birthplace time zone. Chart calculation is not available yet.\n    - paragraph: This form checks entries in your browser. Entries are not sent, saved, or logged by the application.\n    - group \"Birth details\":\n      - text: Birth details\n      - alert:\n        - paragraph: \"Please correct the following fields:\"\n        - list:\n          - listitem:\n            - 'link \"Birth location time zone (required): Enter a recognized IANA time zone, such as Asia/Shanghai or America/Los_Angeles, or UTC; avoid abbreviations such as PST.\"':\n              - /url: \"#birth-timeZone\"\n      - text: Birth date (required)\n      - paragraph: Use the Gregorian calendar and YYYY-MM-DD format.\n      - textbox \"Birth date (required)\":\n        - /placeholder: 2000-01-15\n        - text: 2000-01-15\n      - text: Birth time (required)\n      - paragraph: Enter the local clock time at birth in 24-hour HH:MM format, to the minute.\n      - textbox \"Birth time (required)\":\n        - /placeholder: 14:30\n        - text: 14:30\n      - text: Birth location time zone (required)\n      - paragraph: Use an IANA zone for the birthplace, such as Asia/Shanghai or America/Los_Angeles, or UTC. Your device’s zone is not selected automatically.\n      - textbox \"Birth location time zone (required)\" [invalid]:\n        - /placeholder: Asia/Shanghai\n        - text: Not/A_Zone\n      - paragraph: Enter a recognized IANA time zone, such as Asia/Shanghai or America/Los_Angeles, or UTC; avoid abbreviations such as PST.\n      - button \"Check inputs\"\n    - status",
+  "dom": {
+    "fields": [
+      {
+        "id": "birth-date",
+        "type": "text",
+        "label": "Birth date (required)",
+        "value": "2000-01-15",
+        "required": true,
+        "disabled": false,
+        "invalid": null,
+        "describedBy": "birth-date-hint",
+        "description": "Use the Gregorian calendar and YYYY-MM-DD format.",
+        "error": "",
+        "rect": {
+          "x": 301,
+          "y": 253.8125,
+          "width": 678,
+          "height": 44,
+          "top": 253.8125,
+          "right": 979,
+          "bottom": 297.8125,
+          "left": 301
+        }
+      },
+      {
+        "id": "birth-time",
+        "type": "text",
+        "label": "Birth time (required)",
+        "value": "14:30",
+        "required": true,
+        "disabled": false,
+        "invalid": null,
+        "describedBy": "birth-time-hint",
+        "description": "Enter the local clock time at birth in 24-hour HH:MM format, to the minute.",
+        "error": "",
+        "rect": {
+          "x": 301,
+          "y": 385,
+          "width": 678,
+          "height": 44,
+          "top": 385,
+          "right": 979,
+          "bottom": 429,
+          "left": 301
+        }
+      },
+      {
+        "id": "birth-timeZone",
+        "type": "text",
+        "label": "Birth location time zone (required)",
+        "value": "Not/A_Zone",
+        "required": true,
+        "disabled": false,
+        "invalid": "true",
+        "describedBy": "birth-timeZone-hint birth-timeZone-error",
+        "description": "Use an IANA zone for the birthplace, such as Asia/Shanghai or America/Los_Angeles, or UTC. Your device’s zone is not selected automatically. Enter a recognized IANA time zone, such as Asia/Shanghai or America/Los_Angeles, or UTC; avoid abbreviations such as PST.",
+        "error": "Enter a recognized IANA time zone, such as Asia/Shanghai or America/Los_Angeles, or UTC; avoid abbreviations such as PST.",
+        "rect": {
+          "x": 301,
+          "y": 541.78125,
+          "width": 678,
+          "height": 45.59375,
+          "top": 541.78125,
+          "right": 979,
+          "bottom": 587.375,
+          "left": 301
+        }
+      }
+    ],
+    "status": [
+      ""
+    ],
+    "alerts": [
+      "Please correct the following fields:Birth location time zone (required): Enter a recognized IANA time zone, such as Asia/Shanghai or America/Los_Angeles, or UTC; avoid abbreviations such as PST."
+    ],
+    "active": {
+      "id": "birth-timeZone",
+      "tag": "INPUT",
+      "text": ""
+    },
+    "viewport": {
+      "width": 1280,
+      "height": 800,
+      "documentWidth": 1280,
+      "scale": 1
+    }
+  }
+}

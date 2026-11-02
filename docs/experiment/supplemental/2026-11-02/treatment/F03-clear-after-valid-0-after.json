@@ -1,0 +1,92 @@
+{
+  "at": "2026-11-02T07:32:18.508Z",
+  "url": "http://127.0.0.1:3102/",
+  "ax": "- main:\n  - heading \"Celestia\" [level=1]\n  - paragraph: An independent project for exploring Zi Wei Dou Shu charts.\n  - region \"Check birth inputs\":\n    - heading \"Check birth inputs\" [level=2]\n    - paragraph: Check the date, time, and timezone formats here. Chart calculation is not available, and additional chart inputs have not yet been defined.\n    - paragraph: These entries stay in this page’s memory. They are not sent, saved, or logged by Celestia.\n    - form \"Check birth inputs\":\n      - group \"Birth details — all fields are required\":\n        - text: Birth details — all fields are required\n        - alert:\n          - paragraph: Correct 1 field and check again.\n          - list:\n            - listitem:\n              - 'link \"Birth date (Gregorian): Enter a birth date in YYYY-MM-DD format.\"':\n                - /url: \"#birthDate\"\n        - text: Birth date (Gregorian) (required)\n        - paragraph: Use YYYY-MM-DD, for example 2000-02-29. Lunar dates are not supported by this form.\n        - textbox \"Birth date (Gregorian) (required)\" [invalid]:\n          - /placeholder: YYYY-MM-DD\n        - paragraph: Enter a birth date in YYYY-MM-DD format.\n        - text: Local birth time (required)\n        - paragraph: Use 24-hour HH:mm, for example 14:30. Enter the clock time at the birth location.\n        - textbox \"Local birth time (required)\":\n          - /placeholder: HH:mm\n          - text: 14:30\n        - text: Birth location timezone (required)\n        - paragraph: Enter an IANA timezone such as Asia/Taipei or America/Los_Angeles, or UTC. No timezone is chosen automatically.\n        - textbox \"Birth location timezone (required)\":\n          - /placeholder: Asia/Taipei\n          - text: America/Los_Angeles\n        - button \"Check inputs\"\n      - status",
+  "dom": {
+    "fields": [
+      {
+        "id": "birthDate",
+        "type": "text",
+        "label": "Birth date (Gregorian) (required)",
+        "value": "",
+        "required": true,
+        "disabled": false,
+        "invalid": "true",
+        "describedBy": "birthDate-hint birthDate-error",
+        "description": "Use YYYY-MM-DD, for example 2000-02-29. Lunar dates are not supported by this form. Enter a birth date in YYYY-MM-DD format.",
+        "error": "Enter a birth date in YYYY-MM-DD format.",
+        "rect": {
+          "x": 280,
+          "y": 461.90625,
+          "width": 720,
+          "height": 45.59375,
+          "top": 461.90625,
+          "right": 1000,
+          "bottom": 507.5,
+          "left": 280
+        }
+      },
+      {
+        "id": "birthTime",
+        "type": "text",
+        "label": "Local birth time (required)",
+        "value": "14:30",
+        "required": true,
+        "disabled": false,
+        "invalid": "false",
+        "describedBy": "birthTime-hint",
+        "description": "Use 24-hour HH:mm, for example 14:30. Enter the clock time at the birth location.",
+        "error": "",
+        "rect": {
+          "x": 280,
+          "y": 628.28125,
+          "width": 720,
+          "height": 44,
+          "top": 628.28125,
+          "right": 1000,
+          "bottom": 672.28125,
+          "left": 280
+        }
+      },
+      {
+        "id": "timeZone",
+        "type": "text",
+        "label": "Birth location timezone (required)",
+        "value": "America/Los_Angeles",
+        "required": true,
+        "disabled": false,
+        "invalid": "false",
+        "describedBy": "timeZone-hint",
+        "description": "Enter an IANA timezone such as Asia/Taipei or America/Los_Angeles, or UTC. No timezone is chosen automatically.",
+        "error": "",
+        "rect": {
+          "x": 280,
+          "y": 785.0625,
+          "width": 720,
+          "height": 44,
+          "top": 785.0625,
+          "right": 1000,
+          "bottom": 829.0625,
+          "left": 280
+        }
+      }
+    ],
+    "status": [
+      ""
+    ],
+    "alerts": [
+      "Correct 1 field and check again.Birth date (Gregorian): Enter a birth date in YYYY-MM-DD format."
+    ],
+    "active": {
+      "id": "birthDate",
+      "tag": "INPUT",
+      "text": ""
+    },
+    "viewport": {
+      "width": 1280,
+      "height": 800,
+      "documentWidth": 1280,
+      "scale": 1
+    }
+  }
+}

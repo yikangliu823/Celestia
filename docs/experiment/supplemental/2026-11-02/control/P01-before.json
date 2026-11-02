@@ -1,0 +1,90 @@
+{
+  "at": "2026-11-02T07:32:11.824Z",
+  "url": "http://127.0.0.1:3101/",
+  "ax": "- main:\n  - heading \"Celestia\" [level=1]\n  - paragraph: An independent project for exploring Zi Wei Dou Shu charts.\n  - region \"Check birth inputs\":\n    - heading \"Check birth inputs\" [level=2]\n    - paragraph: Check a date, local time, and birthplace time zone. Chart calculation is not available yet.\n    - paragraph: This form checks entries in your browser. Entries are not sent, saved, or logged by the application.\n    - group \"Birth details\":\n      - text: Birth details Birth date (required)\n      - paragraph: Use the Gregorian calendar and YYYY-MM-DD format.\n      - textbox \"Birth date (required)\":\n        - /placeholder: 2000-01-15\n      - text: Birth time (required)\n      - paragraph: Enter the local clock time at birth in 24-hour HH:MM format, to the minute.\n      - textbox \"Birth time (required)\":\n        - /placeholder: 14:30\n      - text: Birth location time zone (required)\n      - paragraph: Use an IANA zone for the birthplace, such as Asia/Shanghai or America/Los_Angeles, or UTC. Your device’s zone is not selected automatically.\n      - textbox \"Birth location time zone (required)\":\n        - /placeholder: Asia/Shanghai\n      - button \"Check inputs\"\n    - status",
+  "dom": {
+    "fields": [
+      {
+        "id": "birth-date",
+        "type": "text",
+        "label": "Birth date (required)",
+        "value": "",
+        "required": true,
+        "disabled": false,
+        "invalid": null,
+        "describedBy": "birth-date-hint",
+        "description": "Use the Gregorian calendar and YYYY-MM-DD format.",
+        "error": "",
+        "rect": {
+          "x": 301,
+          "y": 433.03125,
+          "width": 678,
+          "height": 44,
+          "top": 433.03125,
+          "right": 979,
+          "bottom": 477.03125,
+          "left": 301
+        }
+      },
+      {
+        "id": "birth-time",
+        "type": "text",
+        "label": "Birth time (required)",
+        "value": "",
+        "required": true,
+        "disabled": false,
+        "invalid": null,
+        "describedBy": "birth-time-hint",
+        "description": "Enter the local clock time at birth in 24-hour HH:MM format, to the minute.",
+        "error": "",
+        "rect": {
+          "x": 301,
+          "y": 564.21875,
+          "width": 678,
+          "height": 44,
+          "top": 564.21875,
+          "right": 979,
+          "bottom": 608.21875,
+          "left": 301
+        }
+      },
+      {
+        "id": "birth-timeZone",
+        "type": "text",
+        "label": "Birth location time zone (required)",
+        "value": "",
+        "required": true,
+        "disabled": false,
+        "invalid": null,
+        "describedBy": "birth-timeZone-hint",
+        "description": "Use an IANA zone for the birthplace, such as Asia/Shanghai or America/Los_Angeles, or UTC. Your device’s zone is not selected automatically.",
+        "error": "",
+        "rect": {
+          "x": 301,
+          "y": 721,
+          "width": 678,
+          "height": 44,
+          "top": 721,
+          "right": 979,
+          "bottom": 765,
+          "left": 301
+        }
+      }
+    ],
+    "status": [
+      ""
+    ],
+    "alerts": [],
+    "active": {
+      "id": "",
+      "tag": "BODY",
+      "text": "CelestiaAn independent project for exploring Zi Wei Dou Shu charts.Check birth inputsCheck a date, local time, and birthplace time zone. Chart calculation is not available yet.This form checks entries in your browser. Entries are not sent, saved, or logged by the application.Enable JavaScript to check birth inputs.Birth detailsBirth date (required)Use the Gregorian calendar and YYYY-MM-DD format.Birth time (required)Enter the local clock time at birth in 24-hour HH:MM format, to the minute.Birth location time zone (required)Use an IANA zone for the birthplace, such as Asia/Shanghai or America/Los_Angeles, or UTC. Your device’s zone is not selected automatically.Check inputs(globalThis[\"TURBOPACK\"] || (globalThis[\"TURBOPACK\"] = [])).push({\"otherChunks\":[\"static/chunks/3cfn99dbrcvvp.js\",\"static/chunks/0r-yur70-ku2o.js\",\"static/chunks/3wbm-994r45kr.js\"],\"runtimeModuleIds\":[94553]});(self.__next_f=self.__next_f||[]).push([0])self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:\\\"/_next/static/chunks/0umf92h1sb77c.js\\\"\\n3:I[39756,[\\\"$2\\\"],\\\"default\\\"]\\n4:I[37457,[\\\"$2\\\"],\\\"default\\\"]\\n6:\\\"/_next/static/chunks/04hk98s4ng_7b.js\\\"\\n7:I[39451,[\\\"$2\\\",\\\"$6\\\"],\\\"default\\\"]\\n8:I[97367,[\\\"$2\\\"],\\\"OutletBoundary\\\"]\\n9:\\\"$Sreact.suspense\\\"\\nb:\\\"ViewportBoundary\\\"\\nc:I[97367,[\\\"$2\\\"],\\\"$b\\\"]\\ne:\\\"MetadataBoundary\\\"\\nf:I[97367,[\\\"$2\\\"],\\\"$e\\\"]\\n11:I[68027,[\\\"$2\\\"],\\\"default\\\",1]\\n:HL[\\\"/_next/static/chunks/08zou04n4-bd2.css\\\",\\\"style\\\"]\\n5:[[\\\"children\\\",{\\\"s\\\":\\\"__PAGE__\\\",\\\"h\\\":512,\\\"d\\\":{\\\"r\\\":[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[[\\\"$\\\",\\\"main\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"h1\\\",null,{\\\"children\\\":\\\"Celestia\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":\\\"An independent project for exploring Zi Wei Dou Shu charts.\\\"}],[\\\"$\\\",\\\"$L7\\\",null,{}]]}],[[\\\"$\\\",\\\"script\\\",\\\"script-0\\\",{\\\"src\\\":\\\"/_next/static/chunks/04hk98s4ng_7b.js\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}]],[\\\"$\\\",\\\"$L8\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$9\\\",null,{\\\"name\\\":\\\"Next.MetadataOutlet\\\",\\\"children\\\":\\\"$@a\\\"}]}]]}],\\\"p\\\":false,\\\"v\\\":null}}]]\\n\"])self.__next_f.push([1,\"0:{\\\"P\\\":null,\\\"c\\\":[\\\"\\\",\\\"\\\"],\\\"q\\\":\\\"\\\",\\\"i\\\":false,\\\"t\\\":{\\\"t\\\":{\\\"s\\\":\\\"\\\",\\\"h\\\":528,\\\"d\\\":{\\\"r\\\":[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/chunks/08zou04n4-bd2.css\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}],[\\\"$\\\",\\\"script\\\",\\\"script-0\\\",{\\\"src\\\":\\\"/_next/static/chunks/0umf92h1sb77c.js\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}]],[\\\"$\\\",\\\"html\\\",null,{\\\"lang\\\":\\\"en\\\",\\\"children\\\":[\\\"$\\\",\\\"body\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":[[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":404}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],[]],\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]}]}]]}],\\\"p\\\":false,\\\"v\\\":null},\\\"c\\\":\\\"$Q5\\\"},\\\"h\\\":{\\\"r\\\":[\\\"$\\\",\\\"$1\\\",\\\"h\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$Lc\\\",null,{\\\"children\\\":\\\"$Ld\\\"}],[\\\"$\\\",\\\"$Lf\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"hidden\\\":true,\\\"children\\\":[\\\"$\\\",\\\"$9\\\",null,{\\\"name\\\":\\\"Next.Metadata\\\",\\\"children\\\":\\\"$L10\\\"}]}],null]}],null]}],\\\"p\\\":false,\\\"v\\\":null}},\\\"m\\\":\\\"$undefined\\\",\\\"G\\\":[\\\"$11\\\",[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/chunks/08zou04n4-bd2.css\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}]]],\\\"S\\\":true,\\\"r\\\":\\\"$undefined\\\",\\\"s\\\":\\\"$undefined\\\",\\\"a\\\":\\\"$undefined\\\",\\\"l\\\":\\\"$undefined\\\",\\\"p\\\":\\\"$undefined\\\",\\\"d\\\":\\\"$undefined\\\",\\\"b\\\":\\\"WJcc7YcJpkIYLve5yv2LF\\\"}\\n\"])self.__next_f.push([1,\"d:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}]]\\n\"])self.__next_f.push([1,\"a:null\\n10:[[\\\"$\\\",\\\"title\\\",\\\"0\\\",{\\\"children\\\":\\\"Celestia\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"description\\\",\\\"content\\\":\\\"An independent Zi Wei Dou Shu chart exploration project.\\\"}]]\\n\"])"
+    },
+    "viewport": {
+      "width": 1280,
+      "height": 800,
+      "documentWidth": 1280,
+      "scale": 1
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "reviewedAt": "2026-11-02T07:34:53.363551+00:00",
+  "reviewer": "Coordinator; not blinded",
+  "screenshotsReviewed": [
+    "control/responsive-1280.png",
+    "control/responsive-390.png",
+    "control/keyboard-focus.png",
+    "treatment/responsive-1280.png",
+    "treatment/responsive-390.png",
+    "treatment/keyboard-focus.png"
+  ],
+  "responsiveReview": "Both error summaries, labels, text inputs, inline errors and submit controls are readable and horizontally contained at both prescribed widths. Vertical scrolling is expected; screenshots are full-page captures from the recorded viewport. Keyboard focus rings are visible. No clipped essential field or error observed.",
+  "privacyReview": {
+    "control": {
+      "P01": "Source artifacts show no logging calls or submitted URL path. Browser console contains only the favicon 404; no runtime exceptions or sentinel leakage. Server output has startup messages only. Captured request URLs contain no sentinel values.",
+      "P02": "Before/after cookies, localStorage, sessionStorage, IndexedDB, Cache Storage and service workers are empty. No requests on entry/submission and no WebSockets. Fields clear on reload. Source has no reachable persistence/transmission operations.",
+      "sourceEvidence": [
+        "control-privacy-source.txt",
+        "privacy-source-review.json"
+      ],
+      "runtimeEvidence": [
+        "control/browser-results.json",
+        "control/telemetry.json",
+        "control-server.txt"
+      ]
+    },
+    "treatment": {
+      "P01": "Source artifacts show no logging calls or submitted URL path. Browser console contains only the favicon 404; no runtime exceptions or sentinel leakage. Server output has startup messages only. Captured request URLs contain no sentinel values.",
+      "P02": "Before/after cookies, localStorage, sessionStorage, IndexedDB, Cache Storage and service workers are empty. No requests on entry/submission and no WebSockets. Fields clear on reload. Source has no reachable persistence/transmission operations.",
+      "sourceEvidence": [
+        "treatment-privacy-source.txt",
+        "privacy-source-review.json"
+      ],
+      "runtimeEvidence": [
+        "treatment/browser-results.json",
+        "treatment/telemetry.json",
+        "treatment-server.txt"
+      ]
+    }
+  },
+  "newObservations": [
+    "Both applications produce a browser console resource error for /favicon.ico returning 404. It contains no birth input. This minor missing asset does not contradict any frozen evaluation criterion."
+  ],
+  "limitations": [
+    "One headless Chrome version; no cross-browser or physical mobile testing.",
+    "Accessibility-tree, keyboard and screenshot checks are not a full WCAG or actual screen-reader audit.",
+    "Privacy evidence covers recorded synthetic interactions plus unchanged-source review, not an exhaustive security guarantee.",
+    "One original implementation run per condition; supplemental evaluation is not another implementation sample."
+  ]
+}

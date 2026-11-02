@@ -1,0 +1,32 @@
+{
+  "control": {
+    "recordedAt": "2026-11-02T07:32:35.646552+00:00",
+    "command": [
+      "rg",
+      "-n",
+      "console\\.|fetch\\(|localStorage|sessionStorage|indexedDB|sendBeacon|XMLHttpRequest|WebSocket|document.cookie",
+      "src"
+    ],
+    "exitCode": 1,
+    "stdout": "",
+    "stderr": "",
+    "sourceArtifact": "control-privacy-source.txt",
+    "interpretation": "Exit 1 is no matches, not a command or implementation failure. Full input/validator/page/layout source is also reviewed; grep absence alone is not proof.",
+    "numberingFormat": "Blank source lines retain their line-number prefix without a trailing separator space. Application source bytes are unchanged."
+  },
+  "treatment": {
+    "recordedAt": "2026-11-02T07:32:35.657839+00:00",
+    "command": [
+      "rg",
+      "-n",
+      "console\\.|fetch\\(|localStorage|sessionStorage|indexedDB|sendBeacon|XMLHttpRequest|WebSocket|document.cookie",
+      "src"
+    ],
+    "exitCode": 1,
+    "stdout": "",
+    "stderr": "",
+    "sourceArtifact": "treatment-privacy-source.txt",
+    "interpretation": "Exit 1 is no matches, not a command or implementation failure. Full input/validator/page/layout source is also reviewed; grep absence alone is not proof.",
+    "numberingFormat": "Blank source lines retain their line-number prefix without a trailing separator space. Application source bytes are unchanged."
+  }
+}

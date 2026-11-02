@@ -1,0 +1,237 @@
+FILE: src/lib/birth-input.ts
+1: /** Provisional form values; this is not a chart calculation contract. */
+2: export type BirthInput = {
+3:   birthDate: string;
+4:   birthTime: string;
+5:   timeZone: string;
+6: };
+7:
+8: export type BirthInputField = keyof BirthInput;
+9: export type BirthInputErrors = Partial<Record<BirthInputField, string>>;
+10:
+11: export type BirthInputValidationResult =
+12:   | { valid: true; value: BirthInput }
+13:   | { valid: false; errors: BirthInputErrors };
+14:
+15: function isGregorianDate(value: string): boolean {
+16:   if (value.length !== 10 || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+17:
+18:   const [year, month, day] = value.split("-").map(Number);
+19:   if (year < 1 || month < 1 || month > 12 || day < 1) return false;
+20:
+21:   const leapYear = year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
+22:   const daysInMonth = [31, leapYear ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+23:   return day <= daysInMonth[month - 1];
+24: }
+25:
+26: function isSupportedTimeZone(value: string): boolean {
+27:   // Require a named zone, rather than a potentially ambiguous abbreviation or offset.
+28:   if (value !== "UTC" && !/^[A-Za-z_+-]+(?:\/[A-Za-z0-9_+-]+)+$/.test(value)) {
+29:     return false;
+30:   }
+31:
+32:   try {
+33:     new Intl.DateTimeFormat("en", { timeZone: value });
+34:     return true;
+35:   } catch {
+36:     return false;
+37:   }
+38: }
+39:
+40: export function validateBirthInput(input: unknown): BirthInputValidationResult {
+41:   const fields =
+42:     typeof input === "object" && input !== null && !Array.isArray(input) ? input : {};
+43:   const birthDate = "birthDate" in fields ? fields.birthDate : undefined;
+44:   const birthTime = "birthTime" in fields ? fields.birthTime : undefined;
+45:   const timeZone = "timeZone" in fields ? fields.timeZone : undefined;
+46:   const errors: BirthInputErrors = {};
+47:
+48:   if (typeof birthDate !== "string" || birthDate === "") {
+49:     errors.birthDate = "Enter a birth date in YYYY-MM-DD format.";
+50:   } else if (!isGregorianDate(birthDate)) {
+51:     errors.birthDate = "Enter a real Gregorian date in YYYY-MM-DD format (years 0001–9999).";
+52:   }
+53:
+54:   if (typeof birthTime !== "string" || birthTime === "") {
+55:     errors.birthTime = "Enter the local birth time in HH:mm format.";
+56:   } else if (birthTime.length !== 5 || !/^([01]\d|2[0-3]):[0-5]\d$/.test(birthTime)) {
+57:     errors.birthTime = "Enter a 24-hour time from 00:00 to 23:59, for example 14:30.";
+58:   }
+59:
+60:   if (typeof timeZone !== "string" || timeZone === "") {
+61:     errors.timeZone = "Enter the birth location’s IANA timezone, for example Asia/Taipei, or UTC.";
+62:   } else if (!isSupportedTimeZone(timeZone)) {
+63:     errors.timeZone = "Enter a timezone supported by this browser, such as Asia/Taipei or America/Los_Angeles, or UTC. Do not use an abbreviation or numeric offset.";
+64:   }
+65:
+66:   if (
+67:     Object.keys(errors).length > 0 ||
+68:     typeof birthDate !== "string" ||
+69:     typeof birthTime !== "string" ||
+70:     typeof timeZone !== "string"
+71:   ) {
+72:     return { valid: false, errors };
+73:   }
+74:
+75:   return { valid: true, value: { birthDate, birthTime, timeZone } };
+76: }
+FILE: src/components/birth-input-form.tsx
+1: "use client";
+2:
+3: import { useRef, useState, useSyncExternalStore, type FormEvent } from "react";
+4: import {
+5:   validateBirthInput,
+6:   type BirthInput,
+7:   type BirthInputErrors,
+8:   type BirthInputField,
+9: } from "../lib/birth-input";
+10:
+11: const fields: { name: BirthInputField; label: string; hint: string; placeholder: string }[] = [
+12:   {
+13:     name: "birthDate",
+14:     label: "Birth date (Gregorian)",
+15:     hint: "Use YYYY-MM-DD, for example 2000-02-29. Lunar dates are not supported by this form.",
+16:     placeholder: "YYYY-MM-DD",
+17:   },
+18:   {
+19:     name: "birthTime",
+20:     label: "Local birth time",
+21:     hint: "Use 24-hour HH:mm, for example 14:30. Enter the clock time at the birth location.",
+22:     placeholder: "HH:mm",
+23:   },
+24:   {
+25:     name: "timeZone",
+26:     label: "Birth location timezone",
+27:     hint: "Enter an IANA timezone such as Asia/Taipei or America/Los_Angeles, or UTC. No timezone is chosen automatically.",
+28:     placeholder: "Asia/Taipei",
+29:   },
+30: ];
+31:
+32: const subscribe = () => () => {};
+33: const clientSnapshot = () => true;
+34: const serverSnapshot = () => false;
+35:
+36: export default function BirthInputForm() {
+37:   // Keep native submission unavailable until the client handler can prevent it.
+38:   const isInteractive = useSyncExternalStore(subscribe, clientSnapshot, serverSnapshot);
+39:   const [values, setValues] = useState<BirthInput>({ birthDate: "", birthTime: "", timeZone: "" });
+40:   const [errors, setErrors] = useState<BirthInputErrors>({});
+41:   const [isValid, setIsValid] = useState(false);
+42:   const inputRefs = useRef<Partial<Record<BirthInputField, HTMLInputElement | null>>>({});
+43:   const invalidFields = fields.filter(({ name }) => errors[name]);
+44:
+45:   function handleSubmit(event: FormEvent<HTMLFormElement>) {
+46:     event.preventDefault();
+47:     const result = validateBirthInput(values);
+48:     setIsValid(result.valid);
+49:     setErrors(result.valid ? {} : result.errors);
+50:
+51:     if (!result.valid) {
+52:       const firstInvalidField = fields.find(({ name }) => result.errors[name]);
+53:       if (firstInvalidField) inputRefs.current[firstInvalidField.name]?.focus();
+54:     }
+55:   }
+56:
+57:   function updateField(name: BirthInputField, value: string) {
+58:     setValues((previous) => ({ ...previous, [name]: value }));
+59:     setIsValid(false);
+60:     setErrors((previous) => {
+61:       const next = { ...previous };
+62:       delete next[name];
+63:       return next;
+64:     });
+65:   }
+66:
+67:   return (
+68:     <section aria-labelledby="birth-input-heading">
+69:       <h2 id="birth-input-heading">Check birth inputs</h2>
+70:       <p id="birth-input-scope">
+71:         Check the date, time, and timezone formats here. Chart calculation is not available,
+72:         and additional chart inputs have not yet been defined.
+73:       </p>
+74:       <p id="birth-input-privacy">
+75:         These entries stay in this page’s memory. They are not sent, saved, or logged by Celestia.
+76:       </p>
+77:       <noscript><p>Enable JavaScript to use this form. Entries cannot be submitted without it.</p></noscript>
+78:       <form
+79:         aria-labelledby="birth-input-heading"
+80:         aria-describedby="birth-input-scope birth-input-privacy"
+81:         autoComplete="off"
+82:         noValidate
+83:         onSubmit={handleSubmit}
+84:       >
+85:         <fieldset disabled={!isInteractive}>
+86:           <legend>Birth details — all fields are required</legend>
+87:           {invalidFields.length > 0 && (
+88:             <div className="error-summary" role="alert">
+89:               <p>Correct {invalidFields.length} {invalidFields.length === 1 ? "field" : "fields"} and check again.</p>
+90:               <ul>
+91:                 {invalidFields.map(({ name, label }) => (
+92:                   <li key={name}>
+93:                     <a href={`#${name}`} onClick={(event) => {
+94:                       event.preventDefault();
+95:                       inputRefs.current[name]?.focus();
+96:                     }}>{label}: {errors[name]}</a>
+97:                   </li>
+98:                 ))}
+99:               </ul>
+100:             </div>
+101:           )}
+102:           {fields.map(({ name, label, hint, placeholder }) => (
+103:             <div className="form-field" key={name}>
+104:               <label htmlFor={name}>{label} (required)</label>
+105:               <p className="field-hint" id={`${name}-hint`}>{hint}</p>
+106:               <input
+107:                 id={name}
+108:                 ref={(element) => { inputRefs.current[name] = element; }}
+109:                 type="text"
+110:                 required
+111:                 spellCheck={false}
+112:                 autoCapitalize="none"
+113:                 placeholder={placeholder}
+114:                 value={values[name]}
+115:                 onChange={(event) => updateField(name, event.target.value)}
+116:                 aria-invalid={Boolean(errors[name])}
+117:                 aria-describedby={`${name}-hint${errors[name] ? ` ${name}-error` : ""}`}
+118:               />
+119:               {errors[name] && <p className="field-error" id={`${name}-error`}>{errors[name]}</p>}
+120:             </div>
+121:           ))}
+122:           <button type="submit">Check inputs</button>
+123:         </fieldset>
+124:         <p role="status">
+125:           {isValid ? "These inputs passed basic validation. No chart has been calculated. Historical timezone offsets and daylight-saving time conflicts have not been checked." : ""}
+126:         </p>
+127:       </form>
+128:     </section>
+129:   );
+130: }
+FILE: src/app/page.tsx
+1: import BirthInputForm from "../components/birth-input-form";
+2:
+3: export default function HomePage() {
+4:   return (
+5:     <main>
+6:       <h1>Celestia</h1>
+7:       <p>An independent project for exploring Zi Wei Dou Shu charts.</p>
+8:       <BirthInputForm />
+9:     </main>
+10:   );
+11: }
+FILE: src/app/layout.tsx
+1: import type { Metadata } from "next";
+2: import type { ReactNode } from "react";
+3: import "./globals.css";
+4:
+5: export const metadata: Metadata = {
+6:   title: "Celestia",
+7:   description: "An independent Zi Wei Dou Shu chart exploration project.",
+8: };
+9:
+10: export default function RootLayout({ children }: { children: ReactNode }) {
+11:   return (
+12:     <html lang="en">
+13:       <body>{children}</body>
+14:     </html>
+15:   );
+16: }

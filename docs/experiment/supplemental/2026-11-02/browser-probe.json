@@ -1,0 +1,60 @@
+{
+  "startedAt": "2026-11-02T07:28:12.442Z",
+  "authorization": "Owner explicitly approved standalone Playwright, fresh isolated contexts and evidence-only harness files.",
+  "playwright": "1.62.1",
+  "node": "v26.11.0",
+  "executable": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  "contextOptions": {
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "deviceScaleFactor": 1,
+    "locale": "en-US",
+    "timezoneId": "America/Los_Angeles",
+    "colorScheme": "light"
+  },
+  "conditions": [
+    {
+      "condition": "control",
+      "port": 3101,
+      "url": "http://127.0.0.1:3101/",
+      "entered": "2000-01-15",
+      "emptyAfterReload": "",
+      "contextDistinct": true,
+      "ax": "- main:\n  - heading \"Celestia\" [level=1]\n  - paragraph: An independent project for exploring Zi Wei Dou Shu charts.\n  - region \"Check birth inputs\":\n    - heading \"Check birth inputs\" [level=2]\n    - paragraph: Check a date, local time, and birthplace time zone. Chart calculation is not available yet.\n    - paragraph: This form checks entries in your browser. Entries are not sent, saved, or logged by the application.\n    - group \"Birth details\":\n      - text: Birth details\n      - alert:\n        - paragraph: \"Please correct the following fields:\"\n        - list:\n          - listitem:\n            - 'link \"Birth time (required): Enter a birth time in 24-hour HH:MM format.\"':\n              - /url: \"#birth-time\"\n          - listitem:\n            - 'link \"Birth location time zone (required): Enter the birth location’s time zone, such as America/Los_Angeles or UTC.\"':\n              - /url: \"#birth-timeZone\"\n      - text: Birth date (required)\n      - paragraph: Use the Gregorian calendar and YYYY-MM-DD format.\n      - textbox \"Birth date (required)\":\n        - /placeholder: 2000-01-15\n        - text: 2000-01-15\n      - text: Birth time (required)\n      - paragraph: Enter the local clock time at birth in 24-hour HH:MM format, to the minute.\n      - textbox \"Birth time (required)\" [invalid]:\n        - /placeholder: 14:30\n      - paragraph: Enter a birth time in 24-hour HH:MM format.\n      - text: Birth location time zone (required)\n      - paragraph: Use an IANA zone for the birthplace, such as Asia/Shanghai or America/Los_Angeles, or UTC. Your device’s zone is not selected automatically.\n      - textbox \"Birth location time zone (required)\" [invalid]:\n        - /placeholder: Asia/Shanghai\n      - paragraph: Enter the birth location’s time zone, such as America/Los_Angeles or UTC.\n      - button \"Check inputs\"\n    - status",
+      "metadata": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "language": "en-US",
+        "timeZone": "America/Los_Angeles",
+        "innerWidth": 1280,
+        "innerHeight": 800,
+        "devicePixelRatio": 1,
+        "visualViewportScale": 1
+      },
+      "cookies": []
+    },
+    {
+      "condition": "treatment",
+      "port": 3102,
+      "url": "http://127.0.0.1:3102/",
+      "entered": "2000-01-15",
+      "emptyAfterReload": "",
+      "contextDistinct": true,
+      "ax": "- main:\n  - heading \"Celestia\" [level=1]\n  - paragraph: An independent project for exploring Zi Wei Dou Shu charts.\n  - region \"Check birth inputs\":\n    - heading \"Check birth inputs\" [level=2]\n    - paragraph: Check the date, time, and timezone formats here. Chart calculation is not available, and additional chart inputs have not yet been defined.\n    - paragraph: These entries stay in this page’s memory. They are not sent, saved, or logged by Celestia.\n    - form \"Check birth inputs\":\n      - group \"Birth details — all fields are required\":\n        - text: Birth details — all fields are required\n        - alert:\n          - paragraph: Correct 2 fields and check again.\n          - list:\n            - listitem:\n              - 'link \"Local birth time: Enter the local birth time in HH:mm format.\"':\n                - /url: \"#birthTime\"\n            - listitem:\n              - 'link \"Birth location timezone: Enter the birth location’s IANA timezone, for example Asia/Taipei, or UTC.\"':\n                - /url: \"#timeZone\"\n        - text: Birth date (Gregorian) (required)\n        - paragraph: Use YYYY-MM-DD, for example 2000-02-29. Lunar dates are not supported by this form.\n        - textbox \"Birth date (Gregorian) (required)\":\n          - /placeholder: YYYY-MM-DD\n          - text: 2000-01-15\n        - text: Local birth time (required)\n        - paragraph: Use 24-hour HH:mm, for example 14:30. Enter the clock time at the birth location.\n        - textbox \"Local birth time (required)\" [invalid]:\n          - /placeholder: HH:mm\n        - paragraph: Enter the local birth time in HH:mm format.\n        - text: Birth location timezone (required)\n        - paragraph: Enter an IANA timezone such as Asia/Taipei or America/Los_Angeles, or UTC. No timezone is chosen automatically.\n        - textbox \"Birth location timezone (required)\" [invalid]:\n          - /placeholder: Asia/Taipei\n        - paragraph: Enter the birth location’s IANA timezone, for example Asia/Taipei, or UTC.\n        - button \"Check inputs\"\n      - status",
+      "metadata": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "language": "en-US",
+        "timeZone": "America/Los_Angeles",
+        "innerWidth": 1280,
+        "innerHeight": 800,
+        "devicePixelRatio": 1,
+        "visualViewportScale": 1
+      },
+      "cookies": []
+    }
+  ],
+  "browserVersion": "156.0.8078.74",
+  "passed": true,
+  "endedAt": "2026-11-02T07:28:17.999Z"
+}
