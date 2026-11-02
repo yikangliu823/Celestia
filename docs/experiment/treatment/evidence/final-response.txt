@@ -1,0 +1,22 @@
+Implemented the provisional birth-input form on `experiment/with-agent-instructions`, with labeled controls, actionable errors, keyboard focus handling, and local-only validation. Birth inputs are not logged, transmitted, or persisted.
+
+Changed files:
+
+- [Form](/Users/richardlau/Development/Celestia-experiment-treatment/src/components/birth-input-form.tsx) and [validator](/Users/richardlau/Development/Celestia-experiment-treatment/src/lib/birth-input.ts).
+- `src/app/page.tsx` and `src/app/globals.css`.
+- `tests/birth-input.test.tsx` and `tests/birth-input-form.test.tsx`.
+- `README.md`, `docs/product-requirements.md`, `docs/architecture.md`, and [verification record](/Users/richardlau/Development/Celestia-experiment-treatment/docs/birth-input-verification.md).
+
+| Required command | Result |
+|---|---|
+| `npm ci` | Exit 0 |
+| `npm run typecheck` | Initially exit 2; fixed object narrowing, rerun exit 0 |
+| `npm run lint` | Exit 0 |
+| `npm test` | Exit 0; 15 tests passed |
+| `npm run build` | Exit 0 |
+
+Installation reported 18 moderate vulnerabilities, deprecated ESLint, and install-script warnings. Dependencies remain unchanged.
+
+The calculation interface and additional required chart inputs are undefined. Documented assumptions are Gregorian dates, minute-precision local time, and an explicit IANA timezone. Calculation date ranges, birthplace requirements, unknown times, and daylight-saving resolution remain unresolved. Tests cover validation and static rendering; browser keyboard and screen-reader behavior remain unverified.
+
+Changes are uncommitted and available for review. No push, PR, merge, or issue-status change was made.

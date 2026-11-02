@@ -1,25 +1,149 @@
 {
   "condition": "treatment",
-  "executionStatus": "not_run",
-  "modelIdentifier": null,
-  "modelSnapshot": null,
-  "reasoningEffort": null,
-  "sessionId": null,
-  "startedAt": null,
-  "endedAt": null,
-  "totalExecutionSeconds": null,
-  "filesChanged": null,
-  "linesAdded": null,
-  "linesDeleted": null,
-  "testRuns": null,
-  "firstTestOutcome": null,
-  "finalTestOutcome": null,
-  "failedTestRuns": null,
-  "debuggingIterations": null,
-  "humanInterventions": null,
-  "finalBuildStatus": null,
-  "finalLintStatus": null,
-  "finalTypecheckStatus": null,
-  "evaluatorTestRuns": null,
-  "measurementNotes": "Null means not observed; preparation checks are excluded."
+  "status": "implementation_frozen_evaluation_partial",
+  "sessionId": "01a19af3-458d-7973-8178-ced55b2e9d99",
+  "modelRequested": "gpt-6-astra",
+  "modelObservedInClient": "gpt-6-astra",
+  "remoteModelSnapshot": null,
+  "reasoningEffortRequested": "high",
+  "reasoningEffortObservedInClient": "high",
+  "startedAt": "2026-11-02T06:29:56.718917+00:00",
+  "endedAt": "2026-11-02T06:37:14.803448+00:00",
+  "durationSeconds": 438.082438708,
+  "implementationCommit": "5fd6e6cb0f29ee472bac25be2ebfd6a2f1e40d34",
+  "filesChanged": [
+    "README.md",
+    "docs/architecture.md",
+    "docs/birth-input-verification.md",
+    "docs/product-requirements.md",
+    "src/app/globals.css",
+    "src/app/page.tsx",
+    "src/components/birth-input-form.tsx",
+    "src/lib/birth-input.ts",
+    "tests/birth-input-form.test.tsx",
+    "tests/birth-input.test.tsx"
+  ],
+  "agentUnitTestInvocations": 2,
+  "agentUnitTestEventLines": [
+    28,
+    45
+  ],
+  "agentFailedUnitTestInvocations": 0,
+  "failedCommandEvents": [
+    {
+      "eventLine": 30,
+      "command": "/bin/zsh -lc 'npm run typecheck'",
+      "exitCode": 2
+    }
+  ],
+  "debuggingIterations": 1,
+  "debuggingCycleEventLines": [
+    "30:34:38"
+  ],
+  "coordinatorUnitTestInvocations": 2,
+  "coordinatorRequiredCommands": [
+    {
+      "command": [
+        "npm",
+        "ci"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "humanImplementationMessages": 0,
+  "coordinatorCodeEdits": 0,
+  "clarificationQuestionsRequiringResponse": 0,
+  "contaminationEventsObserved": [],
+  "source": "CLI events.jsonl and wrapper session metadata; coordinator checks are separate.",
+  "usageReportedByCLI": {
+    "input_tokens": 318891,
+    "cached_input_tokens": 295936,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 13546,
+    "reasoning_output_tokens": 3247
+  },
+  "perCommandTimestamps": null,
+  "evaluation": {
+    "total": 24,
+    "applicableByScope": 22,
+    "assessedApplicable": 4,
+    "PASS": 4,
+    "FAIL": 0,
+    "N/A": 2,
+    "UNVERIFIED": 18,
+    "denominatorPolicy": "Frozen applicable denominator = PASS + FAIL. Scope-applicable includes UNVERIFIED; N/A and UNVERIFIED are never counted as passes/failures. No comparative pass rate is inferred."
+  },
+  "coordinatorPreFreezeUnitTestInvocations": 1,
+  "independentPostFreezeUnitTestInvocations": 1,
+  "independentPostFreezeCommands": [
+    {
+      "command": [
+        "npm",
+        "ci"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exitCode": 0
+    }
+  ]
 }

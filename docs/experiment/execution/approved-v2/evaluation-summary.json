@@ -1,0 +1,24 @@
+[
+  {
+    "condition": "control",
+    "total": 24,
+    "applicableByScope": 22,
+    "assessedApplicable": 10,
+    "PASS": 10,
+    "FAIL": 0,
+    "N/A": 2,
+    "UNVERIFIED": 12,
+    "denominatorPolicy": "Frozen applicable denominator = PASS + FAIL. Scope-applicable includes UNVERIFIED; N/A and UNVERIFIED are never counted as passes/failures. No comparative pass rate is inferred."
+  },
+  {
+    "condition": "treatment",
+    "total": 24,
+    "applicableByScope": 22,
+    "assessedApplicable": 4,
+    "PASS": 4,
+    "FAIL": 0,
+    "N/A": 2,
+    "UNVERIFIED": 18,
+    "denominatorPolicy": "Frozen applicable denominator = PASS + FAIL. Scope-applicable includes UNVERIFIED; N/A and UNVERIFIED are never counted as passes/failures. No comparative pass rate is inferred."
+  }
+]

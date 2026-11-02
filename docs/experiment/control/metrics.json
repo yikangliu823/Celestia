@@ -1,25 +1,171 @@
 {
   "condition": "control",
-  "executionStatus": "not_run",
-  "modelIdentifier": null,
-  "modelSnapshot": null,
-  "reasoningEffort": null,
-  "sessionId": null,
-  "startedAt": null,
-  "endedAt": null,
-  "totalExecutionSeconds": null,
-  "filesChanged": null,
-  "linesAdded": null,
-  "linesDeleted": null,
-  "testRuns": null,
-  "firstTestOutcome": null,
-  "finalTestOutcome": null,
-  "failedTestRuns": null,
-  "debuggingIterations": null,
-  "humanInterventions": null,
-  "finalBuildStatus": null,
-  "finalLintStatus": null,
-  "finalTypecheckStatus": null,
-  "evaluatorTestRuns": null,
-  "measurementNotes": "Null means not observed; preparation checks are excluded."
+  "status": "implementation_frozen_evaluation_partial",
+  "sessionId": "01a19afb-b965-7a70-b700-19ecc53be035",
+  "modelRequested": "gpt-6-astra",
+  "modelObservedInClient": "gpt-6-astra",
+  "remoteModelSnapshot": null,
+  "reasoningEffortRequested": "high",
+  "reasoningEffortObservedInClient": "high",
+  "startedAt": "2026-11-02T06:39:10.664541+00:00",
+  "endedAt": "2026-11-02T06:45:34.463770+00:00",
+  "durationSeconds": 383.79745258400004,
+  "implementationCommit": "b9c5635a66c373276efda99c07e315a63812fec0",
+  "filesChanged": [
+    "README.md",
+    "docs/architecture.md",
+    "docs/birth-input-verification.md",
+    "docs/product-requirements.md",
+    "src/app/globals.css",
+    "src/app/page.tsx",
+    "src/components/birth-input-form.tsx",
+    "src/lib/birth-input.ts",
+    "tests/birth-input-form.test.tsx",
+    "tests/birth-input.test.tsx"
+  ],
+  "agentUnitTestInvocations": 2,
+  "agentUnitTestEventLines": [
+    30,
+    49
+  ],
+  "agentFailedUnitTestInvocations": 0,
+  "failedCommandEvents": [
+    {
+      "eventLine": 18,
+      "command": "/bin/zsh -lc 'cat next.config.ts .gitignore && rg --files src tests docs -g AGENTS.md && node --version && npm --version'",
+      "exitCode": 1
+    },
+    {
+      "eventLine": 35,
+      "command": "/bin/zsh -lc 'npm audit --json'",
+      "exitCode": 1
+    },
+    {
+      "eventLine": 55,
+      "command": "/bin/zsh -lc \"git diff --check && git diff -- src/app/page.tsx docs/architecture.md docs/product-requirements.md README.md && rg -n 'console\\\\.|fetch\\\\(|localStorage|sessionStorage|sendBeacon|XMLHttpRequest' src && git status --short\"",
+      "exitCode": 1
+    }
+  ],
+  "debuggingIterations": 0,
+  "debuggingCycleEventLines": [],
+  "coordinatorUnitTestInvocations": 2,
+  "coordinatorRequiredCommands": [
+    {
+      "command": [
+        "npm",
+        "ci"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "humanImplementationMessages": 0,
+  "coordinatorCodeEdits": 0,
+  "clarificationQuestionsRequiringResponse": 0,
+  "contaminationEventsObserved": [],
+  "source": "CLI events.jsonl and wrapper session metadata; coordinator checks are separate.",
+  "usageReportedByCLI": {
+    "input_tokens": 284020,
+    "cached_input_tokens": 256512,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 11800,
+    "reasoning_output_tokens": 2196
+  },
+  "perCommandTimestamps": null,
+  "failedCommandClassifications": [
+    {
+      "eventLine": 18,
+      "classification": "rg found no nested AGENTS.md; exit 1 stopped the following version commands. Versions were obtained at line 23."
+    },
+    {
+      "eventLine": 35,
+      "classification": "npm audit reported 18 pre-existing moderate development-tool findings. No dependency edit or fix/recheck cycle followed."
+    },
+    {
+      "eventLine": 55,
+      "classification": "rg found no source logging/network/storage matches; exit 1 stopped the trailing status command. Final status was obtained at line 60."
+    }
+  ],
+  "evaluation": {
+    "total": 24,
+    "applicableByScope": 22,
+    "assessedApplicable": 10,
+    "PASS": 10,
+    "FAIL": 0,
+    "N/A": 2,
+    "UNVERIFIED": 12,
+    "denominatorPolicy": "Frozen applicable denominator = PASS + FAIL. Scope-applicable includes UNVERIFIED; N/A and UNVERIFIED are never counted as passes/failures. No comparative pass rate is inferred."
+  },
+  "coordinatorPreFreezeUnitTestInvocations": 1,
+  "independentPostFreezeUnitTestInvocations": 1,
+  "independentPostFreezeCommands": [
+    {
+      "command": [
+        "npm",
+        "ci"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exitCode": 0
+    }
+  ]
 }

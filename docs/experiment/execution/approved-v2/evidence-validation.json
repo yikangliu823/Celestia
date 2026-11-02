@@ -1,0 +1,54 @@
+{
+  "recordedAt": "2026-11-02T07:20:45.930209+00:00",
+  "checks": [
+    {
+      "condition": "control",
+      "evaluationCases": 24,
+      "metricsConsistent": true,
+      "preFreezeCommandExitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "postFreezeCommandExitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "condition": "treatment",
+      "evaluationCases": 24,
+      "metricsConsistent": true,
+      "preFreezeCommandExitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "postFreezeCommandExitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "fullDiffCheck": {
+    "exitCode": 2,
+    "stdout": "docs/experiment/control/git-diff.patch:6: trailing whitespace.\n+ \ndocs/experiment/control/git-diff.patch:8: trailing whitespace.\n+ \ndocs/experiment/control/git-diff.patch:17: trailing whitespace.\n+ \ndocs/experiment/control/git-diff.patch:19: trailing whitespace.\n+ \ndocs/experiment/control/git-diff.patch:21: trailing whitespace.\n+ \ndocs/experiment/control/git-diff.patch:29: trailing whitespace.\n+ \ndocs/experiment/control/git-diff.patch:55: trailing whitespace.\n+ \ndocs/experiment/control/git-diff.patch:61: trailing whitespace.\n+ \ndocs/experiment/control/git-diff.patch:63: trailing whitespace.\n+ \ndocs/experiment/control/git-diff.patch:67: trailing whitespace.\n+ \ndocs/experiment/control/git-diff.patch:187: trailing whitespace.\n+ \ndocs/experiment/control/git-diff.patch:188: trailing whitespace.\n+ **Status:** Draft 0.1  \ndocs/experiment/control/git-diff.patch:189: trailing whitespace.\n+ **Owner:** Celestia repository owner  \ndocs/experiment/control/git-diff.patch:192: trailing whitespace.\n+ \ndocs/experiment/control/git-diff.patch:194: trailing whitespace.\n+ \ndocs/experiment/treatment/git-diff.patch:6: trailing whitespace.\n+ \ndocs/experiment/treatment/git-diff.patch:8: trailing whitespace.\n+ \ndocs/experiment/treatment/git-diff.patch:18: trailing whitespace.\n+ \ndocs/experiment/treatment/git-diff.patch:20: trailing whitespace.\n+ \ndocs/experiment/treatment/git-diff.patch:22: trailing whitespace.\n+ \ndocs/experiment/treatment/git-diff.patch:30: trailing whitespace.\n+ \ndocs/experiment/treatment/git-diff.patch:56: trailing whitespace.\n+ \ndocs/experiment/treatment/git-diff.patch:61: trailing whitespace.\n+ \ndocs/experiment/treatment/git-diff.patch:63: trailing whitespace.\n+ \ndocs/experiment/treatment/git-diff.patch:67: trailing whitespace.\n+ \ndocs/experiment/treatment/git-diff.patch:86: trailing whitespace.\n+ \ndocs/experiment/treatment/git-diff.patch:88: trailing whitespace.\n+ \ndocs/experiment/treatment/git-diff.patch:219: trailing whitespace.\n+ \ndocs/experiment/treatment/git-diff.patch:220: trailing whitespace.\n+ **Status:** Draft 0.1  \ndocs/experiment/treatment/git-diff.patch:221: trailing whitespace.\n+ **Owner:** Celestia repository owner  \ndocs/experiment/treatment/git-diff.patch:225: trailing whitespace.\n+ \ndocs/experiment/treatment/git-diff.patch:227: trailing whitespace.\n+ \ndocs/experiment/treatment/git-diff.patch:229: trailing whitespace.\n+ \ndocs/experiment/treatment/git-diff.patch:231: trailing whitespace.\n+ \n",
+    "stderr": "",
+    "interpretation": "Warnings are confined to preserved git-diff.patch files: unified-diff blank context lines and original Markdown hard-break spaces. Exact raw patches are retained; their frozen SHA-256 values still match."
+  },
+  "authoredEvidenceDiffCheck": {
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

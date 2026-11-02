@@ -1,0 +1,20 @@
+{
+  "sessionId": "01a19afb-b965-7a70-b700-19ecc53be035",
+  "source": "Local CLI rollout turn_context records; remote immutable model snapshot unknown",
+  "records": [
+    {
+      "sourceLine": 8,
+      "timestamp": "2026-11-02T06:39:12.833Z",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "cwd": "/Users/richardlau/Development/Celestia-experiment-control",
+      "approval_policy": "never",
+      "sandbox_policy": {
+        "type": "workspace-write",
+        "network_access": true,
+        "exclude_tmpdir_env_var": false,
+        "exclude_slash_tmp": false
+      }
+    }
+  ]
+}

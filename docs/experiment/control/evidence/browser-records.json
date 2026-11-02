@@ -1,0 +1,27 @@
+[
+  {
+    "id": "F01",
+    "action": "Reconnected after browser-tool reset; fresh empty form observed",
+    "observedAt": "2026-11-02T06:51:27.424Z",
+    "snapshot": "- main:\n  - heading \"Celestia\" [level=1]\n  - paragraph: An independent project for exploring Zi Wei Dou Shu charts.\n  - region \"Check birth inputs\":\n    - heading \"Check birth inputs\" [level=2]\n    - paragraph: Check a date, local time, and birthplace time zone. Chart calculation is not available yet.\n    - paragraph: This form checks entries in your browser. Entries are not sent, saved, or logged by the application.\n    - group \"Birth details\":\n      - generic: Birth details\n      - generic: Birth date (required)\n      - paragraph: Use the Gregorian calendar and YYYY-MM-DD format.\n      - textbox \"Birth date (required)\":\n        - /placeholder: 2000-01-15\n      - generic: Birth time (required)\n      - paragraph: Enter the local clock time at birth in 24-hour HH:MM format, to the minute.\n      - textbox \"Birth time (required)\":\n        - /placeholder: 14:30\n      - generic: Birth location time zone (required)\n      - paragraph: Use an IANA zone for the birthplace, such as Asia/Shanghai or America/Los_Angeles, or UTC. Your device’s zone is not selected automatically.\n      - textbox \"Birth location time zone (required)\":\n        - /placeholder: Asia/Shanghai\n      - button \"Check inputs\"\n    - status\n- alert",
+    "status": [
+      ""
+    ],
+    "alerts": [
+      ""
+    ]
+  },
+  {
+    "id": "F02",
+    "action": "Submitted all fields empty",
+    "observedAt": "2026-11-02T06:51:27.740Z",
+    "snapshot": "- main:\n  - heading \"Celestia\" [level=1]\n  - paragraph: An independent project for exploring Zi Wei Dou Shu charts.\n  - region \"Check birth inputs\":\n    - heading \"Check birth inputs\" [level=2]\n    - paragraph: Check a date, local time, and birthplace time zone. Chart calculation is not available yet.\n    - paragraph: This form checks entries in your browser. Entries are not sent, saved, or logged by the application.\n    - group \"Birth details\":\n      - generic: Birth details\n      - alert:\n        - paragraph: \"Please correct the following fields:\"\n        - list:\n          - 'link \"Birth date (required): Enter a birth date in YYYY-MM-DD format.\"':\n            - /url: \"#birth-date\"\n          - 'link \"Birth time (required): Enter a birth time in 24-hour HH:MM format.\"':\n            - /url: \"#birth-time\"\n          - 'link \"Birth location time zone (required): Enter the birth location’s time zone, such as America/Los_Angeles or UTC.\"':\n            - /url: \"#birth-timeZone\"\n      - generic: Birth date (required)\n      - paragraph: Use the Gregorian calendar and YYYY-MM-DD format.\n      - textbox \"Birth date (required)\" [active]:\n        - /placeholder: 2000-01-15\n      - paragraph: Enter a birth date in YYYY-MM-DD format.\n      - generic: Birth time (required)\n      - paragraph: Enter the local clock time at birth in 24-hour HH:MM format, to the minute.\n      - textbox \"Birth time (required)\":\n        - /placeholder: 14:30\n      - paragraph: Enter a birth time in 24-hour HH:MM format.\n      - generic: Birth location time zone (required)\n      - paragraph: Use an IANA zone for the birthplace, such as Asia/Shanghai or America/Los_Angeles, or UTC. Your device’s zone is not selected automatically.\n      - textbox \"Birth location time zone (required)\":\n        - /placeholder: Asia/Shanghai\n      - paragraph: Enter the birth location’s time zone, such as America/Los_Angeles or UTC.\n      - button \"Check inputs\"\n    - status\n- alert",
+    "status": [
+      ""
+    ],
+    "alerts": [
+      "Please correct the following fields:Birth date (required): Enter a birth date in YYYY-MM-DD format.Birth time (required): Enter a birth time in 24-hour HH:MM format.Birth location time zone (required): Enter the birth location’s time zone, such as America/Los_Angeles or UTC.",
+      ""
+    ]
+  }
+]

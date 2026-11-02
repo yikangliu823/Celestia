@@ -1,0 +1,24 @@
+Implemented a local-only birth-input form with required labels, actionable errors, keyboard controls, first-error focus, and validation tests. Birth information is not logged, transmitted, or persisted.
+
+Changed files:
+
+- Form/validation: `src/components/birth-input-form.tsx`, `src/lib/birth-input.ts`
+- Homepage/styles: `src/app/page.tsx`, `src/app/globals.css`
+- Tests: `tests/birth-input.test.tsx`, `tests/birth-input-form.test.tsx`
+- Documentation: `README.md`, `docs/architecture.md`, `docs/product-requirements.md`, `docs/birth-input-verification.md`
+
+| Verification | Actual result |
+|---|---|
+| `npm ci` | Passed |
+| `npm run typecheck` | Passed |
+| `npm run lint` | Passed |
+| `npm test` | 52 passed, 0 failed |
+| `npm run build` | Passed |
+
+No requested command failed or required corrective fixes. Installation warned about deprecated ESLint, install-script approvals, and 18 moderate vulnerabilities. Additional audit exited 1 for existing development-tool findings; production-only audit passed with zero vulnerabilities. Dependencies remain unchanged.
+
+The calculation interface is absent, so additional required chart inputs remain unresolved. Gregorian dates, minute precision, and birthplace time zone are provisional choices. Lunar dates, supported year limits, unknown times, location coordinates, and daylight-saving resolution remain undefined. Browser interactions and screen-reader behavior were not tested.
+
+Full assumptions and verification details are in [birth-input-verification.md](/Users/richardlau/Development/Celestia-experiment-control/docs/birth-input-verification.md).
+
+Changes remain uncommitted on the current branch for review. No push, PR, merge, or issue-status change was made.

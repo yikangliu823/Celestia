@@ -1,1 +1,154 @@
-NOT RUN. No experimental test commands or outcomes have been recorded.
+COMMAND: npm ci
+START: 2026-11-02T06:45:57.170806+00:00
+END: 2026-11-02T06:46:03.695425+00:00
+EXIT: 0
+STDOUT:
+
+added 349 packages, and audited 350 packages in 6s
+
+142 packages are looking for funding
+  run `npm fund` for details
+
+16 moderate severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+STDERR:
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+npm warn install-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts   fsevents@2.3.3 (install: (install scripts present))
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+
+COMMAND: npm run typecheck
+START: 2026-11-02T06:46:03.696880+00:00
+END: 2026-11-02T06:46:05.358017+00:00
+EXIT: 0
+STDOUT:
+
+> celestia@0.1.0 typecheck
+> next typegen && tsc --noEmit
+
+Generating route types...
+✓ Types generated successfully
+
+STDERR:
+
+COMMAND: npm run lint
+START: 2026-11-02T06:46:05.358368+00:00
+END: 2026-11-02T06:46:06.534933+00:00
+EXIT: 0
+STDOUT:
+
+> celestia@0.1.0 lint
+> eslint . --max-warnings=0
+
+
+STDERR:
+
+COMMAND: npm test
+START: 2026-11-02T06:46:06.535246+00:00
+END: 2026-11-02T06:46:07.219941+00:00
+EXIT: 0
+STDOUT:
+
+> celestia@0.1.0 test
+> tsx --test tests/*.test.tsx
+
+✔ required fields have labels and associated instructions (4.504416ms)
+✔ each invalid field exposes its actionable error to assistive technology (0.62725ms)
+✔ server markup prevents pre-hydration submission and explains the JavaScript requirement (0.411292ms)
+✔ valid input returns trimmed values without mutating the caller's input (26.419917ms)
+✔ all missing fields receive actionable errors and no validated values (0.193709ms)
+✔ rejects invalid Gregorian date: 0000-01-01 (0.276291ms)
+✔ rejects invalid Gregorian date: 10000-01-01 (0.094041ms)
+✔ rejects invalid Gregorian date: 2001-02-29 (0.093417ms)
+✔ rejects invalid Gregorian date: 1900-02-29 (0.095583ms)
+✔ rejects invalid Gregorian date: 2100-02-29 (0.083958ms)
+✔ rejects invalid Gregorian date: 2000-04-31 (0.074917ms)
+✔ rejects invalid Gregorian date: 2000-02-30 (0.084375ms)
+✔ rejects invalid Gregorian date: 2000-00-01 (0.114667ms)
+✔ rejects invalid Gregorian date: 2000-13-01 (0.085333ms)
+✔ rejects invalid Gregorian date: 2000-01-00 (0.075666ms)
+✔ rejects invalid Gregorian date: 2000-01-32 (0.056166ms)
+✔ rejects invalid Gregorian date: 2000-1-15 (0.050958ms)
+✔ rejects invalid Gregorian date: 01/15/2000 (0.045584ms)
+✔ rejects invalid Gregorian date: 2000-01-15T14:30 (0.04825ms)
+✔ rejects invalid Gregorian date: invalid (0.045333ms)
+✔ accepts real Gregorian date without inventing an engine year range: 0001-01-01 (0.055166ms)
+✔ accepts real Gregorian date without inventing an engine year range: 1900-02-28 (0.044083ms)
+✔ accepts real Gregorian date without inventing an engine year range: 2000-02-29 (0.062958ms)
+✔ accepts real Gregorian date without inventing an engine year range: 2024-02-29 (0.046125ms)
+✔ accepts real Gregorian date without inventing an engine year range: 9999-12-31 (0.041625ms)
+✔ rejects invalid minute-precision time: 24:00 (0.057459ms)
+✔ rejects invalid minute-precision time: 23:60 (0.045041ms)
+✔ rejects invalid minute-precision time: -1:00 (0.04075ms)
+✔ rejects invalid minute-precision time: 12:99 (0.046583ms)
+✔ rejects invalid minute-precision time: 9:30 (0.038542ms)
+✔ rejects invalid minute-precision time: 12:3 (0.038708ms)
+✔ rejects invalid minute-precision time: 12:30:00 (0.040166ms)
+✔ rejects invalid minute-precision time: 2:30 PM (0.040875ms)
+✔ rejects invalid minute-precision time: noon (0.044875ms)
+✔ accepts time boundary: 00:00 (0.047458ms)
+✔ accepts time boundary: 12:00 (0.040084ms)
+✔ accepts time boundary: 23:59 (0.048584ms)
+✔ accepts named time zone: UTC (0.082834ms)
+✔ accepts named time zone: America/Los_Angeles (0.061ms)
+✔ accepts named time zone: Asia/Kolkata (0.062ms)
+✔ accepts named time zone: Pacific/Auckland (0.045ms)
+✔ rejects unknown zones, abbreviations, and raw offsets: PST (0.020292ms)
+✔ rejects unknown zones, abbreviations, and raw offsets: CST (0.013583ms)
+✔ rejects unknown zones, abbreviations, and raw offsets: +08:00 (0.0175ms)
+✔ rejects unknown zones, abbreviations, and raw offsets: UTC+8 (0.013125ms)
+✔ rejects unknown zones, abbreviations, and raw offsets: Mars/Olympus (0.14ms)
+✔ rejects unknown zones, abbreviations, and raw offsets: Los Angeles (0.032667ms)
+✔ errors do not echo rejected input (0.050084ms)
+✔ validation does not log valid or rejected birth information (0.322125ms)
+✔ reports multiple errors together and permits correction (0.16275ms)
+✔ format checks do not pretend to resolve daylight-saving gaps or overlaps (0.141625ms)
+✔ homepage renders the application name inside the main landmark (5.244875ms)
+ℹ tests 52
+ℹ suites 0
+ℹ pass 52
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 186.958708
+
+STDERR:
+
+COMMAND: npm run build
+START: 2026-11-02T06:46:07.220276+00:00
+END: 2026-11-02T06:46:09.461366+00:00
+EXIT: 0
+STDOUT:
+
+> celestia@0.1.0 build
+> next build
+
+▲ Next.js 16.4.3 (Turbopack)
+✓ Running next.config.ts took 16ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 168ms
+  Running TypeScript ...
+  Finished TypeScript in 706ms ...
+  Collecting page data using 4 workers ...
+  Generating static pages using 4 workers (0/3) ...
+✓ Generating static pages using 4 workers (3/3) in 150ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+└ ○ /_not-found
+
+
+○  (Static)  prerendered as static content
+
+
+STDERR:

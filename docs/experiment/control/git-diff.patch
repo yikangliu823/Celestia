@@ -1,0 +1,663 @@
+diff --git a/README.md b/README.md
+index 3195dc8..4495ad1 100644
+--- a/README.md
++++ b/README.md
+@@ -4,9 +4,11 @@ Celestia is an independent software project exploring deterministic Zi Wei Dou S
+ 
+ ## Project status
+ 
+-The Issue #1 application scaffold provides a minimal Next.js App Router homepage,
+-strict TypeScript checking, ESLint, and one automated render smoke test. Birth-input
+-forms, chart calculation, authentication, persistence, and AI services are not implemented.
++The Next.js application includes a keyboard-accessible birth-input form with
++browser-local validation of Gregorian date, local time, and birthplace time zone.
++Chart calculation, authentication, persistence, and AI services are not implemented.
++The calculation interface and additional required chart inputs remain undefined;
++see [Issue #3 scope and verification](docs/birth-input-verification.md).
+ 
+ ## Local development
+ 
+@@ -32,8 +34,8 @@ npm start
+ 
+ `typecheck` generates Next.js route types before running TypeScript, including on
+ a fresh checkout. `lint` treats warnings as failures. `test` uses Node's test runner
+-with `tsx` to render the homepage and check its application heading inside the main
+-landmark; it is not a browser or end-to-end test. `start` serves the production build
++with `tsx` for validation unit tests and static form/homepage rendering checks;
++it is not a browser or end-to-end test. `start` serves the production build
+ at [localhost:3000](http://localhost:3000) and requires a successful build first.
+ 
+ See [scaffold verification](docs/scaffold-verification.md) for recorded results and
+@@ -44,10 +46,16 @@ See [scaffold verification](docs/scaffold-verification.md) for recorded results
+ ```text
+ src/app/
+   layout.tsx             Root HTML layout and metadata
+-  page.tsx               Minimal Celestia homepage
++  page.tsx               Celestia homepage with birth-input form
+   globals.css            Base responsive styles
++src/components/
++  birth-input-form.tsx    Accessible local-only form
++src/lib/
++  birth-input.ts          Pure format validation; provisional form value types
+ tests/
+   home-page.test.tsx      Homepage render smoke test
++  birth-input.test.tsx    Validation unit tests with synthetic inputs
++  birth-input-form.test.tsx Static form accessibility and privacy checks
+ docs/                    Product, architecture, dependency, and verification records
+ eslint.config.mjs         Next.js and TypeScript lint rules
+ next.config.ts            Disable automatic agent instruction generation
+diff --git a/docs/architecture.md b/docs/architecture.md
+index 06ac5bf..a499f55 100644
+--- a/docs/architecture.md
++++ b/docs/architecture.md
+@@ -1,7 +1,8 @@
+ # Architecture
+ 
+-**Status:** Application scaffold implemented for Issue #1. The logical components
+-below remain proposed beyond the minimal homepage.
++**Status:** Application scaffold implemented for Issue #1, with local birth-input
++validation added for Issue #3. The calculation interface is absent from this
++checkout; the other logical components below remain proposed.
+ 
+ ## Application foundation
+ 
+@@ -11,6 +12,16 @@ Issue #1. Route components and the root layout live in `src/app`; tests live in
+ Future calculation code must remain independent of route components and AI code.
+ See [dependencies](dependencies.md) for exact versions and license notes.
+ 
++The homepage renders a client form in `src/components/birth-input-form.tsx`.
++`src/lib/birth-input.ts` provides pure format validation and provisional form value
++types, not a chart engine interface. Form values stay in component memory, with no
++logging, transmission, storage, or chart calculation. Native controls, associated
++labels and error descriptions, an error summary, and focus on the first invalid
++field support keyboard and assistive-technology use. No dependencies were added.
++See [birth-input scope and verification](birth-input-verification.md) for unresolved
++input requirements. Any future server entry point must independently validate
++inputs; browser checks are not a server trust boundary.
++
+ `next.config.ts` sets `agentRules: false` so development startup does not create or
+ rewrite instruction files. This preserves explicit control of `AGENTS.md` for the
+ planned Issue #3 experiment; no experimental branches have been created.
+diff --git a/docs/birth-input-verification.md b/docs/birth-input-verification.md
+new file mode 100644
+index 0000000..ef1c390
+--- /dev/null
++++ b/docs/birth-input-verification.md
+@@ -0,0 +1,95 @@
++# Issue #3: birth-input scope and verification
++
++Implemented against the frozen issue requirements supplied for
++`yikangliu823/Celestia#3`, using only this checkout and its product and architecture
++documents. All test inputs are synthetic. No dependency versions were changed.
++
++## Implemented behavior
++
++- Required, explicitly labeled Gregorian date, local birth time, and birthplace
++  time zone fields. Native text inputs allow malformed entries to receive specific
++  format guidance rather than silently normalizing them.
++- Pure validation rejects missing values, impossible dates (including Gregorian
++  leap-year exceptions), malformed times, unknown time zones, bare abbreviations,
++  and raw offsets. It trims surrounding whitespace without mutating its input.
++- Keyboard-operable native controls, visible focus styles, linked error summary,
++  errors associated with their inputs, focus on the first invalid field after
++  submission, and a polite status message. Errors update as users correct fields;
++  editing clears a previous success message.
++- The action is **Check inputs**. Success describes format checks only and states
++  that no chart was calculated and daylight-saving validity was not checked.
++- Values remain in component memory. The application does not log, transmit, or
++  persist them. Error messages do not interpolate entered values. Controls are
++  disabled until hydration, require JavaScript, and omit HTML names so native form
++  submission cannot serialize birth inputs. Autocomplete is disabled as a browser
++  hint; browser extensions and browser-managed recovery are outside app control.
++
++## Assumptions and unresolved requirements
++
++The scaffold dependency is present. The calculation-interface dependency is not:
++there is no engine, schema, or contract in this checkout. `BirthInputValues` is a
++provisional UI type, not an implementation of that missing interface. Integration
++and completeness of “other required chart inputs” cannot be established yet.
++
++Neither source document defines the following choices. They need product and/or
++calculation-interface decisions before chart-ready validation can be claimed:
++
++| Gap | Current limited behavior |
++| --- | --- |
++| Calendar and lunar/leap-month rules | Gregorian dates only; no conversion. |
++| Supported birth-year range, future dates, age constraints | Accepts real dates in years 0001–9999, including future dates; this is a format range, not engine support. |
++| Time precision and unknown/approximate birth time | Requires exact minute-format HH:MM; no seconds or unknown-time mode. |
++| Location meaning: city, coordinates, geocoding, solar-time corrections | Interprets “location/timezone” as the birthplace’s explicitly entered time zone. Does not collect a place name or coordinates. |
++| Time-zone source, aliases, historical accuracy | Accepts UTC or slash-separated IANA identifiers recognized by the runtime’s `Intl` database; runtime versions may differ. No canonicalization or device-zone default. |
++| Daylight-saving gaps/overlaps and instant conversion | Checks the date, time, and zone individually. Does not reject nonexistent local times or disambiguate repeated ones. |
++| Additional chart inputs, including any sex/gender parameter | No unsupported fields or defaults invented. Required fields await the calculation contract. |
++| Submission destination and downstream behavior | Local format-check feedback only; no API or calculation call. |
++
++The product requirement for server-side validation remains applicable to a future
++API. There is no server input endpoint in this change. Client validation must not
++be treated as sufficient validation at a future server boundary. No chart
++calculation, authentication, persistence, or AI services were added.
++
++## Verification
++
++Environment: Node.js `v26.11.0`, npm `11.20.0`.
++
++| Command | Actual result |
++| --- | --- |
++| `npm ci` | Exit 0; added 349 packages, audited 350. |
++| `npm run typecheck` | Exit 0; route generation and TypeScript passed. |
++| `npm run lint` | Exit 0; no warnings or errors. |
++| `npm test` | Exit 0; 52 passed, 0 failed, 0 skipped. |
++| `npm run build` | Exit 0; optimized build and static generation of `/` and `/_not-found` succeeded. |
++| `git diff --check` | Exit 0. |
++
++No requested verification command failed, so no failure-driven implementation
++fixes were required. The initial suite passed 51 tests; after adding the explicit
++no-console test, tests, type checking, and lint passed again.
++
++Installation warned that ESLint 9.39.5 is deprecated and that `esbuild` and
++`fsevents` install scripts are not covered by `allowScripts`. No script approvals
++or npm configuration changes were made. Installation also reported 18 moderate
++vulnerabilities. Follow-up `npm audit --json` exited 1 with those 18 findings in
++the lint tooling dependency tree, rooted in minimatch advisory
++GHSA-g3hv-75wg-m249; the report marked fixes unavailable. These remain unresolved
++maintenance issues. `npm audit --omit=dev` exited 0 with `found 0 vulnerabilities`.
++The dependency manifest and lockfile are unchanged.
++
++The automated suite covers missing/malformed values, leap years, date/time
++boundaries, valid and invalid zones, trimming, nonmutation, multiple errors and
++correction, non-echoing errors, no console calls during validation, and explicit
++DST limitations. Static render tests check labels, required attributes, error
++associations, status markup, the pre-hydration guard, and the homepage.
++
++These tests do not execute browser interactions. Keyboard focus movement,
++correction/success transitions, screen-reader announcements, and responsive
++rendering have not been verified in a browser. There is no claim of end-to-end or
++screen-reader test coverage.
++
++Manual browser follow-up: use Tab/Shift+Tab and Enter to submit empty fields;
++confirm focus on date and read each linked error; correct with synthetic values
++`2000-01-15`, `14:30`, `Asia/Shanghai`; confirm format-only success; edit a value
++and verify success clears; check error links, narrow layouts, and JavaScript-off
++messaging. Confirm there are no birth values in requests, URLs, browser storage,
++or console output during this flow.
+diff --git a/docs/product-requirements.md b/docs/product-requirements.md
+index ec82002..5f11136 100644
+--- a/docs/product-requirements.md
++++ b/docs/product-requirements.md
+@@ -2,7 +2,7 @@
+ 
+ **Status:** Draft 0.1  
+ **Owner:** Celestia repository owner  
+-**Implementation:** Application scaffold only; product capabilities below are not implemented
++**Implementation:** Application scaffold and provisional browser-local birth-input format checks; chart calculation and other product capabilities below are not implemented. See [input scope and open requirements](birth-input-verification.md).
+ 
+ ## Problem
+ 
+diff --git a/src/app/globals.css b/src/app/globals.css
+index 6f9aed0..67e6f0b 100644
+--- a/src/app/globals.css
++++ b/src/app/globals.css
+@@ -23,3 +23,81 @@ main {
+ h1 {
+   line-height: 1.2;
+ }
++
++fieldset {
++  min-width: 0;
++  margin: 1.5rem 0 0;
++  padding: 1.25rem;
++  border: 1px solid #73767c;
++  border-radius: 0.5rem;
++}
++
++legend, label {
++  font-weight: 650;
++}
++
++.form-field {
++  margin-bottom: 1.5rem;
++}
++
++label, input {
++  display: block;
++}
++
++input, button {
++  font: inherit;
++  min-height: 2.75rem;
++  border: 1px solid #73767c;
++  border-radius: 0.25rem;
++  padding: 0.5rem 0.75rem;
++}
++
++input {
++  width: 100%;
++  color: inherit;
++  background: #fff;
++}
++
++button {
++  background: #234f88;
++  color: #fff;
++  cursor: pointer;
++}
++
++fieldset:disabled button {
++  cursor: wait;
++  opacity: 0.65;
++}
++
++:focus-visible {
++  outline: 3px solid #234f88;
++  outline-offset: 3px;
++}
++
++.field-hint {
++  margin: 0.25rem 0 0.5rem;
++  color: #4c5057;
++}
++
++.field-error, .error-summary {
++  color: #9b1c1c;
++}
++
++.field-error {
++  margin: 0.5rem 0 0;
++}
++
++input[aria-invalid="true"] {
++  border: 2px solid #9b1c1c;
++}
++
++.error-summary {
++  border-left: 4px solid currentColor;
++  padding: 0.25rem 1rem;
++  margin-bottom: 1.5rem;
++}
++
++a {
++  color: #234f88;
++  overflow-wrap: anywhere;
++}
+diff --git a/src/app/page.tsx b/src/app/page.tsx
+index bb08395..a250251 100644
+--- a/src/app/page.tsx
++++ b/src/app/page.tsx
+@@ -1,9 +1,11 @@
++import BirthInputForm from "../components/birth-input-form";
++
+ export default function HomePage() {
+   return (
+     <main>
+       <h1>Celestia</h1>
+       <p>An independent project for exploring Zi Wei Dou Shu charts.</p>
+-      <p>The application foundation is ready. Chart features are planned.</p>
++      <BirthInputForm />
+     </main>
+   );
+ }
+diff --git a/src/components/birth-input-form.tsx b/src/components/birth-input-form.tsx
+new file mode 100644
+index 0000000..10ef4c8
+--- /dev/null
++++ b/src/components/birth-input-form.tsx
+@@ -0,0 +1,131 @@
++"use client";
++
++import { useEffect, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
++import {
++  validateBirthInput,
++  type BirthInputErrors,
++  type BirthInputField,
++  type BirthInputValues,
++} from "../lib/birth-input";
++
++const fields: { key: BirthInputField; label: string; hint: string; placeholder: string }[] = [
++  {
++    key: "date",
++    label: "Birth date (required)",
++    hint: "Use the Gregorian calendar and YYYY-MM-DD format.",
++    placeholder: "2000-01-15",
++  },
++  {
++    key: "time",
++    label: "Birth time (required)",
++    hint: "Enter the local clock time at birth in 24-hour HH:MM format, to the minute.",
++    placeholder: "14:30",
++  },
++  {
++    key: "timeZone",
++    label: "Birth location time zone (required)",
++    hint: "Use an IANA zone for the birthplace, such as Asia/Shanghai or America/Los_Angeles, or UTC. Your device’s zone is not selected automatically.",
++    placeholder: "Asia/Shanghai",
++  },
++];
++
++const emptyValues: BirthInputValues = { date: "", time: "", timeZone: "" };
++const subscribe = () => () => {};
++const clientSnapshot = () => true;
++const serverSnapshot = () => false;
++
++export function BirthInputFields({ values, errors, onChange }: {
++  values: BirthInputValues;
++  errors: BirthInputErrors;
++  onChange: (field: BirthInputField, value: string) => void;
++}) {
++  return fields.map(({ key, label, hint, placeholder }) => (
++    <div className="form-field" key={key}>
++      <label htmlFor={`birth-${key}`}>{label}</label>
++      <p className="field-hint" id={`birth-${key}-hint`}>{hint}</p>
++      <input
++        id={`birth-${key}`}
++        type="text"
++        required
++        autoComplete="off"
++        autoCapitalize="none"
++        spellCheck={false}
++        placeholder={placeholder}
++        value={values[key]}
++        aria-invalid={errors[key] ? true : undefined}
++        aria-describedby={`birth-${key}-hint${errors[key] ? ` birth-${key}-error` : ""}`}
++        onChange={(event) => onChange(key, event.target.value)}
++      />
++      {errors[key] && <p className="field-error" id={`birth-${key}-error`}>{errors[key]}</p>}
++    </div>
++  ));
++}
++
++export default function BirthInputForm() {
++  const ready = useSyncExternalStore(subscribe, clientSnapshot, serverSnapshot);
++  const [values, setValues] = useState(emptyValues);
++  const [errors, setErrors] = useState<BirthInputErrors>({});
++  const [attempted, setAttempted] = useState(false);
++  const [valid, setValid] = useState(false);
++  const formRef = useRef<HTMLFormElement>(null);
++  const pendingFocus = useRef<BirthInputField | null>(null);
++
++  // Focus after error descriptions have been added to the DOM.
++  useEffect(() => {
++    if (pendingFocus.current) {
++      formRef.current?.querySelector<HTMLInputElement>(`#birth-${pendingFocus.current}`)?.focus();
++      pendingFocus.current = null;
++    }
++  });
++
++  function changeValue(field: BirthInputField, value: string) {
++    const next = { ...values, [field]: value };
++    setValues(next);
++    setValid(false);
++    if (attempted) {
++      const result = validateBirthInput(next);
++      setErrors(result.valid ? {} : result.errors);
++    }
++  }
++
++  function submit(event: FormEvent<HTMLFormElement>) {
++    event.preventDefault();
++    const result = validateBirthInput(values);
++    setAttempted(true);
++    setValid(result.valid);
++    setErrors(result.valid ? {} : result.errors);
++    if (!result.valid) {
++      pendingFocus.current = fields.find(({ key }) => result.errors[key])?.key ?? null;
++    }
++  }
++
++  return (
++    <section aria-labelledby="birth-input-heading">
++      <h2 id="birth-input-heading">Check birth inputs</h2>
++      <p>Check a date, local time, and birthplace time zone. Chart calculation is not available yet.</p>
++      <p id="birth-privacy">This form checks entries in your browser. Entries are not sent, saved, or logged by the application.</p>
++      <noscript>Enable JavaScript to check birth inputs.</noscript>
++      {/* No names: native submission cannot serialize birth values, even before hydration. */}
++      <form ref={formRef} onSubmit={submit} noValidate autoComplete="off" aria-describedby="birth-privacy">
++        <fieldset disabled={!ready}>
++          <legend>Birth details</legend>
++          {Object.keys(errors).length > 0 && (
++            <div className="error-summary" role="alert">
++              <p>Please correct the following fields:</p>
++              <ul>
++                {fields.filter(({ key }) => errors[key]).map(({ key, label }) => (
++                  <li key={key}><a href={`#birth-${key}`}>{label}: {errors[key]}</a></li>
++                ))}
++              </ul>
++            </div>
++          )}
++          <BirthInputFields values={values} errors={errors} onChange={changeValue} />
++          <button type="submit">Check inputs</button>
++        </fieldset>
++        <p role="status" aria-live="polite">
++          {valid ? "Input format checks passed. No chart has been calculated. Local-time daylight-saving validity has not been checked." : ""}
++        </p>
++      </form>
++    </section>
++  );
++}
+diff --git a/src/lib/birth-input.ts b/src/lib/birth-input.ts
+new file mode 100644
+index 0000000..0670e0b
+--- /dev/null
++++ b/src/lib/birth-input.ts
+@@ -0,0 +1,67 @@
++/** Provisional form values, not a calculation-engine contract. */
++export type BirthInputValues = {
++  date: string;
++  time: string;
++  timeZone: string;
++};
++
++export type BirthInputField = keyof BirthInputValues;
++export type BirthInputErrors = Partial<Record<BirthInputField, string>>;
++
++export type BirthInputValidation =
++  | { valid: true; values: BirthInputValues }
++  | { valid: false; errors: BirthInputErrors };
++
++function isGregorianDate(value: string): boolean {
++  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
++
++  const [year, month, day] = value.split("-").map(Number);
++  if (year < 1 || month < 1 || month > 12 || day < 1) return false;
++
++  const leapYear = year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
++  const daysInMonth = [31, leapYear ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
++  return day <= daysInMonth[month - 1];
++}
++
++function isTimeZone(value: string): boolean {
++  // Require a named zone rather than an abbreviation or fixed UTC offset.
++  if (value !== "UTC" && !/^[A-Za-z_+-]+(?:\/[A-Za-z0-9_+-]+)+$/.test(value)) {
++    return false;
++  }
++  try {
++    new Intl.DateTimeFormat("en", { timeZone: value });
++    return true;
++  } catch {
++    return false;
++  }
++}
++
++/** Checks syntax only; does not resolve a local time to an instant or log inputs. */
++export function validateBirthInput(input: BirthInputValues): BirthInputValidation {
++  const values = {
++    date: input.date.trim(),
++    time: input.time.trim(),
++    timeZone: input.timeZone.trim(),
++  };
++  const errors: BirthInputErrors = {};
++
++  if (!values.date) {
++    errors.date = "Enter a birth date in YYYY-MM-DD format.";
++  } else if (!isGregorianDate(values.date)) {
++    errors.date = "Enter a real Gregorian date in YYYY-MM-DD format (years 0001–9999).";
++  }
++
++  if (!values.time) {
++    errors.time = "Enter a birth time in 24-hour HH:MM format.";
++  } else if (!/^([01]\d|2[0-3]):[0-5]\d$/.test(values.time)) {
++    errors.time = "Enter a time from 00:00 to 23:59 in 24-hour HH:MM format.";
++  }
++
++  if (!values.timeZone) {
++    errors.timeZone = "Enter the birth location’s time zone, such as America/Los_Angeles or UTC.";
++  } else if (!isTimeZone(values.timeZone)) {
++    errors.timeZone = "Enter a recognized IANA time zone, such as Asia/Shanghai or America/Los_Angeles, or UTC; avoid abbreviations such as PST.";
++  }
++
++  return Object.keys(errors).length ? { valid: false, errors } : { valid: true, values };
++}
+diff --git a/tests/birth-input-form.test.tsx b/tests/birth-input-form.test.tsx
+new file mode 100644
+index 0000000..3d01df0
+--- /dev/null
++++ b/tests/birth-input-form.test.tsx
+@@ -0,0 +1,43 @@
++import assert from "node:assert/strict";
++import test from "node:test";
++import { renderToStaticMarkup } from "react-dom/server";
++import BirthInputForm, { BirthInputFields } from "../src/components/birth-input-form";
++import { validateBirthInput } from "../src/lib/birth-input";
++
++const emptyValues = { date: "", time: "", timeZone: "" };
++
++test("required fields have labels and associated instructions", () => {
++  const markup = renderToStaticMarkup(<BirthInputForm />);
++  for (const key of ["date", "time", "timeZone"]) {
++    assert.match(markup, new RegExp(`<label for="birth-${key}">[^<]+\\(required\\)</label>`));
++    assert.match(markup, new RegExp(`<input[^>]+id="birth-${key}"[^>]+required=""`));
++    assert.match(markup, new RegExp(`aria-describedby="birth-${key}-hint"`));
++    assert.match(markup, new RegExp(`id="birth-${key}-hint"`));
++  }
++  assert.match(markup, /<button type="submit">Check inputs<\/button>/);
++  assert.match(markup, /role="status" aria-live="polite"/);
++  assert.doesNotMatch(markup, /aria-invalid="true"/);
++});
++
++test("each invalid field exposes its actionable error to assistive technology", () => {
++  const result = validateBirthInput(emptyValues);
++  assert.equal(result.valid, false);
++  if (result.valid) return;
++  const markup = renderToStaticMarkup(
++    <BirthInputFields values={emptyValues} errors={result.errors} onChange={() => {}} />,
++  );
++  for (const key of ["date", "time", "timeZone"]) {
++    assert.match(markup, new RegExp(`<input[^>]+id="birth-${key}"[^>]+aria-invalid="true"`));
++    assert.match(markup, new RegExp(`aria-describedby="birth-${key}-hint birth-${key}-error"`));
++    assert.match(markup, new RegExp(`<p[^>]+id="birth-${key}-error">[^<]+</p>`));
++  }
++});
++
++test("server markup prevents pre-hydration submission and explains the JavaScript requirement", () => {
++  const markup = renderToStaticMarkup(<BirthInputForm />);
++  assert.match(markup, /<fieldset disabled="">/);
++  assert.match(markup, /<noscript>Enable JavaScript to check birth inputs\.<\/noscript>/);
++  assert.doesNotMatch(markup, /<input[^>]+name=/);
++  assert.match(markup, /not sent, saved, or logged by the application/);
++  assert.match(markup, /Chart calculation is not available yet/);
++});
+diff --git a/tests/birth-input.test.tsx b/tests/birth-input.test.tsx
+new file mode 100644
+index 0000000..8627ba1
+--- /dev/null
++++ b/tests/birth-input.test.tsx
+@@ -0,0 +1,101 @@
++import assert from "node:assert/strict";
++import test from "node:test";
++import { validateBirthInput, type BirthInputField, type BirthInputValues } from "../src/lib/birth-input";
++
++const syntheticInput: BirthInputValues = {
++  date: "2000-01-15",
++  time: "14:30",
++  timeZone: "Asia/Shanghai",
++};
++
++test("valid input returns trimmed values without mutating the caller's input", () => {
++  const input = { date: " 2000-01-15 ", time: " 14:30 ", timeZone: " Asia/Shanghai " };
++  const original = { ...input };
++  assert.deepEqual(validateBirthInput(input), { valid: true, values: syntheticInput });
++  assert.deepEqual(input, original);
++});
++
++test("all missing fields receive actionable errors and no validated values", () => {
++  const result = validateBirthInput({ date: "", time: "   ", timeZone: "\t" });
++  assert.equal(result.valid, false);
++  if (result.valid) return;
++  assert.deepEqual(Object.keys(result.errors), ["date", "time", "timeZone"]);
++  assert.match(result.errors.date!, /YYYY-MM-DD/);
++  assert.match(result.errors.time!, /HH:MM/);
++  assert.match(result.errors.timeZone!, /America\/Los_Angeles/);
++  assert.equal("values" in result, false);
++});
++
++function invalidField(field: BirthInputField, value: string) {
++  const result = validateBirthInput({ ...syntheticInput, [field]: value });
++  assert.equal(result.valid, false);
++  if (result.valid) return;
++  assert.deepEqual(Object.keys(result.errors), [field]);
++  assert.ok(result.errors[field]);
++  assert.equal("values" in result, false);
++}
++
++for (const date of [
++  "0000-01-01", "10000-01-01", "2001-02-29", "1900-02-29", "2100-02-29",
++  "2000-04-31", "2000-02-30", "2000-00-01", "2000-13-01", "2000-01-00",
++  "2000-01-32", "2000-1-15", "01/15/2000", "2000-01-15T14:30", "invalid",
++]) {
++  test(`rejects invalid Gregorian date: ${date}`, () => invalidField("date", date));
++}
++
++for (const date of ["0001-01-01", "1900-02-28", "2000-02-29", "2024-02-29", "9999-12-31"]) {
++  test(`accepts real Gregorian date without inventing an engine year range: ${date}`, () => {
++    assert.equal(validateBirthInput({ ...syntheticInput, date }).valid, true);
++  });
++}
++
++for (const time of ["24:00", "23:60", "-1:00", "12:99", "9:30", "12:3", "12:30:00", "2:30 PM", "noon"]) {
++  test(`rejects invalid minute-precision time: ${time}`, () => invalidField("time", time));
++}
++
++for (const time of ["00:00", "12:00", "23:59"]) {
++  test(`accepts time boundary: ${time}`, () => {
++    assert.equal(validateBirthInput({ ...syntheticInput, time }).valid, true);
++  });
++}
++
++for (const timeZone of ["UTC", "America/Los_Angeles", "Asia/Kolkata", "Pacific/Auckland"]) {
++  test(`accepts named time zone: ${timeZone}`, () => {
++    assert.equal(validateBirthInput({ ...syntheticInput, timeZone }).valid, true);
++  });
++}
++
++for (const timeZone of ["PST", "CST", "+08:00", "UTC+8", "Mars/Olympus", "Los Angeles"]) {
++  test(`rejects unknown zones, abbreviations, and raw offsets: ${timeZone}`, () => {
++    invalidField("timeZone", timeZone);
++  });
++}
++
++test("errors do not echo rejected input", () => {
++  const rejected = "synthetic-private-value";
++  const result = validateBirthInput({ date: rejected, time: rejected, timeZone: rejected });
++  assert.equal(result.valid, false);
++  assert.ok(!JSON.stringify(result).includes(rejected));
++});
++
++test("validation does not log valid or rejected birth information", (context) => {
++  const spies = (["log", "info", "warn", "error", "debug", "trace", "dir", "table"] as const)
++    .map((method) => context.mock.method(console, method, () => {}));
++  validateBirthInput(syntheticInput);
++  validateBirthInput({ date: "synthetic-invalid", time: "25:00", timeZone: "Unknown/Zone" });
++  for (const spy of spies) assert.equal(spy.mock.callCount(), 0);
++});
++
++test("reports multiple errors together and permits correction", () => {
++  const result = validateBirthInput({ ...syntheticInput, date: "2001-02-29", time: "25:00" });
++  assert.equal(result.valid, false);
++  if (result.valid) return;
++  assert.deepEqual(Object.keys(result.errors), ["date", "time"]);
++  assert.equal(validateBirthInput(syntheticInput).valid, true);
++});
++
++test("format checks do not pretend to resolve daylight-saving gaps or overlaps", () => {
++  for (const [date, time] of [["2024-03-10", "02:30"], ["2024-11-03", "01:30"]]) {
++    assert.equal(validateBirthInput({ date, time, timeZone: "America/Los_Angeles" }).valid, true);
++  }
++});

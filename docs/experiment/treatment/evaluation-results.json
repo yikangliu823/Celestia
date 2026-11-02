@@ -1,0 +1,289 @@
+{
+  "evaluatedAt": "2026-11-02T07:12:38.434194+00:00",
+  "condition": "treatment",
+  "summary": {
+    "total": 24,
+    "applicableByScope": 22,
+    "assessedApplicable": 4,
+    "PASS": 4,
+    "FAIL": 0,
+    "N/A": 2,
+    "UNVERIFIED": 18,
+    "denominatorPolicy": "Frozen applicable denominator = PASS + FAIL. Scope-applicable includes UNVERIFIED; N/A and UNVERIFIED are never counted as passes/failures. No comparative pass rate is inferred."
+  },
+  "results": [
+    {
+      "id": "F01",
+      "category": "Functional correctness",
+      "target": "Open the form through public UI. Inventory visible date, time, and location/timezone input concepts.",
+      "expected": "The requested input concepts are present and usable. Additional chart fields are not mandated without a calculation contract.",
+      "result": "UNVERIFIED",
+      "explanation": "Applicable browser interaction/observation could not be completed reliably; source/tests do not substitute for the prescribed browser evidence.",
+      "evidence": [
+        "execution/approved-v2/browser-limitations.md"
+      ]
+    },
+    {
+      "id": "F02",
+      "category": "Functional correctness",
+      "target": "Start with an empty form and attempt submission.",
+      "expected": "Missing required values produce actionable feedback; the form does not report successful validation.",
+      "result": "UNVERIFIED",
+      "explanation": "Applicable browser interaction/observation could not be completed reliably; source/tests do not substitute for the prescribed browser evidence.",
+      "evidence": [
+        "execution/approved-v2/browser-limitations.md"
+      ]
+    },
+    {
+      "id": "F03",
+      "category": "Functional correctness",
+      "target": "Omit each field the implementation declares required, one at a time, keeping the others synthetically valid.",
+      "expected": "Each missing required value is identified with understandable feedback.",
+      "result": "UNVERIFIED",
+      "explanation": "Applicable browser interaction/observation could not be completed reliably; source/tests do not substitute for the prescribed browser evidence.",
+      "evidence": [
+        "execution/approved-v2/browser-limitations.md"
+      ]
+    },
+    {
+      "id": "F04",
+      "category": "Functional correctness",
+      "target": "Correct an invalid field and retry.",
+      "expected": "The corrected field is not still described as invalid when the supplied value is valid under the disclosed policy.",
+      "result": "UNVERIFIED",
+      "explanation": "Applicable browser interaction/observation could not be completed reliably; source/tests do not substitute for the prescribed browser evidence.",
+      "evidence": [
+        "execution/approved-v2/browser-limitations.md"
+      ]
+    },
+    {
+      "id": "F05",
+      "category": "Functional correctness",
+      "target": "Supply a complete synthetic valid input under the implementation's disclosed rules; observe submission.",
+      "expected": "No erroneous validation rejection. Exact success UI or server behavior is not scorable without a specified submission contract.",
+      "result": "UNVERIFIED",
+      "explanation": "Applicable browser interaction/observation could not be completed reliably; source/tests do not substitute for the prescribed browser evidence.",
+      "evidence": [
+        "execution/approved-v2/browser-limitations.md"
+      ]
+    },
+    {
+      "id": "E01",
+      "category": "Calendar edge cases",
+      "target": "Attempt an impossible date such as 2024-02-30 using the available controls.",
+      "expected": "The impossible date cannot be accepted as a valid calendar date. Prevention by a native widget is acceptable; separately review validation tests.",
+      "result": "UNVERIFIED",
+      "explanation": "Applicable browser interaction/observation could not be completed reliably; source/tests do not substitute for the prescribed browser evidence.",
+      "evidence": [
+        "execution/approved-v2/browser-limitations.md"
+      ]
+    },
+    {
+      "id": "E02",
+      "category": "Calendar edge cases",
+      "target": "Attempt 2023-02-29 in a Gregorian input mode.",
+      "expected": "The non-leap-year date is not accepted as a valid Gregorian date. If the mode is not Gregorian, report not scorable rather than assume a calendar.",
+      "result": "UNVERIFIED",
+      "explanation": "Applicable browser interaction/observation could not be completed reliably; source/tests do not substitute for the prescribed browser evidence.",
+      "evidence": [
+        "execution/approved-v2/browser-limitations.md"
+      ]
+    },
+    {
+      "id": "E03",
+      "category": "Calendar edge cases",
+      "target": "Enter 2024-02-29 in a Gregorian input mode.",
+      "expected": "The date is calendar-valid; rejection solely as an impossible Gregorian date fails. Unspecified product date ranges are evaluated separately.",
+      "result": "UNVERIFIED",
+      "explanation": "Applicable browser interaction/observation could not be completed reliably; source/tests do not substitute for the prescribed browser evidence.",
+      "evidence": [
+        "execution/approved-v2/browser-limitations.md"
+      ]
+    },
+    {
+      "id": "E04",
+      "category": "Calendar edge cases",
+      "target": "Review and exercise declared lower/upper date boundaries, if any, and adjacent values.",
+      "expected": "Boundary behavior matches disclosed policy. Whether the chosen product bounds are correct is not scorable because none are specified.",
+      "result": "UNVERIFIED",
+      "explanation": "Applicable browser interaction/observation could not be completed reliably; source/tests do not substitute for the prescribed browser evidence.",
+      "evidence": [
+        "execution/approved-v2/browser-limitations.md"
+      ]
+    },
+    {
+      "id": "E05",
+      "category": "Time edge cases",
+      "target": "Attempt hour 24 or minute 60, using the applicable time representation.",
+      "expected": "Impossible time values are prevented or rejected; no silent normalization to a different birth time.",
+      "result": "UNVERIFIED",
+      "explanation": "Applicable browser interaction/observation could not be completed reliably; source/tests do not substitute for the prescribed browser evidence.",
+      "evidence": [
+        "execution/approved-v2/browser-limitations.md"
+      ]
+    },
+    {
+      "id": "E06",
+      "category": "Time edge cases",
+      "target": "Try 00:00 and 23:59 in a 24-hour mode, or their equivalent in the chosen representation.",
+      "expected": "Both are valid time-of-day values; exact product restrictions are not specified.",
+      "result": "UNVERIFIED",
+      "explanation": "Applicable browser interaction/observation could not be completed reliably; source/tests do not substitute for the prescribed browser evidence.",
+      "evidence": [
+        "execution/approved-v2/browser-limitations.md"
+      ]
+    },
+    {
+      "id": "E07",
+      "category": "Location/timezone edge cases",
+      "target": "If a location field is available, enter an unsupported or nonsensical location; record any declared supported set.",
+      "expected": "Location acceptance/rejection must be described. Exact supported set and resolution rules are not defined, so correctness of those policy choices is not scorable.",
+      "result": "N/A",
+      "explanation": "No separate location field or supported-place set; explicit timezone input is assessed under E08. Location mapping correctness has no frozen oracle.",
+      "evidence": [
+        "execution/approved-v2/code-review.md",
+        "treatment/git-diff.patch"
+      ]
+    },
+    {
+      "id": "E08",
+      "category": "Location/timezone edge cases",
+      "target": "If an IANA timezone input is provided, try Not/A_Zone, then America/Los_Angeles.",
+      "expected": "If the implementation promises IANA validation, the first is rejected and the second recognized. Which timezone representation is required remains unspecified.",
+      "result": "UNVERIFIED",
+      "explanation": "Applicable browser interaction/observation could not be completed reliably; source/tests do not substitute for the prescribed browser evidence.",
+      "evidence": [
+        "execution/approved-v2/browser-limitations.md"
+      ]
+    },
+    {
+      "id": "E09",
+      "category": "Location/timezone edge cases",
+      "target": "Inspect handling of 2024-03-10 02:30 and 2024-11-03 01:30 in America/Los_Angeles if timezone resolution is implemented.",
+      "expected": "No expected disambiguation or rejection policy is specified. Record behavior as not scorable; do not invent an oracle.",
+      "result": "N/A",
+      "explanation": "No timezone instant/DST resolution implemented; expected gap/fold policy is unspecified by the frozen criteria.",
+      "evidence": [
+        "execution/approved-v2/code-review.md",
+        "treatment/git-diff.patch"
+      ]
+    },
+    {
+      "id": "A01",
+      "category": "Accessibility",
+      "target": "Inspect accessible names for every required control using the browser accessibility tree.",
+      "expected": "Every required control has a meaningful accessible label; placeholder-only or visually adjacent unassociated text is insufficient.",
+      "result": "PASS",
+      "explanation": "Initial native accessibility tree returned all three associated required textbox names; later interaction failed.",
+      "evidence": [
+        "execution/approved-v2/browser-tool-transcript.json"
+      ]
+    },
+    {
+      "id": "A02",
+      "category": "Accessibility",
+      "target": "Complete and submit using Tab, Shift+Tab, arrow keys as appropriate, and Enter/Space without a pointer.",
+      "expected": "All relevant controls and submission are operable by keyboard with a visible focus indicator and no trap.",
+      "result": "UNVERIFIED",
+      "explanation": "Applicable browser interaction/observation could not be completed reliably; source/tests do not substitute for the prescribed browser evidence.",
+      "evidence": [
+        "execution/approved-v2/browser-limitations.md"
+      ]
+    },
+    {
+      "id": "A03",
+      "category": "Accessibility",
+      "target": "Trigger errors; inspect control association, accessible descriptions, and feedback discoverability.",
+      "expected": "Errors are understandable and programmatically associated with relevant controls or exposed through accessible native validation; color alone is insufficient.",
+      "result": "UNVERIFIED",
+      "explanation": "Applicable browser interaction/observation could not be completed reliably; source/tests do not substitute for the prescribed browser evidence.",
+      "evidence": [
+        "execution/approved-v2/browser-limitations.md"
+      ]
+    },
+    {
+      "id": "A04",
+      "category": "Accessibility",
+      "target": "Trigger submission errors and observe focus order and the next keyboard action.",
+      "expected": "Focus remains predictable and errors can be found and corrected. No exact autofocus target is mandated.",
+      "result": "UNVERIFIED",
+      "explanation": "Applicable browser interaction/observation could not be completed reliably; source/tests do not substitute for the prescribed browser evidence.",
+      "evidence": [
+        "execution/approved-v2/browser-limitations.md"
+      ]
+    },
+    {
+      "id": "A05",
+      "category": "Accessibility",
+      "target": "Inspect semantic markup and reflow at 1280x800 and 390x844.",
+      "expected": "Form semantics support assistive technology; essential fields and errors remain readable and usable at both viewports. This is not a full WCAG audit.",
+      "result": "UNVERIFIED",
+      "explanation": "Applicable browser interaction/observation could not be completed reliably; source/tests do not substitute for the prescribed browser evidence.",
+      "evidence": [
+        "execution/approved-v2/browser-limitations.md"
+      ]
+    },
+    {
+      "id": "P01",
+      "category": "Privacy/security",
+      "target": "Use synthetic sentinel values; inspect browser console, captured server output, source logging calls, and URLs.",
+      "expected": "No birth inputs are logged or placed in URLs. Inspect source as well as observed output; absence in one run alone is not exhaustive evidence.",
+      "result": "UNVERIFIED",
+      "explanation": "Source review found no input logging/transmission/persistence, but required console/URL/network/storage before/after evidence is incomplete. No privacy guarantee inferred.",
+      "evidence": [
+        "execution/approved-v2/browser-limitations.md"
+      ]
+    },
+    {
+      "id": "P02",
+      "category": "Privacy/security",
+      "target": "Inspect cookies, local/session storage, network activity, and persistence code before and after entry/submission.",
+      "expected": "No unsupported storage or external transmission of birth information; distinguish normal static asset requests from input-bearing requests.",
+      "result": "UNVERIFIED",
+      "explanation": "Source review found no input logging/transmission/persistence, but required console/URL/network/storage before/after evidence is incomplete. No privacy guarantee inferred.",
+      "evidence": [
+        "execution/approved-v2/browser-limitations.md"
+      ]
+    },
+    {
+      "id": "P03",
+      "category": "Privacy/security",
+      "target": "Review fields collected and changed files.",
+      "expected": "No real personal data, credentials, or unnecessary personal fields are introduced; additional required chart fields need a documented basis.",
+      "result": "PASS",
+      "explanation": "All ten changed paths reviewed; only necessary provisional input fields and synthetic fixtures, no credentials or real data.",
+      "evidence": [
+        "execution/approved-v2/code-review.md",
+        "treatment/git-diff.patch"
+      ]
+    },
+    {
+      "id": "V01",
+      "category": "Verification",
+      "target": "Run the five frozen npm commands; inspect implementation-authored validation tests and their discovered file set.",
+      "expected": "Commands pass and meaningful validation tests are actually executed, including missing/invalid cases and fixed expected outcomes.",
+      "result": "PASS",
+      "explanation": "All five coordinator commands exit 0; actual discovered validation and static tests reviewed.",
+      "evidence": [
+        "execution/approved-v2/code-review.md",
+        "treatment/git-diff.patch",
+        "treatment/evidence/coordinator-verification.json",
+        "treatment/test-results.txt",
+        "treatment/evidence/evaluation-verification.json",
+        "treatment/evaluation-test-results.txt"
+      ]
+    },
+    {
+      "id": "Q01",
+      "category": "Code quality",
+      "target": "Review diff for TypeScript safety, focused components, validation separation, maintainability, unnecessary complexity, and architecture consistency.",
+      "expected": "Use the evidence-backed rubric in evaluation-plan.md; do not score compliance with treatment wording itself.",
+      "result": "PASS",
+      "explanation": "All preregistered review dimensions assessed in code-review.md; no material defect demonstrated.",
+      "evidence": [
+        "execution/approved-v2/code-review.md",
+        "treatment/git-diff.patch"
+      ]
+    }
+  ]
+}

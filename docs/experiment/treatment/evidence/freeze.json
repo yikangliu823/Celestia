@@ -1,0 +1,25 @@
+{
+  "condition": "treatment",
+  "frozenAt": "2026-11-02T06:39:08.915250+00:00",
+  "configurationCommit": "96d1af2fb056066376eccc3e66f66a500c70df71",
+  "implementationCommit": "5fd6e6cb0f29ee472bac25be2ebfd6a2f1e40d34",
+  "implementationTree": "b3acbd780bc08b73d90339750006c6c0ec5b2221",
+  "workingTreeClean": true,
+  "filesChanged": [
+    "README.md",
+    "docs/architecture.md",
+    "docs/birth-input-verification.md",
+    "docs/product-requirements.md",
+    "src/app/globals.css",
+    "src/app/page.tsx",
+    "src/components/birth-input-form.tsx",
+    "src/lib/birth-input.ts",
+    "tests/birth-input-form.test.tsx",
+    "tests/birth-input.test.tsx"
+  ],
+  "patchSha256": "8757752c21e74efe53d06e956481d0dfe6a3ab8af527c7bad5bc287729f8e809",
+  "coordinatorCodeEdits": 0,
+  "independentEvaluationStarted": false,
+  "rawEvidenceRedactions": 0,
+  "sessionId": "01a19af3-458d-7973-8178-ced55b2e9d99"
+}

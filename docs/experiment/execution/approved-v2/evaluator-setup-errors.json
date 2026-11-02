@@ -1,0 +1,36 @@
+[
+  {
+    "action": "npm start -- --hostname 127.0.0.1",
+    "cwd": "/Users/richardlau/Development/Celestia-experiment-evidence",
+    "exitCode": 127,
+    "stdout": "> celestia@0.1.0 start\n> next start --hostname 127.0.0.1\n",
+    "stderr": "sh: next: command not found\n",
+    "classification": "Coordinator wrong-working-directory setup error, not an implementation failure. Corrected by starting the frozen control build in its own worktree.",
+    "timestamp": "Not separately captured; occurred immediately after evaluation-start.json record."
+  },
+  {
+    "action": "Read browser environment metadata using DOM-only evaluate",
+    "result": "navigator is not defined",
+    "classification": "Browser version, locale and timezone unavailable; not application failure."
+  },
+  {
+    "action": "Continue browser interaction after tool reset, including fresh tabs and loopback IPv6 attempt",
+    "result": "ERR_CONNECTION_REFUSED error page; browser tool rejected data URL",
+    "classification": "No bypass attempted. Stable browser interaction unavailable despite host HTTP 200."
+  },
+  {
+    "action": "Treatment native click/read/screenshot after initial accessible tree",
+    "result": "browser.user is unavailable",
+    "classification": "Treatment interaction and screenshots unavailable. Initial returned accessibility tree preserved in browser-tool-transcript.json."
+  },
+  {
+    "action": "Inspect final config with Python tomllib",
+    "result": "ModuleNotFoundError: No module named tomllib",
+    "classification": "Read-only coordinator metadata inspection failure; used standard-library text diff instead."
+  },
+  {
+    "action": "Write report with duplicate Delete/Add operations for the same file in apply_patch",
+    "result": "apply_patch verification failed: invalid patch: multiple operations target comparison.md",
+    "classification": "No files modified by failed operation. Report subsequently written through shell heredocs."
+  }
+]

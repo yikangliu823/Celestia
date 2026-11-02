@@ -1,0 +1,10 @@
+{
+  "recordedAt": "2026-11-02T06:29:38.325583+00:00",
+  "command": [
+    "python3",
+    "docs/experiment/amendments/v2/audit-inputs.py"
+  ],
+  "exitCode": 0,
+  "stdout": "{\n  \"startedAt\": \"2026-11-02T06:29:37.786381+00:00\",\n  \"modelInferenceMade\": false,\n  \"conditions\": {\n    \"control\": {\n      \"exitCode\": 0,\n      \"rawSha256\": \"18acecc13609ebe477826f397b75bcdbdde22d3166a4c809ce0983c4b98d9b45\",\n      \"treatmentInstructionBlocks\": 0\n    },\n    \"treatment\": {\n      \"exitCode\": 0,\n      \"rawSha256\": \"dd7f6e763712656a8fdfdb38cad6f084d8886c16e3347c516ee0dbbafe600967\",\n      \"treatmentInstructionBlocks\": 1\n    }\n  },\n  \"normalizedRoleTextEqual\": true,\n  \"endedAt\": \"2026-11-02T06:29:38.322570+00:00\",\n  \"privateEvidenceDirectory\": \"/Users/richardlau/Development/Celestia-experiment-evidence/docs/experiment/private/input-audit-20261102T062937785893Z\"\n}\n",
+  "stderr": ""
+}

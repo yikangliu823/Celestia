@@ -1,0 +1,478 @@
+{
+  "checkedAt": "2026-11-02T07:18:42.281189+00:00",
+  "passed": false,
+  "checks": [
+    {
+      "check": "Evidence branch",
+      "passed": true,
+      "actual": "codex/experiment-protocol",
+      "expected": "codex/experiment-protocol"
+    },
+    {
+      "check": "Main remains baseline",
+      "passed": true,
+      "actual": "03573c23532fa94715844284b8e16a6bf864c9a6",
+      "expected": "03573c23532fa94715844284b8e16a6bf864c9a6"
+    },
+    {
+      "check": "Main branch",
+      "passed": true,
+      "actual": "main",
+      "expected": "main"
+    },
+    {
+      "check": "Main clean",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "check": "Frozen amendments/v2/protocol.md",
+      "passed": true,
+      "actual": "70190846f2f6453258851bb3739f61444114552582d44c97137f1bec80a03edc",
+      "expected": "70190846f2f6453258851bb3739f61444114552582d44c97137f1bec80a03edc"
+    },
+    {
+      "check": "Frozen amendments/v2/runtime-settings.json",
+      "passed": true,
+      "actual": "5818574f3ed00a71ba2020047054f46ab03247b50af2a4362416fbf17fbad2ba",
+      "expected": "5818574f3ed00a71ba2020047054f46ab03247b50af2a4362416fbf17fbad2ba"
+    },
+    {
+      "check": "Frozen amendments/v2/verify-isolation.py",
+      "passed": true,
+      "actual": "d9d2a4ed69a740ad0e08dfef7c165d48469362d4d6b80d40a5e2b3203c1fe5f8",
+      "expected": "d9d2a4ed69a740ad0e08dfef7c165d48469362d4d6b80d40a5e2b3203c1fe5f8"
+    },
+    {
+      "check": "Frozen amendments/v2/audit-inputs.py",
+      "passed": true,
+      "actual": "742e1c184706042cd38398d2b5527aa488e3cd3ff3429897bd0bdacc24339be6",
+      "expected": "742e1c184706042cd38398d2b5527aa488e3cd3ff3429897bd0bdacc24339be6"
+    },
+    {
+      "check": "Frozen amendments/v2/verify-effective-config.py",
+      "passed": true,
+      "actual": "3200eac0cfdf45a76e9b32baef09f06f681a61440fec2a53fae3dc18cd4fa83b",
+      "expected": "3200eac0cfdf45a76e9b32baef09f06f681a61440fec2a53fae3dc18cd4fa83b"
+    },
+    {
+      "check": "Frozen amendments/v2/run-condition.py",
+      "passed": true,
+      "actual": "5f83df5cced06ac6e5df0fdc0940054a05ff6fd6f8e35dc4c64fcdbccefafc3a",
+      "expected": "5f83df5cced06ac6e5df0fdc0940054a05ff6fd6f8e35dc4c64fcdbccefafc3a"
+    },
+    {
+      "check": "Frozen amendments/v2/history-audit.json",
+      "passed": true,
+      "actual": "64883d6a616fe432604531b0bd39967a682b720b0f12c28775b6fcbe1f66cb08",
+      "expected": "64883d6a616fe432604531b0bd39967a682b720b0f12c28775b6fcbe1f66cb08"
+    },
+    {
+      "check": "Frozen amendments/v2/configuration-fingerprints.json",
+      "passed": true,
+      "actual": "f600c01cb009596a6207de1fab564b4a78b42c934c867c972e3235d79fde2bf6",
+      "expected": "f600c01cb009596a6207de1fab564b4a78b42c934c867c972e3235d79fde2bf6"
+    },
+    {
+      "check": "Frozen amendments/v2/model-catalog.json",
+      "passed": true,
+      "actual": "831092d0f7e2f4503697c7c75e7f6062c38f99a6e5239040085519299a87a9e0",
+      "expected": "831092d0f7e2f4503697c7c75e7f6062c38f99a6e5239040085519299a87a9e0"
+    },
+    {
+      "check": "Frozen evaluation/scoring-audit.json",
+      "passed": true,
+      "actual": "787da0daddfbdc410b7f2c82f91f7de2b402e147d744ce195a6f2ef3fc0947e0",
+      "expected": "787da0daddfbdc410b7f2c82f91f7de2b402e147d744ce195a6f2ef3fc0947e0"
+    },
+    {
+      "check": "Frozen evaluation/scoring-clarifications.md",
+      "passed": true,
+      "actual": "81d470743dfbb66ee0e7aa5399dfb759ef9d6cfc9cb0567b2e8558971a584ace",
+      "expected": "81d470743dfbb66ee0e7aa5399dfb759ef9d6cfc9cb0567b2e8558971a584ace"
+    },
+    {
+      "check": "Frozen execution/evaluation-freeze.json",
+      "passed": true,
+      "actual": "6ff754c34b688efa6c3eeac6faec0cd72a3c2f53298eedf9711eae7cef0780ea",
+      "expected": "6ff754c34b688efa6c3eeac6faec0cd72a3c2f53298eedf9711eae7cef0780ea"
+    },
+    {
+      "check": "Approved protocol.md",
+      "passed": true,
+      "actual": "816ad71a692d46dbb62ff4498b9adbf50cb34c2379c6a4f6e1572d1423d13df0",
+      "expected": "816ad71a692d46dbb62ff4498b9adbf50cb34c2379c6a4f6e1572d1423d13df0"
+    },
+    {
+      "check": "Approved implementation-prompt.md",
+      "passed": true,
+      "actual": "0ad96dc539a2696b973d9f5cd470fb146cf16366c135f84f071cd9dcf4fd286b",
+      "expected": "0ad96dc539a2696b973d9f5cd470fb146cf16366c135f84f071cd9dcf4fd286b"
+    },
+    {
+      "check": "Approved evaluation-plan.md",
+      "passed": true,
+      "actual": "b5db16ce0aacdb82f643791d8dbc50f869d018e5309c357dacbe1415437ea508",
+      "expected": "b5db16ce0aacdb82f643791d8dbc50f869d018e5309c357dacbe1415437ea508"
+    },
+    {
+      "check": "Approved logging-procedure.md",
+      "passed": true,
+      "actual": "2794f9ae7271553d275627b4501edb165887258b35944a4f6272d6932e527ad5",
+      "expected": "2794f9ae7271553d275627b4501edb165887258b35944a4f6272d6932e527ad5"
+    },
+    {
+      "check": "Approved evaluation/cases.json",
+      "passed": true,
+      "actual": "733936881854b66dc48ab9923c4230cc2a116f7ef23d10040b6f16817aea0912",
+      "expected": "733936881854b66dc48ab9923c4230cc2a116f7ef23d10040b6f16817aea0912"
+    },
+    {
+      "check": "Approved amendments/v2/README.md",
+      "passed": true,
+      "actual": "770c87d843baf1f09c3623594bbc87695420079da95e6941a0e00437cb617607",
+      "expected": "770c87d843baf1f09c3623594bbc87695420079da95e6941a0e00437cb617607"
+    },
+    {
+      "check": "Global config fingerprint",
+      "passed": false,
+      "actual": "c0471c3e8bca852b4ef63bfc88ad833aa1b962b3a989e31dd628219cd2eafaff",
+      "expected": "bfff10908e1fcdeb84e0e7ecdc2a2219ac3d65b350afee2a77233aebc9645899"
+    },
+    {
+      "check": "Global instruction fingerprint",
+      "passed": true,
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "Global instruction zero bytes",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "check": "control branch",
+      "passed": true,
+      "actual": "experiment/no-agent-instructions",
+      "expected": "experiment/no-agent-instructions"
+    },
+    {
+      "check": "control frozen HEAD",
+      "passed": true,
+      "actual": "b9c5635a66c373276efda99c07e315a63812fec0",
+      "expected": "b9c5635a66c373276efda99c07e315a63812fec0"
+    },
+    {
+      "check": "control frozen tree",
+      "passed": true,
+      "actual": "90c776e85372b26cc067eb49b504d82166ca275a",
+      "expected": "90c776e85372b26cc067eb49b504d82166ca275a"
+    },
+    {
+      "check": "control clean",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "check": "control direct configuration parent",
+      "passed": true,
+      "actual": "85cdbb0c597a6f00f9feac3bf4cb9620f139fb46",
+      "expected": "85cdbb0c597a6f00f9feac3bf4cb9620f139fb46"
+    },
+    {
+      "check": "control baseline ancestor",
+      "passed": true,
+      "actual": "03573c23532fa94715844284b8e16a6bf864c9a6",
+      "expected": "03573c23532fa94715844284b8e16a6bf864c9a6"
+    },
+    {
+      "check": "control saved patch",
+      "passed": true,
+      "actual": "747598811677962dd9d67773f9ff3b10e2edee38fbe70bdb4f9d48c9e244cd97",
+      "expected": "747598811677962dd9d67773f9ff3b10e2edee38fbe70bdb4f9d48c9e244cd97"
+    },
+    {
+      "check": "control dependency/config files unchanged",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "check": "Control AGENTS absent",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "check": "control exact prompt",
+      "passed": true,
+      "actual": "0ad96dc539a2696b973d9f5cd470fb146cf16366c135f84f071cd9dcf4fd286b",
+      "expected": "0ad96dc539a2696b973d9f5cd470fb146cf16366c135f84f071cd9dcf4fd286b"
+    },
+    {
+      "check": "control raw artifact implementation-prompt.md",
+      "passed": true,
+      "actual": "0ad96dc539a2696b973d9f5cd470fb146cf16366c135f84f071cd9dcf4fd286b",
+      "expected": "0ad96dc539a2696b973d9f5cd470fb146cf16366c135f84f071cd9dcf4fd286b"
+    },
+    {
+      "check": "control raw artifact final-response.txt",
+      "passed": true,
+      "actual": "ad883e805879146fdc33b9b6973459ba98005c3d414c2170485a461c4787c56f",
+      "expected": "ad883e805879146fdc33b9b6973459ba98005c3d414c2170485a461c4787c56f"
+    },
+    {
+      "check": "control raw artifact stderr.txt",
+      "passed": true,
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "control raw artifact events.jsonl",
+      "passed": true,
+      "actual": "42affdb6031a9b823aac4946c88387aaadcbf3221123ed8e165d0582c98de828",
+      "expected": "42affdb6031a9b823aac4946c88387aaadcbf3221123ed8e165d0582c98de828"
+    },
+    {
+      "check": "control observed model",
+      "passed": true,
+      "actual": "gpt-6-astra",
+      "expected": "gpt-6-astra"
+    },
+    {
+      "check": "control observed effort",
+      "passed": true,
+      "actual": "high",
+      "expected": "high"
+    },
+    {
+      "check": "treatment branch",
+      "passed": true,
+      "actual": "experiment/with-agent-instructions",
+      "expected": "experiment/with-agent-instructions"
+    },
+    {
+      "check": "treatment frozen HEAD",
+      "passed": true,
+      "actual": "5fd6e6cb0f29ee472bac25be2ebfd6a2f1e40d34",
+      "expected": "5fd6e6cb0f29ee472bac25be2ebfd6a2f1e40d34"
+    },
+    {
+      "check": "treatment frozen tree",
+      "passed": true,
+      "actual": "b3acbd780bc08b73d90339750006c6c0ec5b2221",
+      "expected": "b3acbd780bc08b73d90339750006c6c0ec5b2221"
+    },
+    {
+      "check": "treatment clean",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "check": "treatment direct configuration parent",
+      "passed": true,
+      "actual": "96d1af2fb056066376eccc3e66f66a500c70df71",
+      "expected": "96d1af2fb056066376eccc3e66f66a500c70df71"
+    },
+    {
+      "check": "treatment baseline ancestor",
+      "passed": true,
+      "actual": "03573c23532fa94715844284b8e16a6bf864c9a6",
+      "expected": "03573c23532fa94715844284b8e16a6bf864c9a6"
+    },
+    {
+      "check": "treatment saved patch",
+      "passed": true,
+      "actual": "8757752c21e74efe53d06e956481d0dfe6a3ab8af527c7bad5bc287729f8e809",
+      "expected": "8757752c21e74efe53d06e956481d0dfe6a3ab8af527c7bad5bc287729f8e809"
+    },
+    {
+      "check": "treatment dependency/config files unchanged",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "check": "Treatment AGENTS unchanged",
+      "passed": true,
+      "actual": "cf44f166a3f5f6409a5f4d7e479217198f608849737cafcf3cac803d8d103940",
+      "expected": "cf44f166a3f5f6409a5f4d7e479217198f608849737cafcf3cac803d8d103940"
+    },
+    {
+      "check": "treatment exact prompt",
+      "passed": true,
+      "actual": "0ad96dc539a2696b973d9f5cd470fb146cf16366c135f84f071cd9dcf4fd286b",
+      "expected": "0ad96dc539a2696b973d9f5cd470fb146cf16366c135f84f071cd9dcf4fd286b"
+    },
+    {
+      "check": "treatment raw artifact implementation-prompt.md",
+      "passed": true,
+      "actual": "0ad96dc539a2696b973d9f5cd470fb146cf16366c135f84f071cd9dcf4fd286b",
+      "expected": "0ad96dc539a2696b973d9f5cd470fb146cf16366c135f84f071cd9dcf4fd286b"
+    },
+    {
+      "check": "treatment raw artifact final-response.txt",
+      "passed": true,
+      "actual": "3d06ecf3fc4ee8b0fa6d8d5b91535bd326f4ce3119f3d110260572756cf9ccf8",
+      "expected": "3d06ecf3fc4ee8b0fa6d8d5b91535bd326f4ce3119f3d110260572756cf9ccf8"
+    },
+    {
+      "check": "treatment raw artifact stderr.txt",
+      "passed": true,
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "treatment raw artifact events.jsonl",
+      "passed": true,
+      "actual": "ea69987ea82274f26130e605b2d47eb00c478e6d4dac53337e1f7120a63e3183",
+      "expected": "ea69987ea82274f26130e605b2d47eb00c478e6d4dac53337e1f7120a63e3183"
+    },
+    {
+      "check": "treatment observed model",
+      "passed": true,
+      "actual": "gpt-6-astra",
+      "expected": "gpt-6-astra"
+    },
+    {
+      "check": "treatment observed effort",
+      "passed": true,
+      "actual": "high",
+      "expected": "high"
+    },
+    {
+      "check": "Identical runtime arguments except output location",
+      "passed": true,
+      "actual": [
+        "/Applications/ChatGPT.app/Contents/Resources/codex",
+        "--strict-config",
+        "-c",
+        "model=\"gpt-6-astra\"",
+        "-c",
+        "model_reasoning_effort=\"high\"",
+        "-c",
+        "approval_policy=\"never\"",
+        "-c",
+        "web_search=\"disabled\"",
+        "-c",
+        "project_doc_fallback_filenames=[]",
+        "-c",
+        "features.plugins=false",
+        "-c",
+        "features.apps=false",
+        "-c",
+        "features.memories=false",
+        "-c",
+        "features.multi_agent=false",
+        "-c",
+        "features.hooks=false",
+        "-c",
+        "features.shell_snapshot=false",
+        "-c",
+        "features.skip_host_skill_discovery=true",
+        "-c",
+        "mcp_servers.node_repl.enabled=false",
+        "-c",
+        "mcp_servers.computer-use.enabled=false",
+        "-c",
+        "shell_environment_policy.inherit=\"core\"",
+        "-c",
+        "shell_environment_policy.ignore_default_excludes=false",
+        "-c",
+        "sandbox_mode=\"workspace-write\"",
+        "-c",
+        "sandbox_workspace_write.network_access=true",
+        "exec",
+        "--json",
+        "--color",
+        "never",
+        "--output-last-message",
+        "<condition-output>",
+        "-"
+      ],
+      "expected": [
+        "/Applications/ChatGPT.app/Contents/Resources/codex",
+        "--strict-config",
+        "-c",
+        "model=\"gpt-6-astra\"",
+        "-c",
+        "model_reasoning_effort=\"high\"",
+        "-c",
+        "approval_policy=\"never\"",
+        "-c",
+        "web_search=\"disabled\"",
+        "-c",
+        "project_doc_fallback_filenames=[]",
+        "-c",
+        "features.plugins=false",
+        "-c",
+        "features.apps=false",
+        "-c",
+        "features.memories=false",
+        "-c",
+        "features.multi_agent=false",
+        "-c",
+        "features.hooks=false",
+        "-c",
+        "features.shell_snapshot=false",
+        "-c",
+        "features.skip_host_skill_discovery=true",
+        "-c",
+        "mcp_servers.node_repl.enabled=false",
+        "-c",
+        "mcp_servers.computer-use.enabled=false",
+        "-c",
+        "shell_environment_policy.inherit=\"core\"",
+        "-c",
+        "shell_environment_policy.ignore_default_excludes=false",
+        "-c",
+        "sandbox_mode=\"workspace-write\"",
+        "-c",
+        "sandbox_workspace_write.network_access=true",
+        "exec",
+        "--json",
+        "--color",
+        "never",
+        "--output-last-message",
+        "<condition-output>",
+        "-"
+      ]
+    },
+    {
+      "check": "Identical observed runtime settings",
+      "passed": true,
+      "actual": {
+        "model": "gpt-6-astra",
+        "effort": "high",
+        "approval_policy": "never",
+        "sandbox_policy": {
+          "type": "workspace-write",
+          "network_access": true,
+          "exclude_tmpdir_env_var": false,
+          "exclude_slash_tmp": false
+        }
+      },
+      "expected": {
+        "model": "gpt-6-astra",
+        "effort": "high",
+        "approval_policy": "never",
+        "sandbox_policy": {
+          "type": "workspace-write",
+          "network_access": true,
+          "exclude_tmpdir_env_var": false,
+          "exclude_slash_tmp": false
+        }
+      }
+    },
+    {
+      "check": "Same starting application tree",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    }
+  ]
+}

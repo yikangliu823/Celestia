@@ -1,0 +1,70 @@
+[
+  {
+    "command": [
+      "npm",
+      "ci"
+    ],
+    "cwd": "/Users/richardlau/Development/Celestia-experiment-control",
+    "startedAt": "2026-11-02T06:45:57.170806+00:00",
+    "endedAt": "2026-11-02T06:46:03.695425+00:00",
+    "durationSeconds": 6.524605584000001,
+    "exitCode": 0,
+    "stdout": "\nadded 349 packages, and audited 350 packages in 6s\n\n142 packages are looking for funding\n  run `npm fund` for details\n\n16 moderate severity vulnerabilities\n\nTo address all issues (including breaking changes), run:\n  npm audit fix --force\n\nRun `npm audit` for details.\n",
+    "stderr": "npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.\nnpm warn install-scripts 2 packages have install scripts not yet covered by allowScripts:\nnpm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)\nnpm warn install-scripts   fsevents@2.3.3 (install: (install scripts present))\nnpm warn install-scripts\nnpm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.\n"
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "typecheck"
+    ],
+    "cwd": "/Users/richardlau/Development/Celestia-experiment-control",
+    "startedAt": "2026-11-02T06:46:03.696880+00:00",
+    "endedAt": "2026-11-02T06:46:05.358017+00:00",
+    "durationSeconds": 1.6611494999999996,
+    "exitCode": 0,
+    "stdout": "\n> celestia@0.1.0 typecheck\n> next typegen && tsc --noEmit\n\nGenerating route types...\n\u2713 Types generated successfully\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "cwd": "/Users/richardlau/Development/Celestia-experiment-control",
+    "startedAt": "2026-11-02T06:46:05.358368+00:00",
+    "endedAt": "2026-11-02T06:46:06.534933+00:00",
+    "durationSeconds": 1.176577708,
+    "exitCode": 0,
+    "stdout": "\n> celestia@0.1.0 lint\n> eslint . --max-warnings=0\n\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "npm",
+      "test"
+    ],
+    "cwd": "/Users/richardlau/Development/Celestia-experiment-control",
+    "startedAt": "2026-11-02T06:46:06.535246+00:00",
+    "endedAt": "2026-11-02T06:46:07.219941+00:00",
+    "durationSeconds": 0.6847127090000011,
+    "exitCode": 0,
+    "stdout": "\n> celestia@0.1.0 test\n> tsx --test tests/*.test.tsx\n\n\u2714 required fields have labels and associated instructions (4.504416ms)\n\u2714 each invalid field exposes its actionable error to assistive technology (0.62725ms)\n\u2714 server markup prevents pre-hydration submission and explains the JavaScript requirement (0.411292ms)\n\u2714 valid input returns trimmed values without mutating the caller's input (26.419917ms)\n\u2714 all missing fields receive actionable errors and no validated values (0.193709ms)\n\u2714 rejects invalid Gregorian date: 0000-01-01 (0.276291ms)\n\u2714 rejects invalid Gregorian date: 10000-01-01 (0.094041ms)\n\u2714 rejects invalid Gregorian date: 2001-02-29 (0.093417ms)\n\u2714 rejects invalid Gregorian date: 1900-02-29 (0.095583ms)\n\u2714 rejects invalid Gregorian date: 2100-02-29 (0.083958ms)\n\u2714 rejects invalid Gregorian date: 2000-04-31 (0.074917ms)\n\u2714 rejects invalid Gregorian date: 2000-02-30 (0.084375ms)\n\u2714 rejects invalid Gregorian date: 2000-00-01 (0.114667ms)\n\u2714 rejects invalid Gregorian date: 2000-13-01 (0.085333ms)\n\u2714 rejects invalid Gregorian date: 2000-01-00 (0.075666ms)\n\u2714 rejects invalid Gregorian date: 2000-01-32 (0.056166ms)\n\u2714 rejects invalid Gregorian date: 2000-1-15 (0.050958ms)\n\u2714 rejects invalid Gregorian date: 01/15/2000 (0.045584ms)\n\u2714 rejects invalid Gregorian date: 2000-01-15T14:30 (0.04825ms)\n\u2714 rejects invalid Gregorian date: invalid (0.045333ms)\n\u2714 accepts real Gregorian date without inventing an engine year range: 0001-01-01 (0.055166ms)\n\u2714 accepts real Gregorian date without inventing an engine year range: 1900-02-28 (0.044083ms)\n\u2714 accepts real Gregorian date without inventing an engine year range: 2000-02-29 (0.062958ms)\n\u2714 accepts real Gregorian date without inventing an engine year range: 2024-02-29 (0.046125ms)\n\u2714 accepts real Gregorian date without inventing an engine year range: 9999-12-31 (0.041625ms)\n\u2714 rejects invalid minute-precision time: 24:00 (0.057459ms)\n\u2714 rejects invalid minute-precision time: 23:60 (0.045041ms)\n\u2714 rejects invalid minute-precision time: -1:00 (0.04075ms)\n\u2714 rejects invalid minute-precision time: 12:99 (0.046583ms)\n\u2714 rejects invalid minute-precision time: 9:30 (0.038542ms)\n\u2714 rejects invalid minute-precision time: 12:3 (0.038708ms)\n\u2714 rejects invalid minute-precision time: 12:30:00 (0.040166ms)\n\u2714 rejects invalid minute-precision time: 2:30 PM (0.040875ms)\n\u2714 rejects invalid minute-precision time: noon (0.044875ms)\n\u2714 accepts time boundary: 00:00 (0.047458ms)\n\u2714 accepts time boundary: 12:00 (0.040084ms)\n\u2714 accepts time boundary: 23:59 (0.048584ms)\n\u2714 accepts named time zone: UTC (0.082834ms)\n\u2714 accepts named time zone: America/Los_Angeles (0.061ms)\n\u2714 accepts named time zone: Asia/Kolkata (0.062ms)\n\u2714 accepts named time zone: Pacific/Auckland (0.045ms)\n\u2714 rejects unknown zones, abbreviations, and raw offsets: PST (0.020292ms)\n\u2714 rejects unknown zones, abbreviations, and raw offsets: CST (0.013583ms)\n\u2714 rejects unknown zones, abbreviations, and raw offsets: +08:00 (0.0175ms)\n\u2714 rejects unknown zones, abbreviations, and raw offsets: UTC+8 (0.013125ms)\n\u2714 rejects unknown zones, abbreviations, and raw offsets: Mars/Olympus (0.14ms)\n\u2714 rejects unknown zones, abbreviations, and raw offsets: Los Angeles (0.032667ms)\n\u2714 errors do not echo rejected input (0.050084ms)\n\u2714 validation does not log valid or rejected birth information (0.322125ms)\n\u2714 reports multiple errors together and permits correction (0.16275ms)\n\u2714 format checks do not pretend to resolve daylight-saving gaps or overlaps (0.141625ms)\n\u2714 homepage renders the application name inside the main landmark (5.244875ms)\n\u2139 tests 52\n\u2139 suites 0\n\u2139 pass 52\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 186.958708\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "cwd": "/Users/richardlau/Development/Celestia-experiment-control",
+    "startedAt": "2026-11-02T06:46:07.220276+00:00",
+    "endedAt": "2026-11-02T06:46:09.461366+00:00",
+    "durationSeconds": 2.2411365839999995,
+    "exitCode": 0,
+    "stdout": "\n> celestia@0.1.0 build\n> next build\n\n\u25b2 Next.js 16.4.3 (Turbopack)\n\u2713 Running next.config.ts took 16ms\n\n  Creating an optimized production build ...\n\u2713 Compiled successfully in 168ms\n  Running TypeScript ...\n  Finished TypeScript in 706ms ...\n  Collecting page data using 4 workers ...\n  Generating static pages using 4 workers (0/3) ...\n\u2713 Generating static pages using 4 workers (3/3) in 150ms\n  Finalizing page optimization ...\n\nRoute (app)\n\u250c \u25cb /\n\u2514 \u25cb /_not-found\n\n\n\u25cb  (Static)  prerendered as static content\n\n",
+    "stderr": ""
+  }
+]

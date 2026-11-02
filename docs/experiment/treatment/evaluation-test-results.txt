@@ -1,0 +1,117 @@
+COMMAND: npm ci
+START: 2026-11-02T07:17:36.351555+00:00
+END: 2026-11-02T07:17:42.656673+00:00
+EXIT: 0
+STDOUT:
+
+added 349 packages, and audited 350 packages in 6s
+
+142 packages are looking for funding
+  run `npm fund` for details
+
+16 moderate severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+STDERR:
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+npm warn install-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts   fsevents@2.3.3 (install: (install scripts present))
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+
+COMMAND: npm run typecheck
+START: 2026-11-02T07:17:42.657333+00:00
+END: 2026-11-02T07:17:44.294467+00:00
+EXIT: 0
+STDOUT:
+
+> celestia@0.1.0 typecheck
+> next typegen && tsc --noEmit
+
+Generating route types...
+✓ Types generated successfully
+
+STDERR:
+
+COMMAND: npm run lint
+START: 2026-11-02T07:17:44.294748+00:00
+END: 2026-11-02T07:17:45.487770+00:00
+EXIT: 0
+STDOUT:
+
+> celestia@0.1.0 lint
+> eslint . --max-warnings=0
+
+
+STDERR:
+
+COMMAND: npm test
+START: 2026-11-02T07:17:45.488080+00:00
+END: 2026-11-02T07:17:46.119076+00:00
+EXIT: 0
+STDOUT:
+
+> celestia@0.1.0 test
+> tsx --test tests/*.test.tsx
+
+✔ form renders required fields with labels and associated instructions (4.690666ms)
+✔ server-rendered form prevents entry before hydration and explains its limits (0.478583ms)
+✔ valid synthetic values are returned unchanged without mutating the input (11.79575ms)
+✔ missing or malformed input produces actionable errors for all required fields (0.191625ms)
+✔ each field rejects missing and non-string values without coercion (0.840875ms)
+✔ Gregorian dates accept leap days and exact month boundaries (0.327833ms)
+✔ Gregorian dates reject impossible dates including century leap-year exceptions (0.493167ms)
+✔ dates reject ambiguous formats, whitespace, timestamps, and expanded years (0.323875ms)
+✔ local times accept midnight, noon, and the last minute without conversion (0.188042ms)
+✔ times reject out-of-range values, missing padding, seconds, and timezone suffixes (0.376083ms)
+✔ timezone validation accepts explicit supported named zones and UTC (0.276083ms)
+✔ timezone validation rejects unknown zones, places, abbreviations, and raw offsets (0.144459ms)
+✔ basic format validation does not claim to resolve daylight-saving gaps or folds (0.123917ms)
+✔ invalid values are not echoed in errors or returned as successful data (0.105416ms)
+✔ homepage renders the application name inside the main landmark (4.296417ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 178.829625
+
+STDERR:
+
+COMMAND: npm run build
+START: 2026-11-02T07:17:46.119417+00:00
+END: 2026-11-02T07:17:48.257032+00:00
+EXIT: 0
+STDOUT:
+
+> celestia@0.1.0 build
+> next build
+
+▲ Next.js 16.4.3 (Turbopack)
+✓ Running next.config.ts took 17ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 78ms
+  Running TypeScript ...
+  Finished TypeScript in 660ms ...
+  Collecting page data using 4 workers ...
+  Generating static pages using 4 workers (0/3) ...
+✓ Generating static pages using 4 workers (3/3) in 158ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+└ ○ /_not-found
+
+
+○  (Static)  prerendered as static content
+
+
+STDERR:
