@@ -1,68 +1,74 @@
-# Celestia Engineering Rules
+# Celestia: Codex Project Instructions
 
-## Purpose and scope
+## Context and current scope
 
-These rules govern contributions to the independent Celestia repository. Review the current repository tree before making implementation claims. At initialization, the repository contains planning documents only.
+Celestia explores deterministic Zi Wei Dou Shu charts and cultural interpretation.
+The repository currently implements only a Next.js homepage and scaffold checks.
+Birth-input forms, calculation, authentication, persistence, and AI services are
+not implemented at this baseline. Inspect the tree before claiming otherwise.
+Read `docs/product-requirements.md` for scope, `docs/architecture.md` for boundaries,
+and the assigned GitHub issue for acceptance criteria. Record ambiguities; do not
+invent chart requirements or silently make irreversible data or security decisions.
 
-## Product and requirements
+## Stack and structure
 
-Use `docs/product-requirements.md` for the current product scope. Do not treat features marked planned as implemented. When a requirement is underspecified, record the decision or ask for clarification before introducing irreversible data models or security behavior.
+- Next.js 16.4.3 App Router, React 19.3.1, TypeScript 5.9.3, and plain CSS.
+- `src/app`: root layout, route components, metadata, and global styles.
+- `tests`: Node test runner tests executed with `tsx`; currently one render smoke test.
+- `docs`: requirements, architecture, dependency licenses, and verification records.
+- `package.json` and `package-lock.json`: pinned dependencies and npm scripts.
+- `next.config.ts` disables automatic instruction generation; preserve that setting.
 
-## Architecture
+Keep calculation, UI, application services, persistence, and AI interpretation
+separate as they are introduced. Calculation must be deterministic and testable;
+never ask an LLM to compute or silently change star or palace positions.
 
-- Use a deterministic, testable calculation module for chart computation.
-- Separate calculation results, application services, persistence, and AI interpretation.
-- Do not ask a language model to calculate or silently alter star or palace positions.
-- Keep provider credentials and AI requests on the server.
-- Minimize the personal information included in model requests.
-- Authorize each chart, conversation, share, and consultation operation on the server.
-- Validate input at trust boundaries; handle malformed requests and partial streams.
-- Record external dependencies and license compatibility before integration.
+## Development conventions
 
-## Implementation conventions
+- Use strict TypeScript, explicit domain types, and narrow untrusted inputs before use.
+  Avoid `any`, suppressed type errors, and disabled lint rules as shortcuts.
+- Use PascalCase for components and types, camelCase for variables and functions,
+  and kebab-case for general filenames. Preserve Next.js reserved filenames.
+- Keep React components focused. Use client components only where interaction needs
+  them; keep validation logic testable independently of rendering.
+- Prefer existing platform APIs and dependencies over new abstractions or UI libraries.
+- Validate at trust boundaries; handle empty, malformed, and unsupported input with
+  actionable errors. Do not silently coerce invalid input into a successful result.
+- Do not add unrelated features or claim a proposed service already exists.
 
-- Write new documentation, code comments, issue titles, and UI copy in English.
-- Preserve Chinese text only where required for domain data, proper nouns, quotations, or legal notices.
-- Use `PascalCase` for React components and TypeScript types.
-- Use `camelCase` for variables and functions.
-- Use `kebab-case` for general filenames, documentation, and URL segments.
-- Follow existing framework conventions for reserved filenames such as `page.tsx` and `route.ts`.
-- Prefer descriptive names over abbreviations; avoid redundant words and invented synonyms.
-- Use focused, imperative commit subjects with Conventional Commit prefixes.
-- Keep writing factual and concise. Avoid promotional language, decorative emoji, ornamental separators, and formulaic rhetorical contrasts.
+## Privacy, security, and accessibility
 
-These are project conventions informed by widely used engineering practices; do not represent them as an official universal Google naming policy.
+- Use synthetic fixtures. Never commit credentials or real birth records, log
+  sensitive birth inputs, or put them in URLs, analytics, or AI prompts.
+- Do not add persistence or external transmission without an explicit requirement.
+  Keep future provider credentials and AI requests on the server; authorize private
+  resource operations server-side when those services are introduced.
+- Use semantic HTML, accessible names, keyboard operation, visible focus, readable
+  errors associated with controls, and responsive layouts. Do not rely on color alone.
+- Present interpretations as cultural content, without scientific predictive claims.
 
-## Task workflow
+## Verification and dependencies
 
-- Create an issue before implementing a feature.
-- Write the issue title as an action with one observable outcome.
-- Include context, scope, dependencies, acceptance criteria, and a verification plan.
-- Keep pull requests reviewable and link each change to its issue.
-- Do not claim an acceptance criterion is met without verification evidence.
-- Separate documentation-only changes from behavior changes when practical.
+- Run `npm ci`, `npm run typecheck`, `npm run lint`, `npm test`, and `npm run build`.
+  Start locally with `npm run dev`; serve a completed production build with `npm start`.
+- Add meaningful tests for validation changes and explicit expected outputs for
+  deterministic logic. Preserve existing tests. Do not weaken checks to get a pass.
+- Report commands, exit outcomes, failures, fixes, and skipped checks accurately.
+  Distinguish render tests from browser checks; do not claim unverified behavior,
+  accessibility conformance, test coverage, or completed acceptance criteria.
+- Keep dependencies minimal. Review licenses before adding packages or importing
+  code; record versions and compatibility in `docs/dependencies.md`, retaining notices.
+  Update the lockfile with intentional dependency changes. Do not silently apply
+  breaking audit fixes or change dependencies to hide warnings.
 
-## Testing and quality
+## Git workflow and constraints
 
-- Establish baseline tests before modifying any imported or newly written chart engine.
-- Use fixed fixtures and explicit expected outputs for calculation regression tests.
-- Add unit tests for validation, authorization, and serialization logic.
-- Add integration tests for authenticated endpoints and streaming contracts.
-- Add end-to-end tests for critical user journeys after the application exists.
-- Run available type checks, tests, and builds; report failures and skipped checks.
-- Do not claim a coverage percentage without an actual coverage report.
-
-## Privacy and accessibility
-
-- Never commit credentials or real users' birth records.
-- Do not expose sensitive birth information in application logs or AI prompts.
-- Design for keyboard navigation, labeled controls, visible focus, readable errors, and responsive layouts.
-- Treat chart interpretations as cultural content; avoid assertions of scientific predictive validity.
-
-## External projects
-
-External codebases are read-only references unless the repository owner explicitly approves a specific import. Do not copy another project's branding, contributor list, README, or agent rules. Retain legally required notices for any approved third-party material.
-
-## Agent-specific configuration
-
-Do not create `CLAUDE.md` without a separate explicit request.
+- Work on the assigned branch for the existing issue; create an issue before a new
+  feature. Use focused Conventional Commit subjects and keep changes reviewable.
+- Link pull requests to the issue and include verification results and known risks.
+  Do not modify, merge into, or push `main` without explicit owner approval.
+- Write new code comments, documentation, and UI copy in English, retaining Chinese
+  only for necessary domain terms, proper nouns, quotations, or legal notices.
+- Do not modify external repositories, copy third-party application code without
+  approval and license review, or copy another project's branding or agent rules.
+- Do not create `CLAUDE.md`. Avoid decorative emojis and unnecessary separators.
